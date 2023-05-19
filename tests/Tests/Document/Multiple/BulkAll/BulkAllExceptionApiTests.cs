@@ -6,7 +6,7 @@ using System;
 using System.Threading;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net7;
-using Elasticsearch.Net.VirtualizedCluster;
+using Elasticsearch.Net7.VirtualizedCluster;
 using FluentAssertions;
 using Nest7;
 using Tests.Core.ManagedElasticsearch.Clusters;

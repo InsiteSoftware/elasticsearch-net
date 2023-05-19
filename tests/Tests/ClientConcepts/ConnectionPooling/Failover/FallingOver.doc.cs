@@ -5,8 +5,8 @@
  using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net7;
-using Elasticsearch.Net.VirtualizedCluster;
-using Elasticsearch.Net.VirtualizedCluster.Audit;
+using Elasticsearch.Net7.VirtualizedCluster;
+using Elasticsearch.Net7.VirtualizedCluster.Audit;
 
 namespace Tests.ClientConcepts.ConnectionPooling.Failover
 {

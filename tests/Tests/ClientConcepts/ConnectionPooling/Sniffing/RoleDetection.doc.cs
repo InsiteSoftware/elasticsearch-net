@@ -11,15 +11,15 @@ using System.Threading;
 using Elastic.Elasticsearch.Xunit.Sdk;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net7;
-using Elasticsearch.Net.VirtualizedCluster;
-using Elasticsearch.Net.VirtualizedCluster.Audit;
+using Elasticsearch.Net7.VirtualizedCluster;
+using Elasticsearch.Net7.VirtualizedCluster.Audit;
 using FluentAssertions;
 using Nest7;
 using Tests.Core.Client.Settings;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Framework;
-using static Elasticsearch.Net.VirtualizedCluster.Rules.TimesHelper;
+using static Elasticsearch.Net7.VirtualizedCluster.Rules.TimesHelper;
 using static Elasticsearch.Net.AuditEvent;
 
 namespace Tests.ClientConcepts.ConnectionPooling.Sniffing

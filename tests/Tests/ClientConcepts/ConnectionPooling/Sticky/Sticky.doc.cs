@@ -13,7 +13,7 @@ using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net7;
 using FluentAssertions;
 using Tests.Framework;
-using static Elasticsearch.Net.VirtualizedCluster.Rules.TimesHelper;
+using static Elasticsearch.Net7.VirtualizedCluster.Rules.TimesHelper;
 using static Elasticsearch.Net.AuditEvent;
 
 namespace Tests.ClientConcepts.ConnectionPooling.Sticky

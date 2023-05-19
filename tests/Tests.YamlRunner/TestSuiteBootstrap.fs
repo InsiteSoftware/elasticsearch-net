@@ -7,10 +7,10 @@ module Tests.YamlRunner.TestSuiteBootstrap
 open System
 open System.Linq
 
-open Elasticsearch.Net
-open Elasticsearch.Net.Specification.CatApi
-open Elasticsearch.Net.Specification.ClusterApi
-open Elasticsearch.Net.Specification.IndicesApi
+open Elasticsearch.Net7
+open Elasticsearch.Net7.Specification.CatApi
+open Elasticsearch.Net7.Specification.ClusterApi
+open Elasticsearch.Net7.Specification.IndicesApi
 open Tests.YamlRunner.Models
 
 let DefaultSetup : Operation list = [Actions("Setup", fun (client, suite) ->
