@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
 using Nest7;
 using Newtonsoft.Json;

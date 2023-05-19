@@ -10,7 +10,7 @@ using System.Net.Http.Headers;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
 using Nest7;
 using System.Runtime.Serialization;

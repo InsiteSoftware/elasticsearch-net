@@ -3,10 +3,10 @@
 // See the LICENSE file in the project root for more information
 
 using System.Runtime.Serialization;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Extensions;
-using Elasticsearch.Net.Utf8Json;
-using Elasticsearch.Net.Utf8Json.Formatters;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Extensions;
+using Elasticsearch.Net7.Utf8Json;
+using Elasticsearch.Net7.Utf8Json.Formatters;
 
 namespace Nest7
 {

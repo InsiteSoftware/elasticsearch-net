@@ -10,7 +10,7 @@ namespace ApiGenerator.Configuration
 	public static class GeneratorLocations
 	{
 		// @formatter:off — disable formatter after this line
-		public static string EsNetFolder { get; } = $@"{Root}../../src/Elasticsearch.Net/";
+		public static string EsNetFolder { get; } = $@"{Root}../../src/Elasticsearch.Net7/";
 		public static string LastDownloadedRef { get; } = Path.Combine(Root, "last_downloaded_version.txt");
 
 		public static string NestFolder { get; } = $@"{Root}../../src/Nest/";

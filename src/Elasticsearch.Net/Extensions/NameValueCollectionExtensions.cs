@@ -8,7 +8,7 @@ using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 
-namespace Elasticsearch.Net.Extensions
+namespace Elasticsearch.Net7.Extensions
 {
 	internal static class NameValueCollectionExtensions
 	{

@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.Sdk;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using Elasticsearch.Net.Diagnostics;
 using FluentAssertions;
 using Nest7;
@@ -28,7 +28,7 @@ namespace Tests.ClientConcepts.Troubleshooting
 	/**
 	 * === Debug information
 	 *
-	 * Every response from Elasticsearch.Net and NEST contains a `DebugInformation` property
+	 * Every response from Elasticsearch.Net7 and NEST contains a `DebugInformation` property
 	 * that provides a human readable description of what happened during the request for both successful and
 	 * failed requests
 	 */

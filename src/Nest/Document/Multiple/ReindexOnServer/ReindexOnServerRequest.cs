@@ -3,7 +3,7 @@
 // See the LICENSE file in the project root for more information
 
 using System;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using System.Runtime.Serialization;
 
 
@@ -17,7 +17,7 @@ namespace Nest7
 	{
 		/// <summary>
 		/// Determine what to do in the event of version conflicts.
-		/// Defaults to <see cref="Elasticsearch.Net.Conflicts.Abort" />
+		/// Defaults to <see cref="Elasticsearch.Net7.Conflicts.Abort" />
 		/// </summary>
 		[DataMember(Name ="conflicts")]
 

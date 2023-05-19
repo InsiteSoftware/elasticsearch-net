@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
 namespace Nest7
 {

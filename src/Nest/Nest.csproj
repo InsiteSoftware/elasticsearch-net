@@ -8,14 +8,16 @@
       Strongly typed interface to Elasticsearch. Fluent and classic object initializer mappings of requests and 
       responses. Uses and exposes Elasticsearch.Net.
     </Description>
+    <RootNamespace>Nest7</RootNamespace>
   </PropertyGroup>
   
   <PropertyGroup>
     <IsPackable>true</IsPackable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net461</TargetFrameworks>
   </PropertyGroup>
   <PropertyGroup>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
     <AssemblyName>Nest7</AssemblyName>
   </PropertyGroup>
   <ItemGroup>

@@ -4,7 +4,7 @@
 
 using System;
 using System.Globalization;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
 namespace Nest7
 {

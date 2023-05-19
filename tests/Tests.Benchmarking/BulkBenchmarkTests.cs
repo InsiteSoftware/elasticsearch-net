@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using BenchmarkDotNet.Attributes;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using Nest7;
 using Tests.Benchmarking.Framework;
 using Tests.Core.Client;
@@ -33,7 +33,7 @@ namespace Tests.Benchmarking
 
 		private static readonly Nest7.IElasticClient ClientV7 =
 			new Nest7.ElasticClient(new Nest7.ConnectionSettings(
-					new Elasticsearch.Net.InMemoryConnection(Response, 200, null, null))
+					new Elasticsearch.Net7.InMemoryConnection(Response, 200, null, null))
 				.DefaultIndex("index")
 				.EnableHttpCompression(false)
 			);

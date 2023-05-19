@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public interface IDateTimeProvider
 	{

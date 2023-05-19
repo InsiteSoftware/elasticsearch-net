@@ -6,7 +6,7 @@ using System;
 using System.Text;
 using System.Runtime.Serialization;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using Elasticsearch.Net.Extensions;
 using FluentAssertions;
 using Nest7;
@@ -20,7 +20,7 @@ namespace Tests.ClientConcepts.HighLevel.Serialization
 	 * === Modelling documents with types
 	 *
 	 * Elasticsearch provides search and aggregation capabilities on the documents that it is sent and indexes. These documents are sent as
-	 * JSON objects within the request body of a HTTP request. It is natural to model documents within NEST and Elasticsearch.Net using
+	 * JSON objects within the request body of a HTTP request. It is natural to model documents within NEST and Elasticsearch.Net7 using
 	 * https://en.wikipedia.org/wiki/Plain_Old_CLR_Object[POCOs (__Plain Old CLR Objects__)].
 	 *
 	 * This section provides an overview of how types and type hierarchies can be used to model documents.

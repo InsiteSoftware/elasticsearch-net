@@ -6,7 +6,7 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Text;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
 using Nest7;
 using Nest7.JsonNetSerializer;

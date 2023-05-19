@@ -8,7 +8,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
 using Nest7;
 using Tests.Framework;
@@ -209,10 +209,10 @@ namespace Tests.CodeStandards
 			var typesNotIElasticsearchNetNamespace = types
 				.Where(t => !exceptions.Contains(t))
 				.Where(t => t.Namespace != null)
-				.Where(t => t.Namespace != "Elasticsearch.Net" && !t.Namespace.StartsWith("Elasticsearch.Net.Specification"))
-				.Where(t => !t.Namespace.StartsWith("Elasticsearch.Net.Utf8Json"))
-				.Where(t => !t.Namespace.StartsWith("Elasticsearch.Net.Extensions"))
-				.Where(t => !t.Namespace.StartsWith("Elasticsearch.Net.Diagnostics"))
+				.Where(t => t.Namespace != "Elasticsearch.Net7" && !t.Namespace.StartsWith("Elasticsearch.Net7.Specification"))
+				.Where(t => !t.Namespace.StartsWith("Elasticsearch.Net7.Utf8Json"))
+				.Where(t => !t.Namespace.StartsWith("Elasticsearch.Net7.Extensions"))
+				.Where(t => !t.Namespace.StartsWith("Elasticsearch.Net7.Diagnostics"))
 				.Where(t => !t.Name.StartsWith("<"))
 				.Where(t => IsValidTypeNameOrIdentifier(t.Name, true))
 				.ToList();

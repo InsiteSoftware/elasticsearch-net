@@ -4,7 +4,7 @@
 
 using System.Text;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public class StringResponse : ElasticsearchResponse<string>
 	{

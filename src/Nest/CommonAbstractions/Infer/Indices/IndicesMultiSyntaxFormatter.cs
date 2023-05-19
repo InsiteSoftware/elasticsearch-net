@@ -2,8 +2,8 @@
 // Elasticsearch B.V licenses this file to you under the Apache 2.0 License.
 // See the LICENSE file in the project root for more information
 
-using Elasticsearch.Net;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Utf8Json;
 
 namespace Nest7
 {

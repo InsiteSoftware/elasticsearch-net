@@ -9,7 +9,7 @@ using System.Net.Http;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
 using Nest7;
 using Tests.Core.Xunit;
@@ -46,7 +46,7 @@ namespace Tests.ClientConcepts.Certificates
 		 * ==== Validation configuration
 		 *
 		 * It's possible to also set a callback per service endpoint with .NET, and both Elasticsearch.NET and NEST expose this through
-		 * connection settings (`ConnectionConfiguration` with Elasticsearch.Net and `ConnectionSettings` with NEST). You can do
+		 * connection settings (`ConnectionConfiguration` with Elasticsearch.Net7 and `ConnectionSettings` with NEST). You can do
 		 * your own validation in that handler or use one of the baked in handlers that we ship with out of the box, on the static class
 		 * `CertificateValidations`.
 		 *

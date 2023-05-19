@@ -18,7 +18,7 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Specification.IndexLifecycleManagementApi;
+using Elasticsearch.Net7.Specification.IndexLifecycleManagementApi;
 
 // ReSharper disable once CheckNamespace
 // ReSharper disable RedundantTypeArgumentsOfMethod

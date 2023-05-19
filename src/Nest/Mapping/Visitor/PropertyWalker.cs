@@ -6,7 +6,7 @@ using System;
 using System.Collections;
 using System.Collections.Concurrent;
 using System.Reflection;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
 namespace Nest7
 {

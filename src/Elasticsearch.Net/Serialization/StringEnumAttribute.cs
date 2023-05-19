@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	[AttributeUsage(AttributeTargets.Property | AttributeTargets.Enum)]
 	public class StringEnumAttribute : Attribute { }

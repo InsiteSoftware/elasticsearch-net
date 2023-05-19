@@ -4,7 +4,7 @@
 
 using System;
 using System.Runtime.Serialization;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
 namespace Nest7
 {

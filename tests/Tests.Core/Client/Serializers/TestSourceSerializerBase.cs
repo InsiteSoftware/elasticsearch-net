@@ -3,7 +3,7 @@
 // See the LICENSE file in the project root for more information
 
 using System.Collections.Generic;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using Nest7;
 using Nest7.JsonNetSerializer;
 using Newtonsoft.Json;

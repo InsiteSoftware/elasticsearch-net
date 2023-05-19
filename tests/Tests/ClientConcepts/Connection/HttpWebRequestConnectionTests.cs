@@ -9,12 +9,12 @@ using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
 using Nest7;
 using Tests.Core.ManagedElasticsearch;
 using Tests.Core.ManagedElasticsearch.Clusters;
-using HttpMethod = Elasticsearch.Net.HttpMethod;
+using HttpMethod = Elasticsearch.Net7.HttpMethod;
 
 namespace Tests.ClientConcepts.Connection
 {

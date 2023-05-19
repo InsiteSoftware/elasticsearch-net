@@ -29,11 +29,11 @@ using System.Reflection;
 using System.Reflection.Emit;
 using System.Text.RegularExpressions;
 using System.Threading;
-using Elasticsearch.Net.Utf8Json.Formatters;
-using Elasticsearch.Net.Utf8Json.Internal;
-using Elasticsearch.Net.Utf8Json.Internal.Emit;
+using Elasticsearch.Net7.Utf8Json.Formatters;
+using Elasticsearch.Net7.Utf8Json.Internal;
+using Elasticsearch.Net7.Utf8Json.Internal.Emit;
 
-namespace Elasticsearch.Net.Utf8Json.Resolvers
+namespace Elasticsearch.Net7.Utf8Json.Resolvers
 {
 	/// <summary>
 	/// ObjectResolver by dynamic code generation.

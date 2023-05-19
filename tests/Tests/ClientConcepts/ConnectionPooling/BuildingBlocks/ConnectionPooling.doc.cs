@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
 using Nest7;
 using Tests.Configuration;

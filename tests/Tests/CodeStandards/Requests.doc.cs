@@ -3,7 +3,7 @@
 // See the LICENSE file in the project root for more information
 
 using System;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
 using Nest7;

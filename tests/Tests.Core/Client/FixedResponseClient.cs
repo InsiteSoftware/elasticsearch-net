@@ -4,7 +4,7 @@
 
 using System;
 using System.Text;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using Nest7;
 
 namespace Tests.Core.Client

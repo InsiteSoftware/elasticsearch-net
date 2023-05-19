@@ -8,7 +8,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
 #if DOTNETCORE
 using System.Runtime.InteropServices;

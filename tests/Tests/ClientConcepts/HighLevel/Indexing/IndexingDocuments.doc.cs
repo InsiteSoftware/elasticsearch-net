@@ -6,7 +6,7 @@ using System;
 using System.Runtime.ExceptionServices;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using Nest7;
 using Tests.Framework.DocumentationTests;
 

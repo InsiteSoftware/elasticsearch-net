@@ -18,11 +18,11 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Diagnostics;
-using Elasticsearch.Net.Extensions;
+using Elasticsearch.Net7.Extensions;
+using Elasticsearch.Net7.Diagnostics;
 using static System.Net.DecompressionMethods;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	internal class WebProxy : IWebProxy
 	{

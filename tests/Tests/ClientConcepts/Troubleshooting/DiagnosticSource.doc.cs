@@ -11,7 +11,7 @@ using System.Diagnostics;
 using System.Threading;
 using Elastic.Elasticsearch.Xunit.Sdk;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using Elasticsearch.Net.Diagnostics;
 using FluentAssertions;
 using Nest7;
@@ -27,11 +27,11 @@ namespace Tests.ClientConcepts.Troubleshooting
 	 * [[diagnostic-source]]
 	 * === Diagnostic Source
 	 *
-	 * Elasticsearch.Net and NEST support capturing diagnostics information using `DiagnosticSource` and `Activity` from the
+	 * Elasticsearch.Net7 and NEST support capturing diagnostics information using `DiagnosticSource` and `Activity` from the
 	 * `System.Diagnostics` namespace.
 	 *
 	 * To aid with the discoverability of the topics you can subscribe to and the event names they emit,
-	 * both topics and event names are exposed as strongly typed strings under `Elasticsearch.Net.Diagnostics.DiagnosticSources`
+	 * both topics and event names are exposed as strongly typed strings under `Elasticsearch.Net7.Diagnostics.DiagnosticSources`
 	 */
 	public class DiagnosticSourceUsageDocumentation : IClusterFixture<ReadOnlyCluster>
 	{
@@ -67,7 +67,7 @@ namespace Tests.ClientConcepts.Troubleshooting
 
 			public void OnNext(DiagnosticListener value)
 			{
-				void TrySubscribe(string sourceName, Func<IObserver<KeyValuePair<string, object>>> listener) // <1> By inspecting the name, we can selectively subscribe only to the topics `Elasticsearch.Net` emit
+				void TrySubscribe(string sourceName, Func<IObserver<KeyValuePair<string, object>>> listener) // <1> By inspecting the name, we can selectively subscribe only to the topics `Elasticsearch.Net7` emit
 				{
 					if (value.Name != sourceName) return;
 
@@ -115,7 +115,7 @@ namespace Tests.ClientConcepts.Troubleshooting
 		 * ==== Subscribing to topics
 		 *
 		 * As a concrete example of subscribing to topics, let's hook into all diagnostic sources and use
-		 * `ListenerObserver` to only listen to the ones from `Elasticsearch.Net`
+		 * `ListenerObserver` to only listen to the ones from `Elasticsearch.Net7`
 		 */
 		[I] public void SubscribeToTopics()
 		{

@@ -4,9 +4,9 @@
 
 using System.Threading;
 using System.Threading.Tasks;
-using static Elasticsearch.Net.HttpMethod;
+using static Elasticsearch.Net7.HttpMethod;
 
-namespace Elasticsearch.Net.Specification.NodesApi
+namespace Elasticsearch.Net7.Specification.NodesApi
 {
 	// Introduced as workaround for https://github.com/elastic/elasticsearch-net/pull/4602
 	public partial class LowLevelNodesNamespace

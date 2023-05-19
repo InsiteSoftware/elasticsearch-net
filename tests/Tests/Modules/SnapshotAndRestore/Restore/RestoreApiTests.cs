@@ -6,7 +6,7 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using Nest7;
 using Tests.Core.Client;
 using Tests.Core.ManagedElasticsearch.Clusters;

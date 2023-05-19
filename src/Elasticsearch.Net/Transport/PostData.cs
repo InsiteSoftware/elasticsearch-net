@@ -7,9 +7,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Extensions;
+using Elasticsearch.Net7.Extensions;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	// ReSharper disable once UnusedTypeParameter
 	public interface IPostData<out T>

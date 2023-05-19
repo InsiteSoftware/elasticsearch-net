@@ -29,9 +29,9 @@ using System.Dynamic;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Utf8Json.Formatters;
+using Elasticsearch.Net7.Utf8Json.Formatters;
 
-namespace Elasticsearch.Net.Utf8Json.Resolvers
+namespace Elasticsearch.Net7.Utf8Json.Resolvers
 {
 	internal sealed class BuiltinResolver : IJsonFormatterResolver
     {

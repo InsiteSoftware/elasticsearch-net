@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.Sdk;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
 using Nest7;
 using Tests.Core.Client.Settings;
@@ -23,7 +23,7 @@ namespace Tests.ClientConcepts.Troubleshooting
 	/**
 	 * === Audit trail
 	 *
-	 * Elasticsearch.Net and NEST provide an audit trail for the events within the request pipeline that
+	 * Elasticsearch.Net7 and NEST provide an audit trail for the events within the request pipeline that
 	 * occur when a request is made. This audit trail is available on the response as demonstrated in the
 	 * following example.
 	 */

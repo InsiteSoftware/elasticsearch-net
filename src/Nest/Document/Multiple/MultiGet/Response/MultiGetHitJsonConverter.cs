@@ -7,8 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
-using Elasticsearch.Net.Utf8Json;
-using Elasticsearch.Net.Utf8Json.Resolvers;
+using Elasticsearch.Net7.Utf8Json;
+using Elasticsearch.Net7.Utf8Json.Resolvers;
 
 
 namespace Nest7

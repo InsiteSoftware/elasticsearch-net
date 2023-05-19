@@ -21,9 +21,9 @@ using System.Linq;
 using System.Text;
 using System.Linq.Expressions;
 using System.Runtime.Serialization;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Utf8Json;
-using Elasticsearch.Net.Specification.SecurityApi;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Utf8Json;
+using Elasticsearch.Net7.Specification.SecurityApi;
 
 // ReSharper disable RedundantBaseConstructorCall
 // ReSharper disable UnusedTypeParameter

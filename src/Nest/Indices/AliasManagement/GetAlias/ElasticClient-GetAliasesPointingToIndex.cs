@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using Nest7.Specification.IndicesApi;
 
 namespace Nest7

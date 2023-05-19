@@ -20,9 +20,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Linq.Expressions;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Utf8Json;
-using Elasticsearch.Net.Specification.NodesApi;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Utf8Json;
+using Elasticsearch.Net7.Specification.NodesApi;
 
 // ReSharper disable RedundantBaseConstructorCall
 // ReSharper disable UnusedTypeParameter

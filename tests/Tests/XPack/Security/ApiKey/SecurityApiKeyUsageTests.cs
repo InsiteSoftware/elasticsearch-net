@@ -4,7 +4,7 @@
 
 using System;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
 using Nest7;
 using Tests.Core.Extensions;
@@ -19,9 +19,9 @@ namespace Tests.XPack.Security.ApiKey
 	 *   On the server internally create api key does a search. on CI this search often fails and the PUT for create api key returns with:
 	 *
 	 *  - [1] BadResponse: Node: https://localhost:9200/ Took: 00:00:00.9531746
-# OriginalException: Elasticsearch.Net.ElasticsearchClientException: The remote server returned an error: (503) Server Unavailable.. Call: Status code 503 from: PUT /_security/api_key?pretty=true&error_trace=true. ServerError: Type: search_phase_execution_exception Reason: "all shards failed" ---> System.Net.WebException: The remote server returned an error: (503) Server Unavailable.
+# OriginalException: Elasticsearch.Net7.ElasticsearchClientException: The remote server returned an error: (503) Server Unavailable.. Call: Status code 503 from: PUT /_security/api_key?pretty=true&error_trace=true. ServerError: Type: search_phase_execution_exception Reason: "all shards failed" ---> System.Net.WebException: The remote server returned an error: (503) Server Unavailable.
    at System.Net.HttpWebRequest.GetResponse()
-   at Elasticsearch.Net.HttpWebRequestConnection.Request[TResponse](RequestData requestData) in D:\a\1\s\src\Elasticsearch.Net\Connection\HttpWebRequestConnection.cs:line 59
+   at Elasticsearch.Net7.HttpWebRequestConnection.Request[TResponse](RequestData requestData) in D:\a\1\s\src\Elasticsearch.Net7\Connection\HttpWebRequestConnection.cs:line 59
    --- End of inner exception stack trace ---
 # Request:
 {"name":"nest-initializer-c241e819","role_descriptors":{}}

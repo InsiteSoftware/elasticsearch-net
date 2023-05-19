@@ -12,7 +12,7 @@ namespace ApiGenerator.Generator.Razor
 {
 	public class LowLevelClientInterfaceGenerator : RazorGeneratorBase
 	{
-		public override string Title { get; } = "Elasticsearch.Net client interface";
+		public override string Title { get; } = "Elasticsearch.Net7 client interface";
 
 		public override async Task Generate(RestApiSpec spec, ProgressBar progressBar, CancellationToken token)
 		{

@@ -9,7 +9,7 @@ using System.Diagnostics;
 using System.Net.Http;
 using System.Threading;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
 	/// Heavily modified version of DefaultHttpClientFactory, re-purposed for RequestData
