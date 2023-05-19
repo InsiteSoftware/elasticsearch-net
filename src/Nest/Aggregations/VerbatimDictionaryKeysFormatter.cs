@@ -8,7 +8,7 @@ using System.Globalization;
 using System.Linq;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	internal class VerbatimDictionaryKeysBaseFormatter<TDictionary, TKey, TValue> : IJsonFormatter<TDictionary>
 		where TDictionary : IEnumerable<KeyValuePair<TKey, TValue>>

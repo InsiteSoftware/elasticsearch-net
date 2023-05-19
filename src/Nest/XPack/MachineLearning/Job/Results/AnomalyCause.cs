@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Cause for the anomaly that has been identified for the over field.

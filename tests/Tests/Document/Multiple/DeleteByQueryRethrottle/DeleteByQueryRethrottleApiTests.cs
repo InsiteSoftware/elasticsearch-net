@@ -6,7 +6,7 @@ using System;
 using System.Linq;
 using Elasticsearch.Net;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Document.Multiple.Reindex;
 using Tests.Domain;

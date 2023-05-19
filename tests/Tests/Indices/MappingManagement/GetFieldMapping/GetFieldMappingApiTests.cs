@@ -5,13 +5,13 @@
 using System;
 using Elasticsearch.Net;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 using Tests.Framework.EndpointTests.TestState;
-using static Nest.Infer;
+using static Nest7.Infer;
 
 namespace Tests.Indices.MappingManagement.GetFieldMapping
 {
@@ -21,7 +21,7 @@ namespace Tests.Indices.MappingManagement.GetFieldMapping
 	{
 		private static readonly Fields Fields = Fields<Project>(p => p.Name, p => p.LeadDeveloper.IpAddress);
 		private static readonly Field NameField = Field<Project>(p => p.Name);
-		private static readonly Nest.Indices OnIndices = Index<Project>().And<ProjectPercolation>();
+		private static readonly Nest7.Indices OnIndices = Index<Project>().And<ProjectPercolation>();
 
 		public GetFieldMappingApiTests(ReadOnlyCluster cluster, EndpointUsage usage) : base(cluster, usage) { }
 

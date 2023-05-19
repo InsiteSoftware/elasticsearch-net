@@ -5,7 +5,7 @@
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The unique token filter can be used to only index unique tokens during analysis. By default it is applied on all the

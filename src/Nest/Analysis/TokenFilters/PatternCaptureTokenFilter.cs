@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The pattern_capture token filter, unlike the pattern tokenizer, emits a token for every capture group in the regular expression.

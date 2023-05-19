@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	internal class SuggestDictionaryFormatter<T> : IJsonFormatter<ISuggestDictionary<T>>
 		where T : class

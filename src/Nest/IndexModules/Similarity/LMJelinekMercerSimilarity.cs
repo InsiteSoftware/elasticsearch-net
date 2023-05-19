@@ -6,7 +6,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 // ReSharper disable InconsistentNaming
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A similarity that attempts to capture important patterns in the text,

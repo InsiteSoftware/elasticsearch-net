@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Framework.EndpointTests.TestState;
 

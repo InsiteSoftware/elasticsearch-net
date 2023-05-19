@@ -9,7 +9,7 @@ using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Extensions;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Newtonsoft.Json;
 using Tests.Core.Client;
 using Tests.Framework.DocumentationTests;

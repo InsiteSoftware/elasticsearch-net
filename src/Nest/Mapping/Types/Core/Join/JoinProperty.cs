@@ -7,7 +7,7 @@ using System.Diagnostics;
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The join datatype is a special field that creates parent/child relation within documents of the same index.

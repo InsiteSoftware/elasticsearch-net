@@ -7,7 +7,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary> The decompound mode determines how the tokenizer handles compound tokens. </summary>
 	[StringEnum]

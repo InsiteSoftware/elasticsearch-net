@@ -6,7 +6,7 @@ using System;
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A query allowing to define a script to execute as a query

@@ -5,14 +5,14 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("security.grant_api_key.json")]
 	[ReadAs(typeof(GrantApiKeyRequest))]
 	public partial interface IGrantApiKeyRequest
 	{
 		/// <summary>
-		/// The user’s access token. If you specify the access_token grant type,
+		/// The userï¿½s access token. If you specify the access_token grant type,
 		/// this parameter is required. It is not valid with other grant types.
 		/// </summary>
 		[DataMember(Name = "access_token")]
@@ -25,14 +25,14 @@ namespace Nest
 		GrantType? GrantType { get; set; }
 
 		/// <summary>
-		/// The user’s password. If you specify the password grant type,
+		/// The userï¿½s password. If you specify the password grant type,
 		/// this parameter is required. It is not valid with other grant types.
 		/// </summary>
 		[DataMember(Name = "password")]
 		string Password { get; set; }
 
 		/// <summary>
-		/// The user name that identifies the user. If you specify the password grant type, 
+		/// The user name that identifies the user. If you specify the password grant type,
 		/// this parameter is required. It is not valid with other grant types.
 		/// </summary>
 		[DataMember(Name = "username")]
@@ -69,7 +69,7 @@ namespace Nest
 		string IGrantApiKeyRequest.AccessToken { get; set; }
 
 		/// <inheritdoc cref="IGrantApiKeyRequest.GrantType" />
-		GrantType? IGrantApiKeyRequest.GrantType { get; set; } = Nest.GrantType.AccessToken;
+		GrantType? IGrantApiKeyRequest.GrantType { get; set; } = Nest7.GrantType.AccessToken;
 
 		/// <inheritdoc cref="IGrantApiKeyRequest.Password" />
 		string IGrantApiKeyRequest.Password { get; set; }

@@ -5,7 +5,7 @@
 using System.Diagnostics;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The binary type accepts a binary value as a Base64 encoded string.

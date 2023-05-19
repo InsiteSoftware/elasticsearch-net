@@ -5,7 +5,7 @@
 using System.IO;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary> A request that that does not necessarily (de)serializes itself </summary>
 	public interface IProxyRequest : IRequest

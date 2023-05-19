@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <PackageId>NEST</PackageId>
-    <Title>NEST - Elasticsearch .NET high level client</Title>
+    <PackageId>NEST7</PackageId>
+    <Title>NEST7 - Elasticsearch .NET high level client</Title>
     <PackageTags>elasticsearch;elastic;search;lucene;nest</PackageTags>
     <Description>
       Strongly typed interface to Elasticsearch. Fluent and classic object initializer mappings of requests and 
@@ -14,6 +14,7 @@
     <IsPackable>true</IsPackable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+	<AssemblyName>Nest7</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Elasticsearch.Net\Elasticsearch.Net.csproj" />

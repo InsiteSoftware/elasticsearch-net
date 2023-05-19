@@ -1,4 +1,4 @@
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("transform.get_transform.json")]
 	public partial interface IGetTransformRequest { }

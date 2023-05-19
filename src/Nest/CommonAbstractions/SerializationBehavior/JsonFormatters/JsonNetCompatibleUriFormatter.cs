@@ -5,7 +5,7 @@
 using System;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	internal class JsonNetCompatibleUriFormatter : IJsonFormatter<Uri>
 	{

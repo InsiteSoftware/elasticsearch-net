@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Specification.MachineLearningApi;
 
-namespace Nest
+namespace Nest7
 {
 
 	public class NamespacedClientProxy

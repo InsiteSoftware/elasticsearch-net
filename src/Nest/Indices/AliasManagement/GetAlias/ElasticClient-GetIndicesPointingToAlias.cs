@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Implements several handy alias extensions.

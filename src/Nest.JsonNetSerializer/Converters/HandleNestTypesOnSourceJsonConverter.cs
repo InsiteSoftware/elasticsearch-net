@@ -9,7 +9,7 @@ using Elasticsearch.Net;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace Nest.JsonNetSerializer.Converters
+namespace Nest7.JsonNetSerializer.Converters
 {
 	public class HandleNestTypesOnSourceJsonConverter : JsonConverter
 	{

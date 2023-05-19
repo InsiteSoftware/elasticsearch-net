@@ -8,7 +8,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 using Elasticsearch.Net.Utf8Json.Internal;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A machine learning detector

@@ -8,7 +8,7 @@ using System.Text;
 using System.Runtime.Serialization;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	[DataContract]
 	public class BulkResponse : ResponseBase

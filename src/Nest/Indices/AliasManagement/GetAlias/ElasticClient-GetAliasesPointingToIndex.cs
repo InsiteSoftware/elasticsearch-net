@@ -5,9 +5,9 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Elasticsearch.Net;
-using Nest.Specification.IndicesApi;
+using Nest7.Specification.IndicesApi;
 
-namespace Nest
+namespace Nest7
 {
 	public static class AliasPointingToIndexExtensions
 	{

@@ -7,9 +7,9 @@ using System.IO;
 using System.Text;
 using Elasticsearch.Net.Utf8Json;
 using Elasticsearch.Net.Utf8Json.Internal;
-using Nest;
+using Nest7;
 
-namespace Nest
+namespace Nest7
 {
 	internal enum ShapeFormat
 	{

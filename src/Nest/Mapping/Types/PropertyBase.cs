@@ -9,7 +9,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A mapping for a property type to a document field in Elasticsearch

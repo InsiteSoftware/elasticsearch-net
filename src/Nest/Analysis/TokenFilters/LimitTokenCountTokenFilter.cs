@@ -5,7 +5,7 @@
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Limits the number of tokens that are indexed per document and field.

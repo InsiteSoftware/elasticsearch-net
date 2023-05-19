@@ -12,7 +12,7 @@ using Elasticsearch.Net;
 using Elasticsearch.Net.VirtualizedCluster;
 using Elasticsearch.Net.VirtualizedCluster.Audit;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Domain;
 using Tests.Framework;
 using Tests.Framework.SerializationTests;

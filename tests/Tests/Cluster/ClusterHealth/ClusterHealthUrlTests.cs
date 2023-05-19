@@ -4,11 +4,11 @@
 
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 using static Tests.Framework.EndpointTests.UrlTester;
-using static Nest.Infer;
+using static Nest7.Infer;
 
 namespace Tests.Cluster.ClusterHealth
 {

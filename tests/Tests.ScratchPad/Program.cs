@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using BenchmarkDotNet.Running;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Diagnostics;
-using Nest;
+using Nest7;
 using Tests.Core.Client;
 using Tests.Domain;
 

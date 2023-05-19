@@ -8,7 +8,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net;
-using Nest;
+using Nest7;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Tests.Core.Client.Serializers;

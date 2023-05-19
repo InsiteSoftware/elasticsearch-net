@@ -2,7 +2,7 @@
 // Elasticsearch B.V licenses this file to you under the Apache 2.0 License.
 // See the LICENSE file in the project root for more information
 
-using Nest;
+using Nest7;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
 using Tests.Framework.EndpointTests.TestState;
@@ -16,7 +16,7 @@ namespace Tests.QueryDsl.Geo.BoundingBox
 		protected override ConditionlessWhen ConditionlessWhen => new ConditionlessWhen<IGeoBoundingBoxQuery>(a => a.GeoBoundingBox)
 		{
 			q => q.BoundingBox = null,
-			q => q.BoundingBox = new Nest.BoundingBox(),
+			q => q.BoundingBox = new Nest7.BoundingBox(),
 			q => q.Field = null
 		};
 
@@ -25,7 +25,7 @@ namespace Tests.QueryDsl.Geo.BoundingBox
 			Boost = 1.1,
 			Name = "named_query",
 			Field = Infer.Field<Project>(p => p.LocationPoint),
-			BoundingBox = new Nest.BoundingBox
+			BoundingBox = new Nest7.BoundingBox
 			{
 				TopLeft = new GeoLocation(34, -34),
 				BottomRight = new GeoLocation(-34, 34),
@@ -79,7 +79,7 @@ namespace Tests.QueryDsl.Geo.BoundingBox
 		protected override ConditionlessWhen ConditionlessWhen => new ConditionlessWhen<IGeoBoundingBoxQuery>(a => a.GeoBoundingBox)
 		{
 			q => q.BoundingBox = null,
-			q => q.BoundingBox = new Nest.BoundingBox(),
+			q => q.BoundingBox = new Nest7.BoundingBox(),
 			q => q.Field = null
 		};
 
@@ -88,7 +88,7 @@ namespace Tests.QueryDsl.Geo.BoundingBox
 			Boost = 1.1,
 			Name = "named_query",
 			Field = Infer.Field<Project>(p => p.LocationPoint),
-			BoundingBox = new Nest.BoundingBox
+			BoundingBox = new Nest7.BoundingBox
 			{
 				WellKnownText = "BBOX (-34, 34, 34, -34)"
 			},

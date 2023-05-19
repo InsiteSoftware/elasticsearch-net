@@ -6,7 +6,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A parent pipeline aggregation which calculates the specific normalized/rescaled value for a specific bucket value.

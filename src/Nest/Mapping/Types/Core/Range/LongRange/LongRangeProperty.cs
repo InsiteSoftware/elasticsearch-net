@@ -4,7 +4,7 @@
 
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A range of signed 64-bit integers with a minimum value of -263 and maximum of 263-1.

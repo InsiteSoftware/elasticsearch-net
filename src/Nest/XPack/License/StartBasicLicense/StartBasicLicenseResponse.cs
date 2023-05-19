@@ -8,7 +8,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 using Elasticsearch.Net.Utf8Json.Formatters;
 
-namespace Nest
+namespace Nest7
 {
 	public class StartBasicLicenseResponse : AcknowledgedResponseBase
 	{

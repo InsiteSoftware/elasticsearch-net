@@ -4,7 +4,7 @@
 
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 
@@ -14,7 +14,7 @@ namespace Tests.Indices.IndexManagement.OpenCloseIndex.OpenIndex
 	{
 		[U] public async Task Urls()
 		{
-			var indices = Nest.Indices.Index<Project>().And<Developer>();
+			var indices = Nest7.Indices.Index<Project>().And<Developer>();
 			var index = "project%2Cdevs";
 			await UrlTester.POST($"/{index}/_open")
 					.Fluent(c => c.Indices.Open(indices, s => s))

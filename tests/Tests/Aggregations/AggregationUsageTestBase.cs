@@ -6,14 +6,14 @@
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net;
-using Nest;
+using Nest7;
 using Tests.Core.Client;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Core.ManagedElasticsearch.NodeSeeders;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 using Tests.Framework.EndpointTests.TestState;
-using static Nest.Infer;
+using static Nest7.Infer;
 
 namespace Tests.Aggregations
 {
@@ -22,7 +22,7 @@ namespace Tests.Aggregations
 	{
 		protected AggregationUsageTestBase(ReadOnlyCluster cluster, EndpointUsage usage) : base(cluster, usage) { }
 
-		protected virtual Nest.Indices AgainstIndex { get; } = Index<Project>();
+		protected virtual Nest7.Indices AgainstIndex { get; } = Index<Project>();
 
 		protected abstract object AggregationJson { get; }
 
@@ -87,7 +87,7 @@ namespace Tests.Aggregations
 	{
 		protected ProjectsOnlyAggregationUsageTestBase(ReadOnlyCluster cluster, EndpointUsage usage) : base(cluster, usage) { }
 
-		protected override Nest.Indices AgainstIndex => DefaultSeeder.ProjectsAliasFilter;
+		protected override Nest7.Indices AgainstIndex => DefaultSeeder.ProjectsAliasFilter;
 		protected override string UrlPath => $"/{DefaultSeeder.ProjectsAliasFilter}/_search";
 
 		// https://youtrack.jetbrains.com/issue/RIDER-19912

@@ -5,7 +5,7 @@
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A token filter of type asciifolding that converts alphabetic, numeric, and symbolic Unicode characters which are

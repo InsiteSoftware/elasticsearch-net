@@ -5,7 +5,7 @@
 using System.Runtime.Serialization;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	// TODO: Make a string in 8.0
 	[StringEnum]

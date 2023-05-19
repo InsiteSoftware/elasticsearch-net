@@ -8,7 +8,7 @@ using System.Reflection;
 using System.Text;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net;
-using Nest;
+using Nest7;
 using System.Runtime.Serialization;
 using Tests.Framework;
 using Newtonsoft.Json;

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	[DataContract]
 	public class ValidateQueryResponse : ResponseBase

@@ -8,7 +8,7 @@ using System.Linq;
 using System.Reflection;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Analysis.Analyzers;
 using Tests.Analysis.CharFilters;
 using Tests.Analysis.Normalizers;
@@ -91,7 +91,7 @@ namespace Tests.Analysis
 
 		private static IndexSettings Wrap(Action<Nest.Analysis> set)
 		{
-			var a = new Nest.Analysis();
+			var a = new Nest7.Analysis();
 			var s = new IndexSettings { Analysis = a };
 			set(a);
 			return s;

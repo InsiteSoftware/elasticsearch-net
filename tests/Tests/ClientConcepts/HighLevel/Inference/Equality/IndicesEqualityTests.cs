@@ -21,7 +21,7 @@ namespace Tests.ClientConcepts.HighLevel.Inference.Equality
 				t.Should().Be(types);
 			}
 
-			(Nest.Indices.All == "_all").Should().BeTrue();
+			(Nest7.Indices.All == "_all").Should().BeTrue();
 		}
 
 

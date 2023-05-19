@@ -5,7 +5,7 @@
 using System.Runtime.Serialization;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Setting this decomposition property to canonical allows the Collator to handle unnormalized

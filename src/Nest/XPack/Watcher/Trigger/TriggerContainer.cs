@@ -8,7 +8,7 @@ using Elasticsearch.Net.Utf8Json;
 using Elasticsearch.Net.Utf8Json.Resolvers;
 
 
-namespace Nest
+namespace Nest7
 {
 	[InterfaceDataContract]
 	[JsonFormatter(typeof(TriggerContainerInterfaceFormatter))]

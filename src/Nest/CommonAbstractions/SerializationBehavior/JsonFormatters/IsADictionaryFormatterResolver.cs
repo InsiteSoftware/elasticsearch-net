@@ -8,7 +8,7 @@ using System.Linq;
 using System.Reflection;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	internal class IsADictionaryFormatterResolver : IJsonFormatterResolver
 	{

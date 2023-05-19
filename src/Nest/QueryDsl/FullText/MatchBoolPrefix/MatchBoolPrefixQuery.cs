@@ -5,7 +5,7 @@
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A match_bool_prefix query analyzes its input and constructs a bool query from the terms.
@@ -68,7 +68,7 @@ namespace Nest
 
 		/// <summary>
 		/// The operator used if no explicit operator is specified.
-		/// The default operator is <see cref="Nest.Operator.Or" />.
+		/// The default operator is <see cref="Nest7.Operator.Or" />.
 		/// Applies to the bool query constructed.
 		/// </summary>
 		[DataMember(Name = "operator")]

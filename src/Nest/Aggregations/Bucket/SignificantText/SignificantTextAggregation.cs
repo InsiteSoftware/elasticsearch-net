@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// An aggregation that returns interesting or unusual occurrences of free-text terms in a set.

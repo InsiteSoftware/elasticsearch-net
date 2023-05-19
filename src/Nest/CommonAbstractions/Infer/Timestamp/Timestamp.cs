@@ -6,7 +6,7 @@ using System;
 using System.Globalization;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	public class Timestamp : IUrlParameter, IEquatable<Timestamp>
 	{

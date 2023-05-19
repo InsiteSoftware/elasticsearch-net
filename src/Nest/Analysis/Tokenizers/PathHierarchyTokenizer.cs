@@ -5,7 +5,7 @@
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	///  The path_hierarchy tokenizer takes something like this:

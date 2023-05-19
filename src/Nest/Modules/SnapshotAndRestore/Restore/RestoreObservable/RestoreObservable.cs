@@ -9,7 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	public class RestoreObservable : IDisposable, IObservable<RecoveryStatusResponse>
 	{

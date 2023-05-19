@@ -5,12 +5,12 @@
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Client;
 using Tests.Domain;
 using Tests.Framework;
 using Tests.Framework.DocumentationTests;
-using static Nest.Indices;
+using static Nest7.Indices;
 
 namespace Tests.ClientConcepts.HighLevel.Inference
 {
@@ -89,7 +89,7 @@ namespace Tests.ClientConcepts.HighLevel.Inference
 
 		/**
 		* [[nest-indices]]
-		*==== Using Nest.Indices methods
+		*==== using Nest7.Indices methods
 		* To make creating `IndexName` or `Indices` instances easier, `Nest.Indices` also contains several static methods
 		* that can be used to construct them.
 		*
@@ -99,7 +99,7 @@ namespace Tests.ClientConcepts.HighLevel.Inference
 		*
 		* [TIP]
 		* ====
-		* This example uses the static import `using static Nest.Indices;` in the using directives to shorthand `Nest.Indices.Index()`
+		* This example uses the static import `using static Nest7.Indices;` in the using directives to shorthand `Nest.Indices.Index()`
 		* to simply `Index()`. Be sure to include this static import if copying any of these examples.
 		* ====
 		*/

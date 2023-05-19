@@ -6,7 +6,7 @@ using System;
 using System.Linq;
 using BenchmarkDotNet.Attributes;
 using Elasticsearch.Net;
-using Nest;
+using Nest7;
 using Tests.Benchmarking.Framework;
 
 namespace Tests.Benchmarking

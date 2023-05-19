@@ -4,7 +4,7 @@
 
 using Elasticsearch.Net.Specification.SecurityApi;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("ssl.certificates.json")]
 	public partial interface IGetCertificatesRequest { }

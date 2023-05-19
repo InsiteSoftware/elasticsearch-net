@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	internal class UnionListFormatter<TCollection, TFirst, TSecond> : IJsonFormatter<TCollection>
 		where TCollection : List<Union<TFirst, TSecond>>, new()

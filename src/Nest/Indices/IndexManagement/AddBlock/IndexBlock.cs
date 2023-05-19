@@ -8,7 +8,7 @@
 
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Block type for an index.

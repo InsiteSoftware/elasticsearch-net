@@ -5,12 +5,12 @@
 using System;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net;
-using Nest;
+using Nest7;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 using Tests.Framework.EndpointTests.TestState;
 using static Elasticsearch.Net.HttpMethod;
-using static Nest.Infer;
+using static Nest7.Infer;
 
 namespace Tests.XPack.Enrich.PutPolicy
 {

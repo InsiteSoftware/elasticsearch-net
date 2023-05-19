@@ -4,7 +4,7 @@
 
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Drops the document without raising any errors. This is useful to prevent the document from getting indexed based on some condition.

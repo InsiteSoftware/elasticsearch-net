@@ -5,7 +5,7 @@
 using System;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net;
-using Nest;
+using Nest7;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Framework.EndpointTests;
 using Tests.Framework.EndpointTests.TestState;
@@ -47,7 +47,7 @@ namespace Tests.XPack.License.PostLicense
 		protected override bool SupportsDeserialization => false;
 		protected override string UrlPath => $"/_license?acknowledge=true";
 
-		private Nest.License FakeLicense { get; } = new Nest.License
+		private Nest7.License FakeLicense { get; } = new Nest7.License
 		{
 			UID = "uuid",
 			ExpiryDateInMilliseconds = 1,

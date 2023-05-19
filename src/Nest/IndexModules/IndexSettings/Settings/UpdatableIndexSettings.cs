@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Collection of Elasticsearch index settings that can be dynamically updated

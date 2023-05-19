@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Provides the connection settings for NEST's high level <see cref="ElasticClient" />

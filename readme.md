@@ -279,7 +279,7 @@ Alternatively,  search for `Elasticsearch.Net` in the package manager UI.
 
 ### Connecting
 
-Connecting using the low-level client is very similar to how you would connect using NEST.  In fact, the connection constructs that NEST use are actually Elasticsearch.Net constructs.  Thus, single node connections and connection pooling still apply when using Elasticsearch.Net.
+Connecting using the low-level client is very similar to how you would connect using Nest7.  In fact, the connection constructs that NEST use are actually Elasticsearch.Net constructs.  Thus, single node connections and connection pooling still apply when using Elasticsearch.Net.
 
 ```csharp
 var node = new Uri("http://myserver:9200");

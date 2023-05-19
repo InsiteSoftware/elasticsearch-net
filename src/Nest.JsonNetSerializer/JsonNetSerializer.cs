@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using Elasticsearch.Net;
 using Newtonsoft.Json;
 
-namespace Nest.JsonNetSerializer
+namespace Nest7.JsonNetSerializer
 {
 	public class JsonNetSerializer : ConnectionSettingsAwareSerializerBase
 	{

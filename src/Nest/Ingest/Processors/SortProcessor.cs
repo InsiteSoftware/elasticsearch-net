@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Sorts the elements of an array ascending or descending. Homogeneous arrays of numbers

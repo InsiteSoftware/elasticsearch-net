@@ -8,8 +8,8 @@ using System.Text;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net;
 using FluentAssertions;
-using Nest;
-using Nest.JsonNetSerializer;
+using Nest7;
+using Nest7.JsonNetSerializer;
 using Newtonsoft.Json;
 
 namespace Tests.Reproduce

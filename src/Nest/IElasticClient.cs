@@ -4,7 +4,7 @@
 
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	public partial interface IElasticClient
 	{

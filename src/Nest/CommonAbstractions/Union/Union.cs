@@ -5,7 +5,7 @@
 using System;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Represents the union of two types, <typeparamref name="TFirst" /> and <typeparamref name="TSecond" />. Used

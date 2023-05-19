@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net.Specification.AsyncSearchApi;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("async_search.submit.json")]
 	[ReadAs(typeof(AsyncSearchSubmitRequest))]

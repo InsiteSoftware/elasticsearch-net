@@ -6,7 +6,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 // ReSharper disable InconsistentNaming
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A similarity with Bayesian smoothing using Dirichlet priors.

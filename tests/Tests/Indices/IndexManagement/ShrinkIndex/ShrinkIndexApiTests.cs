@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using Elasticsearch.Net;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Framework.EndpointTests;
@@ -40,7 +40,7 @@ namespace Tests.Indices.IndexManagement.ShrinkIndex
 
 		protected override ShrinkIndexRequest Initializer => new ShrinkIndexRequest(CallIsolatedValue, CallIsolatedValue + "-target")
 		{
-			Settings = new Nest.IndexSettings
+			Settings = new Nest7.IndexSettings
 			{
 				NumberOfShards = 4
 			}

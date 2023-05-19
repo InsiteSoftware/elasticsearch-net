@@ -8,7 +8,7 @@ using System.IO;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("security.put_privileges")]
 	[JsonFormatter(typeof(PutPrivilegesFormatter))]

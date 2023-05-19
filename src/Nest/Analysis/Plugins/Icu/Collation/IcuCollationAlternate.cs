@@ -5,7 +5,7 @@
 using System.Runtime.Serialization;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Sets the alternate handling for strength quaternary to be either shifted or non-ignorable.

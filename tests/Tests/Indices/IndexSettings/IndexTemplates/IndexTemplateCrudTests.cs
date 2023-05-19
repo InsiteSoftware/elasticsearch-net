@@ -5,7 +5,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Framework.EndpointTests;
@@ -42,7 +42,7 @@ namespace Tests.Indices.IndexSettings.IndexTemplates
 		private PutIndexTemplateRequest CreateInitializer(string name) => new PutIndexTemplateRequest(name)
 		{
 			IndexPatterns = new[] { "startingwiththis-*" },
-			Settings = new Nest.IndexSettings
+			Settings = new Nest7.IndexSettings
 			{
 				NumberOfShards = 2
 			}
@@ -86,7 +86,7 @@ namespace Tests.Indices.IndexSettings.IndexTemplates
 		private PutIndexTemplateRequest PutInitializer(string name) => new PutIndexTemplateRequest(name)
 		{
 			IndexPatterns = new[] { "startingwiththis-*" },
-			Settings = new Nest.IndexSettings
+			Settings = new Nest7.IndexSettings
 			{
 				NumberOfShards = 1
 			}

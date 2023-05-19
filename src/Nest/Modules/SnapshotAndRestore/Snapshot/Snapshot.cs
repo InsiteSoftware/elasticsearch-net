@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	public class Snapshot
 	{
@@ -40,7 +40,7 @@ namespace Nest
 
 		[DataMember(Name ="state")]
 		public string State { get; internal set; }
-		
+
 		[DataMember(Name ="metadata")]
 		public IReadOnlyDictionary<string, object> Metadata { get; internal set; } = EmptyReadOnly<string, object>.Dictionary;
 	}

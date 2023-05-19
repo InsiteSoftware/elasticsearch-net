@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 using System.Runtime.Serialization;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A machine learning detection rule

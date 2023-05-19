@@ -5,7 +5,7 @@
 using Elasticsearch.Net.Utf8Json;
 
 
-namespace Nest
+namespace Nest7
 {
 	internal class CharFilterFormatter : IJsonFormatter<ICharFilter>
 	{

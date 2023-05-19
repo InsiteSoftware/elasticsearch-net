@@ -8,7 +8,7 @@ using Elasticsearch.Net.Extensions;
 using Elasticsearch.Net.Utf8Json;
 using Elasticsearch.Net.Utf8Json.Formatters;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Description of the total number of hits of a query. The total hit count

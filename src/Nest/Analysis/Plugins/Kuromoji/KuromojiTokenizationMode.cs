@@ -5,7 +5,7 @@
 using System.Runtime.Serialization;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The tokenization mode determines how the tokenizer handles compound and unknown words.

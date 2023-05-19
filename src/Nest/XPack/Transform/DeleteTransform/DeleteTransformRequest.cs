@@ -1,4 +1,4 @@
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("transform.delete_transform.json")]
 	public partial interface IDeleteTransformRequest { }

@@ -6,7 +6,7 @@ using Elasticsearch.Net;
 using System.Runtime.Serialization;
 
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Configures the destination for a reindex API request

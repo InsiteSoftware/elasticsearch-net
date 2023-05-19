@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using Elasticsearch.Net;
-using Nest;
+using Nest7;
 using Tests.Configuration;
 using Tests.Core.Client.Serializers;
 using Tests.Core.Extensions;

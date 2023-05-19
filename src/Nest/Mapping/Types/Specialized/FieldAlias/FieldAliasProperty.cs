@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// An alias mapping defines an alternate name for a field in the index. The alias can be used in place

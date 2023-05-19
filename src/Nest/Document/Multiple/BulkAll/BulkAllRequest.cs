@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Nest
+namespace Nest7
 {
 	public interface IBulkAllRequest<T> where T : class
 	{
@@ -54,7 +54,7 @@ namespace Nest
 		///<summary>The index to use for items that don't specify one. By default, will be inferred from <typeparamref name="T"/>.
 		/// If no default index has been mapped for <typeparamref name="T" />
 		/// using <see cref="ConnectionSettingsBase{TConnectionSettings}.DefaultMappingFor{TDocument}"/>
-		/// on <see cref="Nest.ConnectionSettings"/>, an exception will be thrown.
+		/// on <see cref="Nest7.ConnectionSettings"/>, an exception will be thrown.
 		/// </summary>
 		IndexName Index { get; set; }
 

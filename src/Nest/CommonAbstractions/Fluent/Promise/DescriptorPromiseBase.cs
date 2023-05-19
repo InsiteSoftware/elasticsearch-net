@@ -5,7 +5,7 @@
 using System;
 using System.ComponentModel;
 
-namespace Nest
+namespace Nest7
 {
 	public interface IPromise<out TValue> where TValue : class
 	{

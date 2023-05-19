@@ -5,7 +5,7 @@
 using System;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	public class IndexUuid : IUrlParameter, IEquatable<IndexUuid>
 	{

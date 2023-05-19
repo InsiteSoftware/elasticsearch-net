@@ -6,7 +6,7 @@ using Elasticsearch.Net.Utf8Json;
 using Elasticsearch.Net.Utf8Json.Internal;
 
 
-namespace Nest
+namespace Nest7
 {
 	[JsonFormatter(typeof(GeoDistanceQueryFormatter))]
 	public interface IGeoDistanceQuery : IFieldNameQuery

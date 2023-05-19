@@ -7,7 +7,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 using Elasticsearch.Net.Utf8Json.Internal;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A query that only works on rank_feature fields and rank_features fields. Its goal is to boost the score of documents

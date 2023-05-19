@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using Elasticsearch.Net.Utf8Json;
 using Elasticsearch.Net.Utf8Json.Internal;
 
-namespace Nest
+namespace Nest7
 {
 	internal class TermsIncludeFormatter : IJsonFormatter<TermsInclude>
 	{

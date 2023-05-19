@@ -6,7 +6,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 using Elasticsearch.Net.Utf8Json.Internal;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Boosts the relevance score of documents closer to a provided origin date or point. For example, you can use this query to give

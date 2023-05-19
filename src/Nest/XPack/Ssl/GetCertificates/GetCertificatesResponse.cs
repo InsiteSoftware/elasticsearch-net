@@ -9,7 +9,7 @@ using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 using Elasticsearch.Net.Utf8Json.Formatters;
 
-namespace Nest
+namespace Nest7
 {
 	[JsonFormatter(typeof(GetCertificatesResponseFormatter))]
 	public class GetCertificatesResponse : ResponseBase

@@ -7,7 +7,7 @@ using Elasticsearch.Net;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace Nest.JsonNetSerializer
+namespace Nest7.JsonNetSerializer
 {
 	internal static class JTokenExtensions
 	{

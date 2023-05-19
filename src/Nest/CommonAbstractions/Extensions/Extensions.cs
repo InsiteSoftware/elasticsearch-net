@@ -14,7 +14,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Elasticsearch.Net.Utf8Json.Internal;
 
-namespace Nest
+namespace Nest7
 {
 	internal static class Extensions
 	{

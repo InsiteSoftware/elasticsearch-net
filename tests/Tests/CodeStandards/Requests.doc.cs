@@ -6,7 +6,7 @@ using System;
 using Elasticsearch.Net;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Domain;
 
 namespace Tests.CodeStandards

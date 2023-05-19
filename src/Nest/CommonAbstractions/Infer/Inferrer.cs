@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	public class Inferrer
 	{

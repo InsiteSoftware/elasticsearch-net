@@ -5,7 +5,7 @@
 using System;
 using Elasticsearch.Net.Specification.SqlApi;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("sql.translate.json")]
 	[ReadAs(typeof(TranslateSqlRequest))]

@@ -5,7 +5,7 @@
 using System;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Makes it explicit which API this request interface maps, the name of the interface informs

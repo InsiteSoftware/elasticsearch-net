@@ -4,7 +4,7 @@
 
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 using static Tests.Framework.EndpointTests.UrlTester;
@@ -37,9 +37,9 @@ namespace Tests.Search.SearchShards
 				;
 			await POST("/_all/_search_shards")
 					.Fluent(c => c.SearchShards<Project>(s => s.AllIndices()))
-					.Request(c => c.SearchShards(new SearchShardsRequest<Project>(Nest.Indices.All)))
+					.Request(c => c.SearchShards(new SearchShardsRequest<Project>(Nest7.Indices.All)))
 					.FluentAsync(c => c.SearchShardsAsync<Project>(s => s.AllIndices()))
-					.RequestAsync(c => c.SearchShardsAsync(new SearchShardsRequest<Project>(Nest.Indices.All)))
+					.RequestAsync(c => c.SearchShardsAsync(new SearchShardsRequest<Project>(Nest7.Indices.All)))
 				;
 		}
 	}

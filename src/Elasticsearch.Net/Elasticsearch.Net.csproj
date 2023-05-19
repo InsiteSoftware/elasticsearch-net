@@ -28,7 +28,7 @@
     <PackageReference Condition="'$(TargetFramework)' == 'netstandard2.0'" Include="System.Reflection.Emit.Lightweight" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
-    <InternalsVisibleTo Include="Nest" Key="$(ExposedPublicKey)" />
+    <InternalsVisibleTo Include="Nest7" Key="$(ExposedPublicKey)" />
     <InternalsVisibleTo Include="Elasticsearch.Net.CustomDynamicObjectResolver" Key="$(ExposedPublicKey)" />
     <InternalsVisibleTo Include="Elasticsearch.Net.DynamicCompositeResolver" Key="$(ExposedPublicKey)" />
     <InternalsVisibleTo Include="Elasticsearch.Net.DynamicObjectResolverAllowPrivateFalseExcludeNullFalseNameMutateOriginal" Key="$(ExposedPublicKey)" />

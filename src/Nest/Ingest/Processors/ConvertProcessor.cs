@@ -9,7 +9,7 @@ using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Converts a field in the currently ingested document to a different type,

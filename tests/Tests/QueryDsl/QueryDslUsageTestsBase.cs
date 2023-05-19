@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Newtonsoft.Json;
 using Tests.Core.Client;
 using Tests.Core.Extensions;

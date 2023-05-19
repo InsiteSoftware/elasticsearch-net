@@ -6,7 +6,7 @@ using Elasticsearch.Net.Extensions;
 using Elasticsearch.Net.Utf8Json;
 using Elasticsearch.Net.Utf8Json.Internal;
 
-namespace Nest
+namespace Nest7
 {
 	internal class FieldNameQueryFormatter<T, TInterface> : ReadAsFormatter<T, TInterface>
 		where T : class, TInterface, IFieldNameQuery, new()

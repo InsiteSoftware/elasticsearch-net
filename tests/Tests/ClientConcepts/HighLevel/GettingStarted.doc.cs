@@ -9,7 +9,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using Elasticsearch.Net;
-using Nest;
+using Nest7;
 
 namespace Tests.ClientConcepts.HighLevel
 {
@@ -210,7 +210,7 @@ namespace Tests.ClientConcepts.HighLevel
 		 */
 		public async Task ObjectInitializerSyntax()
 		{
-			var searchRequest = new SearchRequest<Person>(Nest.Indices.All) //<1> All indices and types are specified in the constructor
+			var searchRequest = new SearchRequest<Person>(Nest7.Indices.All) //<1> All indices and types are specified in the constructor
 			{
 				From = 0,
 				Size = 10,

@@ -6,7 +6,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// An item within a bulk response
@@ -94,7 +94,7 @@ namespace Nest
 				}
 			}
 		}
-    
+
 		public override string ToString() =>
 			$"{Operation} returned {Status} _index: {Index} _type: {Type} _id: {Id} _version: {Version} error: {Error}";
 	}

@@ -6,7 +6,7 @@ using System;
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("indices.validate_query.json")]
 	public partial interface IValidateQueryRequest

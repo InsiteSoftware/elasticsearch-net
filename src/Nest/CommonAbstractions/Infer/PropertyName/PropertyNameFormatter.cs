@@ -4,7 +4,7 @@
 
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	internal class PropertyNameFormatter : IJsonFormatter<PropertyName>, IObjectPropertyNameFormatter<PropertyName>
 	{

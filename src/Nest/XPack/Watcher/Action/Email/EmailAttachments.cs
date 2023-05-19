@@ -8,7 +8,7 @@ using Elasticsearch.Net.Utf8Json;
 using Elasticsearch.Net.Utf8Json.Internal;
 
 
-namespace Nest
+namespace Nest7
 {
 	[JsonFormatter(typeof(EmailAttachmentsFormatter))]
 	public interface IEmailAttachments : IIsADictionary<string, IEmailAttachment> { }

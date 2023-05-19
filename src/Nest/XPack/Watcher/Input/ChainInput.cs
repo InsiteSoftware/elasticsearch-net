@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	///  input to load data from multiple sources into the watch execution context when the watch is triggered.

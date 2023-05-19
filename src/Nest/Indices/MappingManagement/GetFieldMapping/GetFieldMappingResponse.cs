@@ -8,9 +8,9 @@ using System.Linq.Expressions;
 using System.Runtime.Serialization;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
-using static Nest.Infer;
+using static Nest7.Infer;
 
-namespace Nest
+namespace Nest7
 {
 	[JsonFormatter(typeof(ResolvableDictionaryResponseFormatter<GetFieldMappingResponse, IndexName, TypeFieldMappings>))]
 	public class GetFieldMappingResponse : DictionaryResponseBase<IndexName, TypeFieldMappings>
@@ -41,7 +41,7 @@ namespace Nest
 		public IFieldMapping MappingFor<T, TValue>(Expression<Func<T, TValue>> objectPath, IndexName index = null)
 			where T : class =>
 			GetMapping(index ?? Index<T>(), Field(objectPath));
-		
+
 		public IFieldMapping MappingFor<T>(Expression<Func<T, object>> objectPath, IndexName index = null)
 			where T : class =>
 			GetMapping(index ?? Index<T>(), Field(objectPath));

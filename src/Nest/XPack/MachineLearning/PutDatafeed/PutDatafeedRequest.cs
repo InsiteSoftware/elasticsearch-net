@@ -6,7 +6,7 @@ using System;
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Creates a datafeed for a machine learning job.
@@ -151,7 +151,7 @@ namespace Nest
 		public PutDatafeedDescriptor<TDocument> Indices<TOther>() => Assign(typeof(TOther), (a, v) => a.Indices = v);
 
 		///<summary>A shortcut into calling Indices(Indices.All)</summary>
-		public PutDatafeedDescriptor<TDocument> AllIndices() => Indices(Nest.Indices.All);
+		public PutDatafeedDescriptor<TDocument> AllIndices() => Indices(Nest7.Indices.All);
 
 		/// <inheritdoc />
 		public PutDatafeedDescriptor<TDocument> JobId(Id jobId) => Assign(jobId, (a, v) => a.JobId = v);

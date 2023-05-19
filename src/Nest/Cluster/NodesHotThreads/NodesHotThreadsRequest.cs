@@ -5,7 +5,7 @@
 using Elasticsearch.Net;
 using Elasticsearch.Net.Specification.NodesApi;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("nodes.hot_threads.json")]
 	public partial interface INodesHotThreadsRequest { }
@@ -21,7 +21,7 @@ namespace Nest
 	public partial class NodesHotThreadsDescriptor
 	{
 		protected override string ContentType => RequestData.MimeTypeTextPlain;
-		
+
 		protected sealed override void RequestDefaults(NodesHotThreadsRequestParameters parameters) =>
 			parameters.CustomResponseBuilder = NodeHotThreadsResponseBuilder.Instance;
 	}

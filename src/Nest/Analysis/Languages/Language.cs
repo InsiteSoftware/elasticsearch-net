@@ -5,7 +5,7 @@
 using Elasticsearch.Net;
 
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Language types used for language analyzers

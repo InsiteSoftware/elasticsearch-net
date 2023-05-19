@@ -6,7 +6,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The term suggester suggests terms based on edit distance. The provided suggest text is analyzed before terms are suggested.

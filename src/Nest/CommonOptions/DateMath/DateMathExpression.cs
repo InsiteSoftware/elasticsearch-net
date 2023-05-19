@@ -6,7 +6,7 @@ using System;
 using Elasticsearch.Net.Extensions;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[JsonFormatter(typeof(DateMathExpressionFormatter))]
 	public class DateMathExpression : DateMath

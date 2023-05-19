@@ -4,7 +4,7 @@
 
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 using static Tests.Framework.EndpointTests.UrlTester;
@@ -24,9 +24,9 @@ namespace Tests.Cat.CatSegments
 
 			await GET("/_cat/segments/project")
 				.Fluent(c => c.Cat.Segments(r => r.Index<Project>()))
-				.Request(c => c.Cat.Segments(new CatSegmentsRequest(Nest.Indices.Index<Project>())))
+				.Request(c => c.Cat.Segments(new CatSegmentsRequest(Nest7.Indices.Index<Project>())))
 				.FluentAsync(c => c.Cat.SegmentsAsync(r => r.Index<Project>()))
-				.RequestAsync(c => c.Cat.SegmentsAsync(new CatSegmentsRequest(Nest.Indices.Index<Project>())));
+				.RequestAsync(c => c.Cat.SegmentsAsync(new CatSegmentsRequest(Nest7.Indices.Index<Project>())));
 		}
 	}
 }

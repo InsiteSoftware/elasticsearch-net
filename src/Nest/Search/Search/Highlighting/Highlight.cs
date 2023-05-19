@@ -8,7 +8,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	//TODO 8.0 completely revisit how we mapped highlighters
 	//this is used in tophits/percolator AND in search highligher as the root

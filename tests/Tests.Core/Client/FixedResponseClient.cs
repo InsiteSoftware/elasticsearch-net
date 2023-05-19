@@ -5,7 +5,7 @@
 using System;
 using System.Text;
 using Elasticsearch.Net;
-using Nest;
+using Nest7;
 
 namespace Tests.Core.Client
 {

@@ -6,7 +6,7 @@ using System;
 using Elasticsearch.Net;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("count.json")]
 	[ReadAs(typeof(CountRequest))]

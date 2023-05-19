@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Runtime.Serialization;
 using Newtonsoft.Json;
 
-namespace Nest.JsonNetSerializer
+namespace Nest7.JsonNetSerializer
 {
 	public abstract partial class ConnectionSettingsAwareSerializerBase : IPropertyMappingProvider
 	{

@@ -9,7 +9,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[InterfaceDataContract]
 	[ReadAs(typeof(MoreLikeThisQuery))]
@@ -104,7 +104,7 @@ namespace Nest
 		internal override void InternalWrapInContainer(IQueryContainer c) => c.MoreLikeThis = this;
 
 		internal static bool IsConditionless(IMoreLikeThisQuery q) =>
-			q.Fields.IsConditionless() && (!q.Like.HasAny() || q.Like.All(Nest.Like.IsConditionless));
+			q.Fields.IsConditionless() && (!q.Like.HasAny() || q.Like.All(Nest7.Like.IsConditionless));
 	}
 
 	public class MoreLikeThisQueryDescriptor<T>

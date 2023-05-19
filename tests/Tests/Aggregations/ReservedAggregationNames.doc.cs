@@ -7,12 +7,12 @@ using System.Collections.Generic;
 using System.Linq;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Aggregations.Bucket.Children;
 using Tests.Domain;
 using Tests.Framework;
 using Tests.Framework.DocumentationTests;
-using static Nest.Infer;
+using static Nest7.Infer;
 
 namespace Tests.Aggregations
 {

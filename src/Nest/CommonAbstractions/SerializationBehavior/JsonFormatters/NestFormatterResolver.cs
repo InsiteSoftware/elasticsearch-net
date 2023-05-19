@@ -10,7 +10,7 @@ using Elasticsearch.Net.Utf8Json;
 using Elasticsearch.Net.Utf8Json.Formatters;
 using Elasticsearch.Net.Utf8Json.Resolvers;
 
-namespace Nest
+namespace Nest7
 {
 	internal interface IJsonFormatterResolverWithSettings
 	{

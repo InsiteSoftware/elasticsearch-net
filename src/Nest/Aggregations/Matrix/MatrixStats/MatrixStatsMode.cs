@@ -5,7 +5,7 @@
 using System.Runtime.Serialization;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The matrix_stats aggregation treats each document field as an independent sample.

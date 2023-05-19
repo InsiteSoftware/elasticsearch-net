@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using System.Threading;
 using Bogus;
-using Nest;
+using Nest7;
 using Tests.Configuration;
 using Tests.Domain.Helpers;
 

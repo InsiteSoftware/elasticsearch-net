@@ -4,9 +4,9 @@
 
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Framework.EndpointTests;
-using static Nest.Infer;
+using static Nest7.Infer;
 using static Tests.Framework.EndpointTests.UrlTester;
 
 namespace Tests.Indices.AliasManagement.GetAlias

@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 using Elasticsearch.Net;
-using Nest;
+using Nest7;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Framework.EndpointTests;
 using Tests.Framework.EndpointTests.TestState;

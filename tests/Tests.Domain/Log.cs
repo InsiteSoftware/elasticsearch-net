@@ -6,7 +6,7 @@ using System;
 using System.Linq;
 using System.Text;
 using Bogus;
-using Nest;
+using Nest7;
 using Tests.Configuration;
 
 namespace Tests.Domain

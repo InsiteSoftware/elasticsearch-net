@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[JsonFormatter(typeof(DynamicTemplatesInterfaceFormatter))]
 	public interface IDynamicTemplateContainer : IIsADictionary<string, IDynamicTemplate> { }

@@ -4,7 +4,7 @@
 
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A range of ip values supporting either IPv4 or IPv6 (or mixed) addresses.

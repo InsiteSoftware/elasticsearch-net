@@ -8,7 +8,7 @@ using System.Globalization;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[DebuggerDisplay("{DebugDisplay,nq}")]
 	[JsonFormatter(typeof(TaskIdFormatter))]

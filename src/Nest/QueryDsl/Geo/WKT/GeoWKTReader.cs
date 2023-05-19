@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Reads Well-Known Text (WKT) into <see cref="IGeoShape" /> types

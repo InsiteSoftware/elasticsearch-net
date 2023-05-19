@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("watcher.execute_watch.json")]
 	public partial interface IExecuteWatchRequest

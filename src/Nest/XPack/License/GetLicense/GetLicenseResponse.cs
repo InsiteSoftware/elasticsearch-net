@@ -7,7 +7,7 @@ using System.IO;
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	public class GetLicenseResponse : ResponseBase
 	{

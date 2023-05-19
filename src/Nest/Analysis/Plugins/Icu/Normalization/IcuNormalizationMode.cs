@@ -5,7 +5,7 @@
 using System.Runtime.Serialization;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Normalization mode https://en.wikipedia.org/wiki/Unicode_equivalence#Normal_forms

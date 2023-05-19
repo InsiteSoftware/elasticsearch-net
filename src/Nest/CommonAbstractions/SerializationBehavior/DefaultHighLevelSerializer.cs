@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>The built in internal serializer that the high level client NEST uses.</summary>
 	internal class DefaultHighLevelSerializer : IElasticsearchSerializer, IInternalSerializer

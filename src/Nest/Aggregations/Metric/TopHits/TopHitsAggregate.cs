@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	public class TopHitsAggregate : MetricAggregateBase
 	{

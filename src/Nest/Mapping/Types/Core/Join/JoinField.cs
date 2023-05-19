@@ -5,7 +5,7 @@
 using System;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	// This does not extend from Union because its intended to be used on folk's _source's
 	// And the union serialization will bleed into their own JSON.NET serializer should they

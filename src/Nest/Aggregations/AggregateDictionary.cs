@@ -8,7 +8,7 @@ using System.Linq;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Contains aggregates that are returned by Elasticsearch. In NEST, Aggregation always refers to an aggregation

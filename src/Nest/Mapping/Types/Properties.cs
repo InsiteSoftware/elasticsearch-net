@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[JsonFormatter(typeof(PropertiesFormatter))]
 	public interface IProperties : IIsADictionary<PropertyName, IProperty> { }

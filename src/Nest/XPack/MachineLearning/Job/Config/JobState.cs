@@ -6,7 +6,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net;
 
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The state of a machine learning job

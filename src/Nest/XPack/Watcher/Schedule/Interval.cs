@@ -9,7 +9,7 @@ using System.Text.RegularExpressions;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[StringEnum]
 	public enum IntervalUnit

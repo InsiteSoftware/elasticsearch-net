@@ -5,7 +5,7 @@
 using System;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Framework.EndpointTests.TestState;
 

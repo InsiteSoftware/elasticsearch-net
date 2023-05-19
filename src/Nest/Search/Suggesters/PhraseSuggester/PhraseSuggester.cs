@@ -8,7 +8,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The phrase suggester adds additional logic on top of the <see cref="ITermSuggester">term suggester</see> to select entire corrected phrases instead of

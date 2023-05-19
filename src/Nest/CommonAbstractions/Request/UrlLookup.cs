@@ -6,7 +6,7 @@ using System;
 using System.Linq;
 using System.Text;
 
-namespace Nest
+namespace Nest7
 {
 	internal class UrlLookup
 	{

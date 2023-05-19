@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Core.ManagedElasticsearch.NodeSeeders;
 using Tests.Domain;
@@ -96,7 +96,7 @@ namespace Tests.QueryDsl.Specialized.Percolate
 					}
 				}, d => d.Index(percolationIndex));
 				Client.Index(Project.Instance, i => i.Routing(Project.Instance.Name));
-				Client.Indices.Refresh(Nest.Indices.Index(percolationIndex).And<Project>());
+				Client.Indices.Refresh(Nest7.Indices.Index(percolationIndex).And<Project>());
 			}
 		}
 	}

@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The pattern_replace char filter allows the use of a regex to manipulate the characters in a string before analysis.

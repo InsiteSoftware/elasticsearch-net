@@ -6,7 +6,7 @@ using System;
 using System.Runtime.Serialization;
 
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("ml.flush_job.json")]
 	public partial interface IFlushJobRequest

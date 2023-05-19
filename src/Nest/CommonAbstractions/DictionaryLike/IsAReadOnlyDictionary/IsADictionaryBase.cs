@@ -6,7 +6,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	public abstract class IsAReadOnlyDictionaryBase<TKey, TValue> : IIsAReadOnlyDictionary<TKey, TValue>
 	{

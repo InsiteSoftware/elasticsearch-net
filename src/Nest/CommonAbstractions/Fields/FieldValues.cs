@@ -8,7 +8,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[JsonFormatter(typeof(FieldValuesFormatter))]
 	public class FieldValues : IsADictionaryBase<string, LazyDocument>

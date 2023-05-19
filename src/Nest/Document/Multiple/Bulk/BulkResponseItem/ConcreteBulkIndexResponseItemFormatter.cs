@@ -5,7 +5,7 @@
 using Elasticsearch.Net.Utf8Json;
 using Elasticsearch.Net.Utf8Json.Resolvers;
 
-namespace Nest
+namespace Nest7
 {
 	internal class ConcreteBulkIndexResponseItemFormatter<T> : IJsonFormatter<T>
 		where T : BulkResponseItemBase

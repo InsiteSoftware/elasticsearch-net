@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary> A response returned for each scroll in ScrollAll() </summary>
 	public interface IScrollAllResponse<out T> where T : class

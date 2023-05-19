@@ -5,7 +5,7 @@
 using System.Runtime.CompilerServices;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	internal static class JsonFormatterResolverExtensions
 	{

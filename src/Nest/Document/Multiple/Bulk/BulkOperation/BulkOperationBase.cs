@@ -5,7 +5,7 @@
 using System;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	public abstract class BulkOperationBase : IBulkOperation
 	{

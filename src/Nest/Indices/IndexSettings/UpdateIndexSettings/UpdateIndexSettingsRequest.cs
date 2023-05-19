@@ -5,7 +5,7 @@
 using System;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("indices.put_settings.json")]
 	[JsonFormatter(typeof(UpdateIndexSettingsRequestFormatter))]

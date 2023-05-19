@@ -8,7 +8,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A metrics aggregation that performs a statistical hypothesis test in which the test statistic follows a

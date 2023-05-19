@@ -5,7 +5,7 @@
 using System;
 using System.Runtime.Serialization;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Core.Serialization;
 
 namespace Tests.Analysis.CharFilters
@@ -113,9 +113,9 @@ namespace Tests.Analysis.CharFilters
 						{
 							Settings = new IndexSettings
 							{
-								Analysis = new Nest.Analysis
+								Analysis = new Nest7.Analysis
 								{
-									CharFilters = new Nest.CharFilters()
+									CharFilters = new Nest7.CharFilters()
 									{
 										{ FilterName, UserDefinedFilter }
 									}

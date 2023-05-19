@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using BenchmarkDotNet.Attributes;
 using Elasticsearch.Net;
-using Nest;
+using Nest7;
 using Tests.Benchmarking.Framework;
 using Tests.Core.Client;
 using Tests.Domain;

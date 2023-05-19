@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A lazily deserialized document
@@ -36,7 +36,7 @@ namespace Nest
 		/// </summary>
 		/// <typeparam name="T">The type</typeparam>
 		Task<T> AsAsync<T>(CancellationToken ct = default);
-		
+
 		/// <summary>
 		/// Creates an instance of <paramref name="objectType" /> from this
 		/// <see cref="ILazyDocument" /> instance

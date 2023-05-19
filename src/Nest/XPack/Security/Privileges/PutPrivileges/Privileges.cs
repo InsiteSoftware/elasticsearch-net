@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[ReadAs(typeof(Privileges))]
 	[JsonFormatter(typeof(PrivilegesFormatter))]

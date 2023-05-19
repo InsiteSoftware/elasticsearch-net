@@ -7,7 +7,7 @@ using System.Linq;
 
 #pragma warning disable 3015
 
-namespace Nest
+namespace Nest7
 {
 	public class JoinAttribute : ElasticsearchPropertyAttributeBase, IJoinProperty
 	{

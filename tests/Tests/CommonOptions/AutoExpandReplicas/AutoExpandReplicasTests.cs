@@ -52,7 +52,7 @@ namespace Tests.CommonOptions.AutoExpandReplicas
 		[U]
 		public void CreateWithMinAndMax()
 		{
-			var autoExpandReplicas = Nest.AutoExpandReplicas.Create(2, 3);
+			var autoExpandReplicas = Nest7.AutoExpandReplicas.Create(2, 3);
 			autoExpandReplicas.Should().NotBeNull();
 			autoExpandReplicas.Enabled.Should().BeTrue();
 			autoExpandReplicas.MinReplicas.Should().Be(2);
@@ -66,7 +66,7 @@ namespace Tests.CommonOptions.AutoExpandReplicas
 		[U]
 		public void CreateWithMinAndAll()
 		{
-			var autoExpandReplicas = Nest.AutoExpandReplicas.Create(0);
+			var autoExpandReplicas = Nest7.AutoExpandReplicas.Create(0);
 			autoExpandReplicas.Should().NotBeNull();
 			autoExpandReplicas.Enabled.Should().BeTrue();
 			autoExpandReplicas.MinReplicas.Should().Be(0);
@@ -80,7 +80,7 @@ namespace Tests.CommonOptions.AutoExpandReplicas
 		[U]
 		public void Disabled()
 		{
-			var autoExpandReplicas = Nest.AutoExpandReplicas.Disabled;
+			var autoExpandReplicas = Nest7.AutoExpandReplicas.Disabled;
 			autoExpandReplicas.Should().NotBeNull();
 			autoExpandReplicas.Enabled.Should().BeFalse();
 			autoExpandReplicas.MinReplicas.Should().NotHaveValue();
@@ -91,18 +91,18 @@ namespace Tests.CommonOptions.AutoExpandReplicas
 
 		[U]
 		public void MinMustBeEqualOrLessThanMax() =>
-			Assert.Throws<ArgumentException>(() => Nest.AutoExpandReplicas.Create(2, 1));
+			Assert.Throws<ArgumentException>(() => Nest7.AutoExpandReplicas.Create(2, 1));
 
 		[U]
 		public void MinMustBeGreaterThanOrEqualToZero() =>
-			Assert.Throws<ArgumentException>(() => Nest.AutoExpandReplicas.Create(-1));
+			Assert.Throws<ArgumentException>(() => Nest7.AutoExpandReplicas.Create(-1));
 
 		[U]
 		public void MinMustBeAnInteger() =>
-			Assert.Throws<FormatException>(() => Nest.AutoExpandReplicas.Create("all-all"));
+			Assert.Throws<FormatException>(() => Nest7.AutoExpandReplicas.Create("all-all"));
 
 		[U]
 		public void MaxMustBeAllOrAnInteger() =>
-			Assert.Throws<FormatException>(() => Nest.AutoExpandReplicas.Create("2-boo"));
+			Assert.Throws<FormatException>(() => Nest7.AutoExpandReplicas.Create("2-boo"));
 	}
 }

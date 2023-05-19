@@ -7,7 +7,7 @@ using System.Globalization;
 using System.Text.RegularExpressions;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A time representation for use within <see cref="DateMath" /> expressions.

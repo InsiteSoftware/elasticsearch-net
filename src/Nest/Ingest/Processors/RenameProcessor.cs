@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Renames an existing field. If the field doesn't exist or the new name is already used, an exception will be thrown.

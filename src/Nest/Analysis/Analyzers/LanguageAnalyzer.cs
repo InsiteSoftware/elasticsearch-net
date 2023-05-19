@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using Elasticsearch.Net;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A set of analyzers aimed at analyzing specific language text.

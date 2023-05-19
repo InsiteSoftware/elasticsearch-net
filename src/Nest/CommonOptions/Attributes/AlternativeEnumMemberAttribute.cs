@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Similar to <see cref="System.Runtime.Serialization.EnumMemberAttribute" />, but allows an alternative string

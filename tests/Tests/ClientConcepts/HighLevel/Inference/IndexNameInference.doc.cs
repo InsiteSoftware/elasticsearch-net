@@ -3,7 +3,7 @@
 // See the LICENSE file in the project root for more information
 
 using FluentAssertions;
-using Nest;
+using Nest7;
 using System;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net;
@@ -14,7 +14,7 @@ using Tests.Framework;
 using Tests.Framework.DocumentationTests;
 using Xunit;
 using static Tests.Core.Serialization.SerializationTestHelper;
-using static Nest.Infer;
+using static Nest7.Infer;
 
 namespace Tests.ClientConcepts.HighLevel.Inference
 {
@@ -29,7 +29,7 @@ namespace Tests.ClientConcepts.HighLevel.Inference
 	public class IndexNameInference : DocumentationTestBase
 	{
 		//hide
-		private class ConnectionSettings : Nest.ConnectionSettings
+		private class ConnectionSettings : Nest7.ConnectionSettings
 		{
 			public ConnectionSettings() : base(new InMemoryConnection())
 			{

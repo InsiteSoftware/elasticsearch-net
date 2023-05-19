@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Framework.EndpointTests;
@@ -86,7 +86,7 @@ namespace Tests.Indices.IndexManagement.CloneIndex
 
 		protected override CloneIndexRequest Initializer => new CloneIndexRequest(CallIsolatedValue, CallIsolatedValue + CloneSuffix)
 		{
-			Settings = new Nest.IndexSettings
+			Settings = new Nest7.IndexSettings
 			{
 				NumberOfReplicas = 0,
 				NumberOfShards = 1,

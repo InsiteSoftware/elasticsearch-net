@@ -2,8 +2,8 @@
 // Elasticsearch B.V licenses this file to you under the Apache 2.0 License.
 // See the LICENSE file in the project root for more information
 
-using Nest;
-using Nest.JsonNetSerializer;
+using Nest7;
+using Nest7.JsonNetSerializer;
 using Tests.Configuration;
 using Tests.Core.Client.Settings;
 using Tests.Domain.Extensions;

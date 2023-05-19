@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	internal class SingleOrEnumerableFormatter<T> : IJsonFormatter<IEnumerable<T>>
 	{

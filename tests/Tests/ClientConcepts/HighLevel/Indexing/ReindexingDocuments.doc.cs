@@ -8,7 +8,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Elasticsearch.Net;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Framework;
 using Tests.Framework.DocumentationTests;
 

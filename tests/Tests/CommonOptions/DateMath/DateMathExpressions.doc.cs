@@ -5,7 +5,7 @@
 using System;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Framework;
 using static Tests.Core.Serialization.SerializationTestHelper;
 // ReSharper disable SuggestVarOrType_Elsewhere
@@ -42,8 +42,8 @@ namespace Tests.CommonOptions.DateMath
 			* ==== Simple expressions
 			* You can create simple expressions using any of the static methods on `DateMath`
 			*/
-			//Expect("now").WhenSerializing(Nest.DateMath.Now);
-			Expect("2015-05-05T00:00:00").WhenSerializing(Nest.DateMath.Anchored(new DateTime(2015,05, 05)));
+			//Expect("now").WhenSerializing(Nest7.DateMath.Now);
+			Expect("2015-05-05T00:00:00").WhenSerializing(Nest7.DateMath.Anchored(new DateTime(2015,05, 05)));
 
 			/** strings implicitly convert to `DateMath` */
 			Expect("now").WhenSerializing<Nest.DateMath>("now");
@@ -142,17 +142,17 @@ namespace Tests.CommonOptions.DateMath
 			* largest whole number value and unit, rounded to the nearest second.
 			*
 			*/
-			Expect("now+1w").WhenSerializing(Nest.DateMath.Now.Add(TimeSpan.FromDays(7)));
+			Expect("now+1w").WhenSerializing(Nest7.DateMath.Now.Add(TimeSpan.FromDays(7)));
 
-			Expect("now+1w").WhenSerializing(Nest.DateMath.Now.Add("1w"));
+			Expect("now+1w").WhenSerializing(Nest7.DateMath.Now.Add("1w"));
 
-			Expect("now+1w").WhenSerializing(Nest.DateMath.Now.Add(604800000));
+			Expect("now+1w").WhenSerializing(Nest7.DateMath.Now.Add(604800000));
 
-			Expect("now+7d").WhenSerializing(Nest.DateMath.Now.Add("7d"));
+			Expect("now+7d").WhenSerializing(Nest7.DateMath.Now.Add("7d"));
 
-			Expect("now+30h").WhenSerializing(Nest.DateMath.Now.Add(TimeSpan.FromHours(30)));
+			Expect("now+30h").WhenSerializing(Nest7.DateMath.Now.Add(TimeSpan.FromHours(30)));
 
-			Expect("now+30h").WhenSerializing(Nest.DateMath.Now.Add("1.25d"));
+			Expect("now+30h").WhenSerializing(Nest7.DateMath.Now.Add("1.25d"));
 
 			Expect("now+90001s").WhenSerializing(
 				Nest.DateMath.Now.Add(TimeSpan.FromHours(25).Add(TimeSpan.FromSeconds(1))));
@@ -160,13 +160,13 @@ namespace Tests.CommonOptions.DateMath
 			Expect("now+90000s").WhenSerializing(
 				Nest.DateMath.Now.Add(TimeSpan.FromHours(25).Add(TimeSpan.FromMilliseconds(1))));
 
-			Expect("now+1y").WhenSerializing(Nest.DateMath.Now.Add("1y"));
+			Expect("now+1y").WhenSerializing(Nest7.DateMath.Now.Add("1y"));
 
-			Expect("now+12M").WhenSerializing(Nest.DateMath.Now.Add("12M"));
+			Expect("now+12M").WhenSerializing(Nest7.DateMath.Now.Add("12M"));
 
-			Expect("now+18M").WhenSerializing(Nest.DateMath.Now.Add("1.5y"));
+			Expect("now+18M").WhenSerializing(Nest7.DateMath.Now.Add("1.5y"));
 
-			Expect("now+52w").WhenSerializing(Nest.DateMath.Now.Add(TimeSpan.FromDays(7 * 52)));
+			Expect("now+52w").WhenSerializing(Nest7.DateMath.Now.Add(TimeSpan.FromDays(7 * 52)));
 		}
 
 		[U] public void Rounding()

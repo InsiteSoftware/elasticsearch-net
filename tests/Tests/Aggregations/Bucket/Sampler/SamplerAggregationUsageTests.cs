@@ -4,7 +4,7 @@
 
 using System;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Configuration;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;

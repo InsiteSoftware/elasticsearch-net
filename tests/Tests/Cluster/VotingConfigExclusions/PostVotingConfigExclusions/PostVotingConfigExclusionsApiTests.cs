@@ -7,7 +7,7 @@ using System.Threading;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Cluster.TaskManagement.GetTask;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;

@@ -8,7 +8,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[InterfaceDataContract]
 	[ReadAs(typeof(DirectGenerator))]

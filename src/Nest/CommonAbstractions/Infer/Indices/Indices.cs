@@ -9,7 +9,7 @@ using System.Linq;
 using Elasticsearch.Net;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[JsonFormatter(typeof(IndicesMultiSyntaxFormatter))]
 	[DebuggerDisplay("{DebugDisplay,nq}")]

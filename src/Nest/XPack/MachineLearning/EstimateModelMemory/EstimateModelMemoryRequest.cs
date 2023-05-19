@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 using System.Runtime.Serialization;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("ml.estimate_model_memory.json")]
 	[ReadAs(typeof(EstimateModelMemoryRequest))]

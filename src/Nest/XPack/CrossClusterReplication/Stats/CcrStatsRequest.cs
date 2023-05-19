@@ -2,14 +2,14 @@
 // Elasticsearch B.V licenses this file to you under the Apache 2.0 License.
 // See the LICENSE file in the project root for more information
 
-using Nest.Specification.CrossClusterReplicationApi;
+using Nest7.Specification.CrossClusterReplicationApi;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Gets cross-cluster replication stats. Returns all stats related to cross-cluster replication.
 	/// In particular, this API returns stats about auto-following, and returns the same shard-level stats as in the get
-	/// follower stats API. <see cref="CrossClusterReplicationNamespace.FollowIndexStats(Nest.Indices,System.Func{Nest.FollowIndexStatsDescriptor,Nest.IFollowIndexStatsRequest})"/>
+	/// follower stats API. <see cref="CrossClusterReplicationNamespace.FollowIndexStats(Nest7.Indices,System.Func{Nest7.FollowIndexStatsDescriptor,Nest7.IFollowIndexStatsRequest})"/>
 	/// </summary>
 	[MapsApi("ccr.stats.json")]
 	[ReadAs(typeof(CcrStatsRequest))]

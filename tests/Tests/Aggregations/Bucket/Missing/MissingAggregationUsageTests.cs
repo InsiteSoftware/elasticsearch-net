@@ -3,12 +3,12 @@
 // See the LICENSE file in the project root for more information
 
 using System;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
 using Tests.Framework.EndpointTests.TestState;
-using static Nest.Infer;
+using static Nest7.Infer;
 
 namespace Tests.Aggregations.Bucket.Missing
 {

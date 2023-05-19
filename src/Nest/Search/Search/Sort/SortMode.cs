@@ -6,7 +6,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net;
 
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Elasticsearch supports sorting by array or multi-valued fields. The mode option controls what array value is picked for

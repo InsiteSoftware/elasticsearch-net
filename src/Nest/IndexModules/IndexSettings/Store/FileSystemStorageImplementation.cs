@@ -6,7 +6,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net;
 
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The store module allows you to control how index data is stored and accessed on disk.

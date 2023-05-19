@@ -5,7 +5,7 @@
 using System;
 using Elasticsearch.Net.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary> Signals the type to deserialize hits into </summary>
 	[InterfaceDataContract]

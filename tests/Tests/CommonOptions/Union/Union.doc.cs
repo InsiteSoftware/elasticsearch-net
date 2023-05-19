@@ -4,7 +4,7 @@
 
 using Elasticsearch.Net;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using System.Runtime.Serialization;
 using Tests.Core.Client;
 using Tests.Framework;

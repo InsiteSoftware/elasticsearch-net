@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using Elastic.Elasticsearch.Managed.FileSystem;
 using Elasticsearch.Net;
-using Nest;
+using Nest7;
 using Tests.Core.Client;
 using Tests.Core.Extensions;
 using Tests.Domain;

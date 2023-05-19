@@ -14,7 +14,7 @@ using Elasticsearch.Net;
 using System.Runtime.InteropServices;
 #endif
 
-namespace Nest
+namespace Nest7
 {
 	/// <inheritdoc cref="IConnectionSettingsValues" />
 	public class ConnectionSettings : ConnectionSettingsBase<ConnectionSettings>

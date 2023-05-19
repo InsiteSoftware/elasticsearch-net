@@ -8,7 +8,7 @@ using Elastic.Elasticsearch.Ephemeral;
 using Elastic.Elasticsearch.Xunit;
 using Elastic.Stack.ArtifactsApi.Products;
 using Elasticsearch.Net;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.NodeSeeders;
 using Tests.Core.ManagedElasticsearch.Tasks;

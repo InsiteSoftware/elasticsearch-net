@@ -5,7 +5,7 @@
 using Elasticsearch.Net;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[DataContract]
 	public class ShardHealthStats

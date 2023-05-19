@@ -7,7 +7,7 @@ using System.Runtime.Serialization;
 using Elasticsearch.Net;
 
 
-namespace Nest
+namespace Nest7
 {
 	[StringEnum]
 	public enum NumberType

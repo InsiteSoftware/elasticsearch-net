@@ -6,7 +6,7 @@ using System;
 using System.Runtime.Serialization;
 using Elasticsearch.Net;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("field_caps.json")]
 	public partial interface IFieldCapabilitiesRequest
