@@ -16,7 +16,7 @@ namespace Tests.Indices.IndexSettings.GetIndexSettings
 		[U] public async Task Urls()
 		{
 			var index = "index1,index2";
-			Nest.Indices indices = index;
+			Nest7.Indices indices = index;
 			var name = "name";
 			Name n = name;
 			await GET($"/index1%2Cindex2/_settings/{name}")

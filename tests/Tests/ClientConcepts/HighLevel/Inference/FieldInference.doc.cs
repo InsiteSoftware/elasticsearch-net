@@ -135,7 +135,7 @@ namespace Tests.ClientConcepts.HighLevel.Inference
 		* [TIP]
 		* ====
 		* This example uses the https://msdn.microsoft.com/en-us/library/sf0df423.aspx#Anchor_0[static import] `using static Nest7.Infer;`
-		 * in the using directives to shorthand `Nest.Infer.Field<T>()`
+		 * in the using directives to shorthand `Nest7.Infer.Field<T>()`
 		* to simply `Field<T>()`. Be sure to include this static import if copying any of these examples.
 		* ====
 		*
@@ -157,7 +157,7 @@ namespace Tests.ClientConcepts.HighLevel.Inference
 				.WhenSerializing(fieldString)
 				.WhenSerializing(fieldExpression);
 
-			/** You can specify boosts in the field using a string, as well as using `Nest.Infer.Field` */
+			/** You can specify boosts in the field using a string, as well as using `Nest7.Infer.Field` */
 			fieldString = "name^2.1";
 			fieldString.Boost.Should().Be(2.1);
 

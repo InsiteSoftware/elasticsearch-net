@@ -292,7 +292,7 @@ namespace Tests.XPack.Transform
 			transform.Destination.Should().NotBeNull();
 			transform.Destination.Index.Should().Be($"transform-{v}");
 
-			Nest.Indices indices = "project";
+			Nest7.Indices indices = "project";
 			transform.Source.Index.Should().Be(indices);
 			((IQueryContainer)transform.Source.Query).MatchAll.Should().NotBeNull();
 

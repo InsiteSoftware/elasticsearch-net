@@ -15,7 +15,7 @@ namespace Tests.CommonOptions.AutoExpandReplicas
 		public void ImplicitConversionFromNullString()
 		{
 			string nullString = null;
-			Nest.AutoExpandReplicas autoExpandReplicas = nullString;
+			Nest7.AutoExpandReplicas autoExpandReplicas = nullString;
 			autoExpandReplicas.Should().BeNull();
 		}
 
@@ -23,7 +23,7 @@ namespace Tests.CommonOptions.AutoExpandReplicas
 		public void ImplicitConversionFromMinAndMaxString()
 		{
 			var minAndMax = "0-5";
-			Nest.AutoExpandReplicas autoExpandReplicas = minAndMax;
+			Nest7.AutoExpandReplicas autoExpandReplicas = minAndMax;
 			autoExpandReplicas.Should().NotBeNull();
 			autoExpandReplicas.Enabled.Should().BeTrue();
 			autoExpandReplicas.MinReplicas.Should().Be(0);
@@ -38,7 +38,7 @@ namespace Tests.CommonOptions.AutoExpandReplicas
 		public void ImplicitConversionFromMinAndAllString()
 		{
 			var minAndMax = "0-all";
-			Nest.AutoExpandReplicas autoExpandReplicas = minAndMax;
+			Nest7.AutoExpandReplicas autoExpandReplicas = minAndMax;
 			autoExpandReplicas.Should().NotBeNull();
 			autoExpandReplicas.Enabled.Should().BeTrue();
 			autoExpandReplicas.MinReplicas.Should().Be(0);

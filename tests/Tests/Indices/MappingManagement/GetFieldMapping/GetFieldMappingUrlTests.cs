@@ -18,7 +18,7 @@ namespace Tests.Indices.MappingManagement.GetFieldMapping
 		public async Task Urls()
 		{
 			var index = "index1,index2";
-			Nest.Indices indices = index;
+			Nest7.Indices indices = index;
 			var fields = Field<Project>(p => p.Name).And("field");
 			await GET($"/_mapping/field/name%2Cfield")
 					.Request(c => c.Indices.GetFieldMapping(new GetFieldMappingRequest(fields)))

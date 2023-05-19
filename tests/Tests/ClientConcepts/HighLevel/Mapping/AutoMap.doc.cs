@@ -195,16 +195,16 @@ namespace Tests.ClientConcepts.HighLevel.Mapping
 		 * and supports a number of special types defined in NEST
 		 *
 		 * [horizontal]
-		 * `Nest.QueryContainer`:: maps to `"percolator"`
-		 * `Nest.GeoLocation`:: maps to `"geo_point"`
-		 * `Nest.IGeoShape`:: maps to `"geo_shape"` (if you want to map to a `"shape"` type use explicit mapping or the [Shape] attribute on the property)
-		 * `Nest.CompletionField`:: maps to `"completion"`
-		 * `Nest.DateRange`:: maps to `"date_range"`
-		 * `Nest.DoubleRange`:: maps to `"double_range"`
-		 * `Nest.FloatRange`:: maps to `"float_range"`
-		 * `Nest.IntegerRange`:: maps to `"integer_range"`
-		 * `Nest.LongRange`:: maps to `"long_range"`
-		 * `Nest.IpAddressRange`:: maps to `"ip_range"`
+		 * `Nest7.QueryContainer`:: maps to `"percolator"`
+		 * `Nest7.GeoLocation`:: maps to `"geo_point"`
+		 * `Nest7.IGeoShape`:: maps to `"geo_shape"` (if you want to map to a `"shape"` type use explicit mapping or the [Shape] attribute on the property)
+		 * `Nest7.CompletionField`:: maps to `"completion"`
+		 * `Nest7.DateRange`:: maps to `"date_range"`
+		 * `Nest7.DoubleRange`:: maps to `"double_range"`
+		 * `Nest7.FloatRange`:: maps to `"float_range"`
+		 * `Nest7.IntegerRange`:: maps to `"integer_range"`
+		 * `Nest7.LongRange`:: maps to `"long_range"`
+		 * `Nest7.IpAddressRange`:: maps to `"ip_range"`
 		 *
 		 * All other types map to `"object"` by default.
 		 *

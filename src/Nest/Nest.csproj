@@ -14,7 +14,9 @@
     <IsPackable>true</IsPackable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
-	<AssemblyName>Nest7</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyName>Nest7</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Elasticsearch.Net\Elasticsearch.Net.csproj" />
