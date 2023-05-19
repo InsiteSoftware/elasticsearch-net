@@ -24,8 +24,8 @@
 
 using System;
 using System.Reflection;
-using Elasticsearch.Net7.Utf8Json.Internal;
 using Elasticsearch.Net7.Utf8Json.Formatters;
+using Elasticsearch.Net7.Utf8Json.Internal;
 
 namespace Elasticsearch.Net7.Utf8Json.Resolvers
 {

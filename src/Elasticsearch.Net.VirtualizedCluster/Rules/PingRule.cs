@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Elasticsearch.Net.VirtualizedCluster.Rules
+namespace Elasticsearch.Net7.VirtualizedCluster.Rules
 {
 	public class PingRule : RuleBase<PingRule>
 	{

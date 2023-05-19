@@ -9,8 +9,8 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net7.Extensions;
 using Elasticsearch.Net7.Diagnostics;
+using Elasticsearch.Net7.Extensions;
 using Elasticsearch.Net7.Specification.NodesApi;
 using static Elasticsearch.Net7.AuditEvent;
 

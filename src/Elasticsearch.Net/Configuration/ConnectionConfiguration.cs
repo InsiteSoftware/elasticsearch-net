@@ -88,7 +88,7 @@ namespace Elasticsearch.Net7
 		public static readonly TimeSpan DefaultDnsRefreshTimeout = TimeSpan.FromMinutes(5);
 
 		/// <summary>
-		/// The default connection limit for both Elasticsearch.Net7 and Nest7. Defaults to <c>80</c>
+		/// The default connection limit for both Elasticsearch.Net and Nest. Defaults to <c>80</c>
 #if DOTNETCORE
 		/// <para>Except for <see cref="HttpClientHandler"/> implementations based on curl, which defaults to <see cref="Environment.ProcessorCount"/></para>
 #endif
@@ -96,9 +96,9 @@ namespace Elasticsearch.Net7
 		public static readonly int DefaultConnectionLimit = UsingCurlHandler ? Environment.ProcessorCount : 80;
 
 		/// <summary>
-		/// The default user agent for Elasticsearch.Net7
+		/// The default user agent for Elasticsearch.Net
 		/// </summary>
-		public static readonly string DefaultUserAgent = $"elasticsearch-net/{typeof(IConnectionConfigurationValues).Assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>().InformationalVersion} ({RuntimeInformation.OSDescription}; {RuntimeInformation.FrameworkDescription}; Elasticsearch.Net7)";
+		public static readonly string DefaultUserAgent = $"elasticsearch-net/{typeof(IConnectionConfigurationValues).Assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>().InformationalVersion} ({RuntimeInformation.OSDescription}; {RuntimeInformation.FrameworkDescription}; Elasticsearch.Net)";
 
 		/// <summary>
 		/// Creates a new instance of <see cref="ConnectionConfiguration"/>
@@ -203,7 +203,7 @@ namespace Elasticsearch.Net7
 		private IMemoryStreamFactory _memoryStreamFactory = RecyclableMemoryStreamFactory.Default;
 		private bool _enableTcpStats;
 		//public static IMemoryStreamFactory Default { get; } = RecyclableMemoryStreamFactory.Default;
-		public static IMemoryStreamFactory DefaultMemoryStreamFactory { get; } = Net7.MemoryStreamFactory.Default;
+		public static IMemoryStreamFactory DefaultMemoryStreamFactory { get; } = Elasticsearch.Net7.MemoryStreamFactory.Default;
 		private bool _enableThreadPoolStats;
 
 		private string _userAgent = ConnectionConfiguration.DefaultUserAgent;

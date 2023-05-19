@@ -25,8 +25,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
-using Elasticsearch.Net7.Utf8Json.Internal.Emit;
 using Elasticsearch.Net7.Utf8Json.Internal;
+using Elasticsearch.Net7.Utf8Json.Internal.Emit;
 using Elasticsearch.Net7.Utf8Json.Resolvers;
 
 namespace Elasticsearch.Net7.Utf8Json.Formatters

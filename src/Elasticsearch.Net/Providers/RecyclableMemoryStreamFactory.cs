@@ -12,7 +12,7 @@ namespace Elasticsearch.Net7
 	/// </summary>
 	public class RecyclableMemoryStreamFactory : IMemoryStreamFactory
 	{
-		private const string TagSource = "Elasticsearch.Net7";
+		private const string TagSource = "Elasticsearch.Net";
 		private readonly RecyclableMemoryStreamManager _manager;
 
 		public static RecyclableMemoryStreamFactory Default { get; } = new RecyclableMemoryStreamFactory();

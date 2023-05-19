@@ -18,8 +18,8 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net7.Extensions;
 using Elasticsearch.Net7.Diagnostics;
+using Elasticsearch.Net7.Extensions;
 using static System.Net.DecompressionMethods;
 
 namespace Elasticsearch.Net7

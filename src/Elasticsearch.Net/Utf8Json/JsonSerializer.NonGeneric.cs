@@ -28,8 +28,8 @@ using System.Linq;
 using System.Reflection;
 using System.Reflection.Emit;
 using System.Threading.Tasks;
-using Elasticsearch.Net7.Utf8Json.Internal.Emit;
 using Elasticsearch.Net7.Utf8Json.Internal;
+using Elasticsearch.Net7.Utf8Json.Internal.Emit;
 
 namespace Elasticsearch.Net7.Utf8Json
 {
