@@ -2,6 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageId>NEST7</PackageId>
+    <PackageVersion>7.10.0</PackageVersion>
     <Title>NEST7 - Elasticsearch .NET high level client</Title>
     <PackageTags>elasticsearch;elastic;search;lucene;nest</PackageTags>
     <Description>
@@ -24,14 +25,14 @@
     <ProjectReference Include="..\Elasticsearch.Net\Elasticsearch.Net.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <InternalsVisibleTo Include="Elasticsearch.Net.CustomDynamicObjectResolver" Key="$(ExposedPublicKey)" />
-    <InternalsVisibleTo Include="Elasticsearch.Net.DynamicCompositeResolver" Key="$(ExposedPublicKey)" />
-    <InternalsVisibleTo Include="Elasticsearch.Net.DynamicObjectResolverAllowPrivateFalseExcludeNullFalseNameMutateOriginal" Key="$(ExposedPublicKey)" />
-    <InternalsVisibleTo Include="Elasticsearch.Net.DynamicObjectResolverAllowPrivateFalseExcludeNullFalseNameMutateCamelCase" Key="$(ExposedPublicKey)" />
-    <InternalsVisibleTo Include="Elasticsearch.Net.DynamicObjectResolverAllowPrivateFalseExcludeNullFalseNameMutateSnakeCase" Key="$(ExposedPublicKey)" />
-    <InternalsVisibleTo Include="Elasticsearch.Net.DynamicObjectResolverAllowPrivateFalseExcludeNullTrueNameMutateOriginal" Key="$(ExposedPublicKey)" />
-    <InternalsVisibleTo Include="Elasticsearch.Net.DynamicObjectResolverAllowPrivateFalseExcludeNullTrueNameMutateCamelCase" Key="$(ExposedPublicKey)" />
-    <InternalsVisibleTo Include="Elasticsearch.Net.DynamicObjectResolverAllowPrivateFalseExcludeNullTrueNameMutateSnakeCase" Key="$(ExposedPublicKey)" />
+    <InternalsVisibleTo Include="Elasticsearch.Net7.CustomDynamicObjectResolver" Key="$(ExposedPublicKey)" />
+    <InternalsVisibleTo Include="Elasticsearch.Net7.DynamicCompositeResolver" Key="$(ExposedPublicKey)" />
+    <InternalsVisibleTo Include="Elasticsearch.Net7.DynamicObjectResolverAllowPrivateFalseExcludeNullFalseNameMutateOriginal" Key="$(ExposedPublicKey)" />
+    <InternalsVisibleTo Include="Elasticsearch.Net7.DynamicObjectResolverAllowPrivateFalseExcludeNullFalseNameMutateCamelCase" Key="$(ExposedPublicKey)" />
+    <InternalsVisibleTo Include="Elasticsearch.Net7.DynamicObjectResolverAllowPrivateFalseExcludeNullFalseNameMutateSnakeCase" Key="$(ExposedPublicKey)" />
+    <InternalsVisibleTo Include="Elasticsearch.Net7.DynamicObjectResolverAllowPrivateFalseExcludeNullTrueNameMutateOriginal" Key="$(ExposedPublicKey)" />
+    <InternalsVisibleTo Include="Elasticsearch.Net7.DynamicObjectResolverAllowPrivateFalseExcludeNullTrueNameMutateCamelCase" Key="$(ExposedPublicKey)" />
+    <InternalsVisibleTo Include="Elasticsearch.Net7.DynamicObjectResolverAllowPrivateFalseExcludeNullTrueNameMutateSnakeCase" Key="$(ExposedPublicKey)" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Requests.*.cs">
