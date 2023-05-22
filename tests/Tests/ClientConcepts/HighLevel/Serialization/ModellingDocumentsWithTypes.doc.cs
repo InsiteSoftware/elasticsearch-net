@@ -7,7 +7,7 @@ using System.Text;
 using System.Runtime.Serialization;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net7;
-using Elasticsearch.Net.Extensions;
+using Elasticsearch.Net7.Extensions;
 using FluentAssertions;
 using Nest7;
 using Newtonsoft.Json;

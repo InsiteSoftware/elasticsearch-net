@@ -10,7 +10,7 @@ using Nest7;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Framework.EndpointTests;
 using Tests.Framework.EndpointTests.TestState;
-using static Elasticsearch.Net.HttpMethod;
+using static Elasticsearch.Net7.HttpMethod;
 
 namespace Tests.XPack.License.GetLicense
 {

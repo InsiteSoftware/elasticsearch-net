@@ -14,7 +14,7 @@ using Nest7;
 using Tests.Framework;
 using System.Threading;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net.Extensions;
+using Elasticsearch.Net7.Extensions;
 using Tests.Domain.Extensions;
 
 // ReSharper disable SuggestVarOrType_Elsewhere

@@ -13,7 +13,7 @@ using Elasticsearch.Net7;
 using Nest7;
 using Tests.Core.ManagedElasticsearch;
 using Tests.Core.ManagedElasticsearch.Clusters;
-using HttpMethod = Elasticsearch.Net.HttpMethod;
+using HttpMethod = Elasticsearch.Net7.HttpMethod;
 using FluentAssertions;
 
 namespace Tests.ClientConcepts.Connection

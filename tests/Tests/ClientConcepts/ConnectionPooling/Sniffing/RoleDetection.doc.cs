@@ -20,7 +20,7 @@ using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Framework;
 using static Elasticsearch.Net7.VirtualizedCluster.Rules.TimesHelper;
-using static Elasticsearch.Net.AuditEvent;
+using static Elasticsearch.Net7.AuditEvent;
 
 namespace Tests.ClientConcepts.ConnectionPooling.Sniffing
 {

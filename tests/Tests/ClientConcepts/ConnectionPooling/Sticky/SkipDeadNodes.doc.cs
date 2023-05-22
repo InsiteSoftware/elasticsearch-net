@@ -14,7 +14,7 @@ using Elasticsearch.Net7.VirtualizedCluster.Providers;
 using FluentAssertions;
 using Tests.Framework;
 using static Elasticsearch.Net7.VirtualizedCluster.Rules.TimesHelper;
-using static Elasticsearch.Net.AuditEvent;
+using static Elasticsearch.Net7.AuditEvent;
 
 namespace Tests.ClientConcepts.ConnectionPooling.Sticky
 {

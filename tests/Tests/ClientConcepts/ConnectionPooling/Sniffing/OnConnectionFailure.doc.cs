@@ -12,7 +12,7 @@ using FluentAssertions;
 using Tests.Framework;
 using Tests.Framework.Extensions;
 using static Elasticsearch.Net7.VirtualizedCluster.Rules.TimesHelper;
-using static Elasticsearch.Net.AuditEvent;
+using static Elasticsearch.Net7.AuditEvent;
 
 namespace Tests.ClientConcepts.ConnectionPooling.Sniffing
 {

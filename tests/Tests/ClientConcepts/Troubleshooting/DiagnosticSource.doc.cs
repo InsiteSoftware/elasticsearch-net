@@ -12,7 +12,7 @@ using System.Threading;
 using Elastic.Elasticsearch.Xunit.Sdk;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using Elasticsearch.Net7;
-using Elasticsearch.Net.Diagnostics;
+using Elasticsearch.Net7.Diagnostics;
 using FluentAssertions;
 using Nest7;
 using Tests.Core.Client.Settings;
