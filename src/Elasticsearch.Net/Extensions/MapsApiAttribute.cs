@@ -6,7 +6,7 @@ using System;
 using System.Collections.ObjectModel;
 using System.Linq;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	internal class MapsApiAttribute : Attribute
 	{

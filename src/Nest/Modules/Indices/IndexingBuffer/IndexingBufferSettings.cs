@@ -2,7 +2,7 @@
 // Elasticsearch B.V licenses this file to you under the Apache 2.0 License.
 // See the LICENSE file in the project root for more information
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The indexing buffer is used to store newly indexed documents. When it fills up, the documents in the buffer are written to a segment on

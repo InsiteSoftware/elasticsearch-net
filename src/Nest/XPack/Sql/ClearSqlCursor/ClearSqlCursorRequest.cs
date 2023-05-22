@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("sql.clear_cursor.json")]
 	[ReadAs(typeof(ClearSqlCursorRequest))]

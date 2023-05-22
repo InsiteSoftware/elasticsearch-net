@@ -5,7 +5,7 @@
 using System;
 using System.Text;
 
-namespace Elasticsearch.Net.Extensions
+namespace Elasticsearch.Net7.Extensions
 {
 	/// <summary>Provide a cached reusable instance of stringbuilder per thread.</summary>
 	internal static class StringBuilderCache

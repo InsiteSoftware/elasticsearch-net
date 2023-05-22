@@ -6,7 +6,7 @@ using System;
 using System.Linq.Expressions;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The fuzzy rule matches terms that are similar to the provided term, within an edit distance defined by Fuzziness.
@@ -37,7 +37,7 @@ namespace Nest
 
 		/// <summary>
 		/// Maximum edit distance allowed for matching. See Fuzziness for valid values and more information.
-		/// Defaults to <see cref="Nest.Fuzziness.Auto"/>.
+		/// Defaults to <see cref="Nest7.Fuzziness.Auto"/>.
 		/// </summary>
 		[DataMember(Name = "fuzziness")]
 		Fuzziness Fuzziness { get; set; }

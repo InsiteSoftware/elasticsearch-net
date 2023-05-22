@@ -3,9 +3,9 @@
 // See the LICENSE file in the project root for more information
 
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[InterfaceDataContract]
 	[ReadAs(typeof(PointInTime))]
@@ -47,10 +47,10 @@ namespace Nest
 	public class PointInTimeDescriptor : DescriptorBase<PointInTimeDescriptor, IPointInTime>, IPointInTime
 	{
 		public PointInTimeDescriptor(string id) => Self.Id = id;
-		
+
 		string IPointInTime.Id { get; set; }
 		Time IPointInTime.KeepAlive { get; set; }
-		
+
 		/// <inheritdoc cref="IPointInTime.KeepAlive" />
 		public PointInTimeDescriptor KeepAlive(Time id) => Assign(id, (a, v) => a.KeepAlive = v);
 	}

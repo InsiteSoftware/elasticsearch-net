@@ -5,9 +5,9 @@
 using System;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Framework.EndpointTests;
 using Tests.Framework.EndpointTests.TestState;
@@ -23,7 +23,7 @@ namespace Tests.XPack.Security.ApiKey.GrantApiKey
 		private const string GrantApiKeyWithExpirationStep = nameof(GrantApiKeyWithExpirationStep);
 		private const string GenerateAccessTokenStep = nameof(GenerateAccessTokenStep);
 		private const string GrantApiKeyUsingAccessTokenStep = nameof(GrantApiKeyUsingAccessTokenStep);
-		
+
 		public GrantApiKeyTests(XPackCluster cluster, EndpointUsage usage) : base(new CoordinatedUsage(cluster, usage)
 		{
 			{
@@ -74,7 +74,7 @@ namespace Tests.XPack.Security.ApiKey.GrantApiKey
 							GrantType = GrantType.Password,
 							Username = $"user-{v}-target",
 							Password = "password",
-							ApiKey = new Nest.ApiKey
+							ApiKey = new Nest7.ApiKey
 							{
 								Name = $"api-key-{v}"
 							},
@@ -103,7 +103,7 @@ namespace Tests.XPack.Security.ApiKey.GrantApiKey
 							GrantType = GrantType.Password,
 							Username = $"user-{v}-target",
 							Password = "password",
-							ApiKey = new Nest.ApiKey
+							ApiKey = new Nest7.ApiKey
 							{
 								Name = $"api-key-{v}",
 								Expiration = new Time(TimeSpan.FromMinutes(1))
@@ -145,7 +145,7 @@ namespace Tests.XPack.Security.ApiKey.GrantApiKey
 						{
 							GrantType = GrantType.AccessToken,
 							AccessToken = u.Usage.CallUniqueValues.ExtendedValue<string>("accessToken") ?? string.Empty,
-							ApiKey = new Nest.ApiKey
+							ApiKey = new Nest7.ApiKey
 							{
 								Name = $"api-key-{v}"
 							},

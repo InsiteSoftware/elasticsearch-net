@@ -5,7 +5,7 @@
 using System;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Framework;
 using static Tests.Core.Serialization.SerializationTestHelper;
 // ReSharper disable SuggestVarOrType_Elsewhere
@@ -42,18 +42,18 @@ namespace Tests.CommonOptions.DateMath
 			* ==== Simple expressions
 			* You can create simple expressions using any of the static methods on `DateMath`
 			*/
-			//Expect("now").WhenSerializing(Nest.DateMath.Now);
-			Expect("2015-05-05T00:00:00").WhenSerializing(Nest.DateMath.Anchored(new DateTime(2015,05, 05)));
+			//Expect("now").WhenSerializing(Nest7.DateMath.Now);
+			Expect("2015-05-05T00:00:00").WhenSerializing(Nest7.DateMath.Anchored(new DateTime(2015,05, 05)));
 
 			/** strings implicitly convert to `DateMath` */
-			Expect("now").WhenSerializing<Nest.DateMath>("now");
+			Expect("now").WhenSerializing<Nest7.DateMath>("now");
 
 			/** but are lenient to bad math expressions */
 			var nonsense = "now||*asdaqwe";
 
 			/** the resulting date math will assume the whole string is the anchor */
 			Expect(nonsense)
-				.WhenSerializing<Nest.DateMath>(nonsense)
+				.WhenSerializing<Nest7.DateMath>(nonsense)
 				.AssertSubject(dateMath => ((IDateMath)dateMath)
 					.Anchor.Match(
 						d => d.Should().NotBe(default(DateTime)),
@@ -74,7 +74,7 @@ namespace Tests.CommonOptions.DateMath
 
 			// hide
 			Expect(expected)
-				.WhenSerializing<Nest.DateMath>(date)
+				.WhenSerializing<Nest7.DateMath>(date)
 				.AssertSubject(dateMath => ((IDateMath)dateMath)
 					.Anchor.Match(
 						d => d.Should().Be(date),
@@ -96,7 +96,7 @@ namespace Tests.CommonOptions.DateMath
 
 			// hide
 			Expect(expected)
-				.WhenSerializing<Nest.DateMath>(utcDate)
+				.WhenSerializing<Nest7.DateMath>(utcDate)
 				.AssertSubject(dateMath => ((IDateMath)dateMath)
 					.Anchor.Match(
 						d => d.Should().Be(utcDate),
@@ -112,15 +112,15 @@ namespace Tests.CommonOptions.DateMath
 			* Ranges can be chained on to simple expressions
 			*/
 			Expect("now+1d").WhenSerializing(
-				Nest.DateMath.Now.Add("1d"));
+				Nest7.DateMath.Now.Add("1d"));
 
 			/** Including multiple operations */
 			Expect("now+1d-1m").WhenSerializing(
-				Nest.DateMath.Now.Add("1d").Subtract(TimeSpan.FromMinutes(1)));
+				Nest7.DateMath.Now.Add("1d").Subtract(TimeSpan.FromMinutes(1)));
 
 			/** A rounding value can be chained to the end of the expression, after which no more ranges can be appended */
 			Expect("now+1d-1m/d").WhenSerializing(
-				Nest.DateMath.Now.Add("1d")
+				Nest7.DateMath.Now.Add("1d")
 					.Subtract(TimeSpan.FromMinutes(1))
 					.RoundTo(DateMathTimeUnit.Day));
 
@@ -128,7 +128,7 @@ namespace Tests.CommonOptions.DateMath
 			* Again, multiple ranges can be chained
 			*/
 			Expect("2015-05-05T00:00:00||+1d-1m").WhenSerializing(
-				Nest.DateMath.Anchored(new DateTime(2015,05,05))
+				Nest7.DateMath.Anchored(new DateTime(2015,05,05))
 					.Add("1d")
 					.Subtract(TimeSpan.FromMinutes(1)));
 		}
@@ -142,31 +142,31 @@ namespace Tests.CommonOptions.DateMath
 			* largest whole number value and unit, rounded to the nearest second.
 			*
 			*/
-			Expect("now+1w").WhenSerializing(Nest.DateMath.Now.Add(TimeSpan.FromDays(7)));
+			Expect("now+1w").WhenSerializing(Nest7.DateMath.Now.Add(TimeSpan.FromDays(7)));
 
-			Expect("now+1w").WhenSerializing(Nest.DateMath.Now.Add("1w"));
+			Expect("now+1w").WhenSerializing(Nest7.DateMath.Now.Add("1w"));
 
-			Expect("now+1w").WhenSerializing(Nest.DateMath.Now.Add(604800000));
+			Expect("now+1w").WhenSerializing(Nest7.DateMath.Now.Add(604800000));
 
-			Expect("now+7d").WhenSerializing(Nest.DateMath.Now.Add("7d"));
+			Expect("now+7d").WhenSerializing(Nest7.DateMath.Now.Add("7d"));
 
-			Expect("now+30h").WhenSerializing(Nest.DateMath.Now.Add(TimeSpan.FromHours(30)));
+			Expect("now+30h").WhenSerializing(Nest7.DateMath.Now.Add(TimeSpan.FromHours(30)));
 
-			Expect("now+30h").WhenSerializing(Nest.DateMath.Now.Add("1.25d"));
+			Expect("now+30h").WhenSerializing(Nest7.DateMath.Now.Add("1.25d"));
 
 			Expect("now+90001s").WhenSerializing(
-				Nest.DateMath.Now.Add(TimeSpan.FromHours(25).Add(TimeSpan.FromSeconds(1))));
+				Nest7.DateMath.Now.Add(TimeSpan.FromHours(25).Add(TimeSpan.FromSeconds(1))));
 
 			Expect("now+90000s").WhenSerializing(
-				Nest.DateMath.Now.Add(TimeSpan.FromHours(25).Add(TimeSpan.FromMilliseconds(1))));
+				Nest7.DateMath.Now.Add(TimeSpan.FromHours(25).Add(TimeSpan.FromMilliseconds(1))));
 
-			Expect("now+1y").WhenSerializing(Nest.DateMath.Now.Add("1y"));
+			Expect("now+1y").WhenSerializing(Nest7.DateMath.Now.Add("1y"));
 
-			Expect("now+12M").WhenSerializing(Nest.DateMath.Now.Add("12M"));
+			Expect("now+12M").WhenSerializing(Nest7.DateMath.Now.Add("12M"));
 
-			Expect("now+18M").WhenSerializing(Nest.DateMath.Now.Add("1.5y"));
+			Expect("now+18M").WhenSerializing(Nest7.DateMath.Now.Add("1.5y"));
 
-			Expect("now+52w").WhenSerializing(Nest.DateMath.Now.Add(TimeSpan.FromDays(7 * 52)));
+			Expect("now+52w").WhenSerializing(Nest7.DateMath.Now.Add(TimeSpan.FromDays(7 * 52)));
 		}
 
 		[U] public void Rounding()
@@ -176,16 +176,16 @@ namespace Tests.CommonOptions.DateMath
 			 * Rounding can be controlled using the constructor, and passing a value for rounding
 			 */
 			Expect("now+2s").WhenSerializing(
-				Nest.DateMath.Now.Add(new DateMathTime("2.5s", MidpointRounding.ToEven)));
+				Nest7.DateMath.Now.Add(new DateMathTime("2.5s", MidpointRounding.ToEven)));
 
 			Expect("now+3s").WhenSerializing(
-				Nest.DateMath.Now.Add(new DateMathTime("2.5s", MidpointRounding.AwayFromZero)));
+				Nest7.DateMath.Now.Add(new DateMathTime("2.5s", MidpointRounding.AwayFromZero)));
 
 			Expect("now+0s").WhenSerializing(
-				Nest.DateMath.Now.Add(new DateMathTime(500, MidpointRounding.ToEven)));
+				Nest7.DateMath.Now.Add(new DateMathTime(500, MidpointRounding.ToEven)));
 
 			Expect("now+1s").WhenSerializing(
-				Nest.DateMath.Now.Add(new DateMathTime(500, MidpointRounding.AwayFromZero)));
+				Nest7.DateMath.Now.Add(new DateMathTime(500, MidpointRounding.AwayFromZero)));
 		}
 
 		[U] public void EqualityAndComparison()

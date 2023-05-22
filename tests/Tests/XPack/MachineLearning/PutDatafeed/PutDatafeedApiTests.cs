@@ -3,9 +3,9 @@
 // See the LICENSE file in the project root for more information
 
 using System;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Domain;
 using Tests.Framework.EndpointTests.TestState;
@@ -19,7 +19,7 @@ namespace Tests.XPack.MachineLearning.PutDatafeed
 	{
 		private IElasticClient _client;
 
-		public PutDatafeedApiTests(MachineLearningCluster cluster, EndpointUsage usage) : base(cluster, usage) => 
+		public PutDatafeedApiTests(MachineLearningCluster cluster, EndpointUsage usage) : base(cluster, usage) =>
 			_client = cluster.Client;
 
 		protected override bool ExpectIsValid => true;

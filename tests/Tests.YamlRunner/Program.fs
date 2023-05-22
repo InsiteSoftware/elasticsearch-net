@@ -10,7 +10,7 @@ open System.Diagnostics
 open Argu
 open Tests.YamlRunner
 open Tests.YamlRunner.Models
-open Elasticsearch.Net
+open Elasticsearch.Net7
 
 type Arguments =
     | [<First; MainCommand; CliPrefix(CliPrefix.None)>] NamedSuite of TestSuite

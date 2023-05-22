@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[DataContract]
 	public class CatNodesRecord : ICatRecord
@@ -512,7 +512,7 @@ namespace Nest
 
 		[DataMember(Name = "query_cache.memory_size")]
 		internal string _query_cache_memory_size { get; set; }
-		
+
 		[DataMember(Name = "qcm")]
 		internal string _qcm { get; set; }
 

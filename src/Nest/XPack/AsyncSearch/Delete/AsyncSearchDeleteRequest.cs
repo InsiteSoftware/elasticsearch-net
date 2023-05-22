@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("async_search.delete.json")]
 	[ReadAs(typeof(AsyncSearchDeleteRequest))]

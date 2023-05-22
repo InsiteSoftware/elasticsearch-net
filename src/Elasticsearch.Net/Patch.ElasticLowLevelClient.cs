@@ -4,9 +4,9 @@
 
 using System.Threading;
 using System.Threading.Tasks;
-using static Elasticsearch.Net.HttpMethod;
+using static Elasticsearch.Net7.HttpMethod;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	// Introduced for BWC for body introduced in https://github.com/elastic/elasticsearch/pull/57276
 	public partial class ElasticLowLevelClient

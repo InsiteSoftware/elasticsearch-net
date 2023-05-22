@@ -4,9 +4,9 @@
 
 using System;
 using System.Collections.Generic;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
@@ -97,7 +97,7 @@ namespace Tests.Indices.IndexManagement.RolloverIndex
 				MaxAge = "7d",
 				MaxDocs = 1000
 			},
-			Settings = new Nest.IndexSettings
+			Settings = new Nest7.IndexSettings
 			{
 				NumberOfShards = 1,
 				NumberOfReplicas = 1

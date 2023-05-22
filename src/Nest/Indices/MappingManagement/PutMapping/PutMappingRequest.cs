@@ -5,9 +5,9 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("indices.put_mapping.json")]
 	[ReadAs(typeof(PutMappingRequest))]
@@ -100,7 +100,7 @@ namespace Nest
 			return this;
 		}
 
-		/// <inheritdoc cref="AutoMap(Nest.IPropertyVisitor,int)" />
+		/// <inheritdoc cref="AutoMap(Nest7.IPropertyVisitor,int)" />
 		public PutMappingDescriptor<TDocument> AutoMap(int maxRecursion) => AutoMap(null, maxRecursion);
 
 		/// <inheritdoc cref="ITypeMapping.Dynamic" />

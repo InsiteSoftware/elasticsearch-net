@@ -4,7 +4,7 @@
 
 using System;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Domain;
 
 namespace Tests.QueryDsl.BoolDsl.Operators

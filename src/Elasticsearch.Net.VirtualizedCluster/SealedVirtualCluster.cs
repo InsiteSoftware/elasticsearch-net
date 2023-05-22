@@ -3,9 +3,9 @@
 // See the LICENSE file in the project root for more information
 
 using System;
-using Elasticsearch.Net.VirtualizedCluster.Providers;
+using Elasticsearch.Net7.VirtualizedCluster.Providers;
 
-namespace Elasticsearch.Net.VirtualizedCluster
+namespace Elasticsearch.Net7.VirtualizedCluster
 {
 	public class SealedVirtualCluster
 	{
@@ -28,7 +28,7 @@ namespace Elasticsearch.Net.VirtualizedCluster
 
 		public VirtualizedCluster Settings(Func<ConnectionConfiguration, ConnectionConfiguration> selector) =>
 			new VirtualizedCluster(_dateTimeProvider, selector(CreateSettings()));
-		
+
 		public VirtualClusterConnection VirtualClusterConnection(Func<ConnectionConfiguration, ConnectionConfiguration> selector = null) =>
 			new VirtualizedCluster(_dateTimeProvider, selector == null ? CreateSettings() : selector(CreateSettings()))
 				.Connection;

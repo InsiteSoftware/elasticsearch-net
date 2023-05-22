@@ -5,11 +5,11 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Utf8Json;
-using Elasticsearch.Net.Utf8Json.Internal;
+using Elasticsearch.Net7.Utf8Json;
+using Elasticsearch.Net7.Utf8Json.Internal;
 
 
-namespace Nest
+namespace Nest7
 {
 	[InterfaceDataContract]
 	[JsonFormatter(typeof(ScriptTransformFormatter))]

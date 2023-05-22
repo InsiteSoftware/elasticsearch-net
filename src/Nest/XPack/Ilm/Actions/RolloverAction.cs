@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The Rollover Action rolls an alias over to a new index when the existing index meets one of the rollover conditions.

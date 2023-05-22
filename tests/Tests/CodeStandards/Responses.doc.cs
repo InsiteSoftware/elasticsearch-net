@@ -10,9 +10,9 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Framework;
 
 namespace Tests.CodeStandards
@@ -119,7 +119,7 @@ namespace Tests.CodeStandards
 					}
 				}
 				else if (propertyInfo.PropertyType.IsClass &&
-						 (propertyInfo.PropertyType.Namespace.StartsWith("Nest") || propertyInfo.PropertyType.Namespace.StartsWith("Elasticsearch.Net"))
+						 (propertyInfo.PropertyType.Namespace.StartsWith("Nest") || propertyInfo.PropertyType.Namespace.StartsWith("Elasticsearch.Net7"))
 						 //Do not traverse known response dictionaries
 						 && !ResponseDictionaries.Contains(propertyInfo.PropertyType)
 				)

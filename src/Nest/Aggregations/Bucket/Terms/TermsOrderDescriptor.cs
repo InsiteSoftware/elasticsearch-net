@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 
-namespace Nest
+namespace Nest7
 {
 	public class TermsOrderDescriptor<T> : DescriptorPromiseBase<TermsOrderDescriptor<T>, IList<TermsOrder>>
 		where T : class

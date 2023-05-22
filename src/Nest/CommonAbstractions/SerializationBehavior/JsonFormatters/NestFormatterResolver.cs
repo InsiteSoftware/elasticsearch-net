@@ -5,12 +5,12 @@
 using System;
 using System.Collections.Concurrent;
 using System.Reflection;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Utf8Json;
-using Elasticsearch.Net.Utf8Json.Formatters;
-using Elasticsearch.Net.Utf8Json.Resolvers;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Utf8Json;
+using Elasticsearch.Net7.Utf8Json.Formatters;
+using Elasticsearch.Net7.Utf8Json.Resolvers;
 
-namespace Nest
+namespace Nest7
 {
 	internal interface IJsonFormatterResolverWithSettings
 	{
@@ -89,7 +89,7 @@ namespace Nest
 
 			private JsonProperty GetMapping(MemberInfo member)
 			{
-				// TODO: Skip calling this method for NEST and Elasticsearch.Net types, at the type level
+				// TODO: Skip calling this method for NEST and Elasticsearch.Net7 types, at the type level
 				if (!_settings.PropertyMappings.TryGetValue(member, out var propertyMapping))
 					propertyMapping = ElasticsearchPropertyAttributeBase.From(member);
 

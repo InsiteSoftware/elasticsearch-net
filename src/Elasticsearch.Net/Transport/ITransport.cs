@@ -5,7 +5,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public interface ITransport<out TConnectionSettings>
 		where TConnectionSettings : IConnectionConfigurationValues

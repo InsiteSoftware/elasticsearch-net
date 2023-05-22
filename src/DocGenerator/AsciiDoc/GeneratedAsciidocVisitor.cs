@@ -11,9 +11,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using AsciiDocNet;
 using DocGenerator.XmlDocs;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using Microsoft.CodeAnalysis;
-using Nest;
+using Nest7;
 using NuDoq;
 using Container = AsciiDocNet.Container;
 using Document = AsciiDocNet.Document;
@@ -262,7 +262,7 @@ namespace DocGenerator.AsciiDoc
 			switch (assemblyName.ToLowerInvariant())
 			{
 				case "elasticsearch.net":
-					xmlDocsFile = Path.GetFullPath(XmlFile("Elasticsearch.Net"));
+					xmlDocsFile = Path.GetFullPath(XmlFile("Elasticsearch.Net7"));
 					assembly = typeof(ElasticLowLevelClient).Assembly;
 					assemblyNamespace = typeof(ElasticLowLevelClient).Namespace;
 					break;

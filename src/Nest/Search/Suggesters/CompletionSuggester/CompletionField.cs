@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A field mapped as an <see cref="ICompletionProperty" />. Convenience class to use when indexing completion

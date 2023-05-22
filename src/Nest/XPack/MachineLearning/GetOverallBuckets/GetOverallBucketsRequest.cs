@@ -6,7 +6,7 @@ using System;
 using System.Runtime.Serialization;
 
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Retrieves overall bucket results that summarize the bucket results of multiple jobs.

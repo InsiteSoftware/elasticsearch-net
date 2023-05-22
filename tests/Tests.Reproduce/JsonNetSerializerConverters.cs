@@ -6,10 +6,10 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
-using Nest.JsonNetSerializer;
+using Nest7;
+using Nest7.JsonNetSerializer;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 

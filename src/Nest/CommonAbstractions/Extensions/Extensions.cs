@@ -12,9 +12,9 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Utf8Json.Internal;
+using Elasticsearch.Net7.Utf8Json.Internal;
 
-namespace Nest
+namespace Nest7
 {
 	internal static class Extensions
 	{

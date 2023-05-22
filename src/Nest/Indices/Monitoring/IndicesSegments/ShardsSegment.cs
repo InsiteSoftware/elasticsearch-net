@@ -4,12 +4,12 @@
 
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Utf8Json;
-using Elasticsearch.Net.Utf8Json.Resolvers;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Utf8Json;
+using Elasticsearch.Net7.Utf8Json.Resolvers;
 
 
-namespace Nest
+namespace Nest7
 {
 	[DataContract]
 	[JsonFormatter(typeof(Json))]

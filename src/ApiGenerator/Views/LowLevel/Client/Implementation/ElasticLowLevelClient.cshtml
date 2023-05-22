@@ -12,9 +12,9 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 @{ await IncludeAsync("LowLevel/Client/Usings.cshtml", Model);}
-using static Elasticsearch.Net.HttpMethod;
+using static Elasticsearch.Net7.HttpMethod;
 
 @{
 	RestApiSpec model = Model;
@@ -22,7 +22,7 @@ using static Elasticsearch.Net.HttpMethod;
 <text>
 // ReSharper disable InterpolatedStringExpressionIsNotIFormattable
 // ReSharper disable RedundantExtendsListEntry
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	///<summary>
 	///Elasticsearch low level client

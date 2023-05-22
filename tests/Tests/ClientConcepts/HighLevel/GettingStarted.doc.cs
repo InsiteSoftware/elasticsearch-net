@@ -8,8 +8,8 @@ using System.Linq;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
-using Elasticsearch.Net;
-using Nest;
+using Elasticsearch.Net7;
+using Nest7;
 
 namespace Tests.ClientConcepts.HighLevel
 {
@@ -21,8 +21,8 @@ namespace Tests.ClientConcepts.HighLevel
 	 * NEST is a high level Elasticsearch .NET client that still maps very closely to the original Elasticsearch API.
 	 * All requests and responses are exposed through types, making it ideal for getting up and running quickly.
 	 *
-	 * Under the covers, NEST uses the <<elasticsearch-net,Elasticsearch.Net low level client>> to dispatch requests and
-	 * responses, using and extending many of the types within Elasticsearch.Net. The low level client itself is still
+	 * Under the covers, NEST uses the <<elasticsearch-net,Elasticsearch.Net7 low level client>> to dispatch requests and
+	 * responses, using and extending many of the types within Elasticsearch.Net7. The low level client itself is still
 	 * exposed on the high level client through the `.LowLevel` property.
 	 */
 	public class GettingStarted
@@ -55,7 +55,7 @@ namespace Tests.ClientConcepts.HighLevel
 		/**
 		 * In this example, a default index was also specified to use if no other index is supplied for the request or can be inferred for the
 		 * POCO generic type parameter in the request. There are many other <<configuration-options,Configuration options>> on `ConnectionSettings`, which it inherits
-		 * from `ConnectionConfiguration`, the type used to pass additional configuration options to the low level client in <<elasticsearch-net,Elasticsearch.Net>>.
+		 * from `ConnectionConfiguration`, the type used to pass additional configuration options to the low level client in <<elasticsearch-net,Elasticsearch.Net7>>.
 		 *
 		 * TIP: Specifying a default index is _optional_ but NEST may throw an exception if no index can be inferred for a given request. To understand more around how
 		 * an index can be specified for a request, see <<index-name-inference,Index name inference>>.
@@ -210,7 +210,7 @@ namespace Tests.ClientConcepts.HighLevel
 		 */
 		public async Task ObjectInitializerSyntax()
 		{
-			var searchRequest = new SearchRequest<Person>(Nest.Indices.All) //<1> All indices and types are specified in the constructor
+			var searchRequest = new SearchRequest<Person>(Nest7.Indices.All) //<1> All indices and types are specified in the constructor
 			{
 				From = 0,
 				Size = 10,
@@ -226,7 +226,7 @@ namespace Tests.ClientConcepts.HighLevel
 
 		/** [NOTE]
 		 * --
-		 * As indicated at the start of this section, the high level client still exposes the low level client from Elasticsearch.Net
+		 * As indicated at the start of this section, the high level client still exposes the low level client from Elasticsearch.Net7
 		 * through the `.LowLevel` property on the client. The low level client can be useful in scenarios where you may already have
 		 * the JSON that represents the request that you wish to send and don't wish to translate it over to the Fluent API or Object Initializer syntax
 		 * at this point in time, or perhaps there is a bug in the client that can be worked around by sending a request as a string or anonymous type.

@@ -18,7 +18,7 @@ using Microsoft.CSharp.RuntimeBinder;
 // ReSharper disable RemoveRedundantBraces
 // ReSharper disable ArrangeMethodOrOperatorBody
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public class DynamicValue : DynamicObject, IEquatable<DynamicValue>, IConvertible
 	{

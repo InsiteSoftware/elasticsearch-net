@@ -5,9 +5,9 @@
  using System;
 using System.Runtime.Serialization;
 using System.Text;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A response from Elasticsearch

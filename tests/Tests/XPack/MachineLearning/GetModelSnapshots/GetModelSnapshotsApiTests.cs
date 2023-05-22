@@ -4,9 +4,9 @@
 
 using System;
 using System.Linq;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Framework.EndpointTests.TestState;
 
@@ -26,7 +26,7 @@ namespace Tests.XPack.MachineLearning.GetModelSnapshots
 		protected override Func<GetModelSnapshotsDescriptor, IGetModelSnapshotsRequest> Fluent => f => f
 			.Start(Timestamp.AddHours(-1))
 			.End(Timestamp.AddHours(1));
-		
+
 		protected override HttpMethod HttpMethod => HttpMethod.POST;
 		protected override GetModelSnapshotsRequest Initializer => new GetModelSnapshotsRequest(CallIsolatedValue)
 		{

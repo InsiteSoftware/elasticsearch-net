@@ -15,7 +15,7 @@ using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
 	/// Provides an <see cref="HttpContent"/> implementation that exposes an output <see cref="Stream"/>

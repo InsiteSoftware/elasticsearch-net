@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("transform.preview_transform.json")]
 	public partial interface IPreviewTransformRequest

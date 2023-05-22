@@ -5,9 +5,9 @@
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using static Elasticsearch.Net.SerializationFormatting;
+using static Elasticsearch.Net7.SerializationFormatting;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public class SerializableData<T> : PostData, IPostData<T>
 	{

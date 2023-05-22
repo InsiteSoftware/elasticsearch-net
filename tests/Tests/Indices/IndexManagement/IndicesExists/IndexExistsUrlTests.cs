@@ -4,7 +4,7 @@
 
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 
@@ -14,7 +14,7 @@ namespace Tests.Indices.IndexManagement.IndicesExists
 	{
 		[U] public async Task Urls()
 		{
-			var indices = Nest.Indices.Index<Project>().And<CommitActivity>();
+			var indices = Nest7.Indices.Index<Project>().And<CommitActivity>();
 			var index = "project";
 			await UrlTester.HEAD($"/{index}")
 					.Fluent(c => c.Indices.Exists(index, s => s))

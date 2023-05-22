@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The Wait For Snapshot Action waits for defined SLM policy to be executed to ensure that snapshot of index exists before deletion.

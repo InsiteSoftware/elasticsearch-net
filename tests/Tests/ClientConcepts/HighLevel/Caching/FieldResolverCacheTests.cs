@@ -12,10 +12,10 @@ using System.Text;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
 using Microsoft.FSharp.Core;
-using Nest;
+using Nest7;
 using Tests.Domain;
 using Xunit.Abstractions;
-using static Nest.Infer;
+using static Nest7.Infer;
 // ReSharper disable UnusedAutoPropertyAccessor.Local
 
 namespace Tests.ClientConcepts.HighLevel.Caching

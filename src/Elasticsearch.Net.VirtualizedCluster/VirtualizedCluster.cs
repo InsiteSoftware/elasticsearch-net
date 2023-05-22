@@ -5,9 +5,9 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.VirtualizedCluster.Providers;
+using Elasticsearch.Net7.VirtualizedCluster.Providers;
 
-namespace Elasticsearch.Net.VirtualizedCluster
+namespace Elasticsearch.Net7.VirtualizedCluster
 {
 	public class VirtualizedCluster
 	{

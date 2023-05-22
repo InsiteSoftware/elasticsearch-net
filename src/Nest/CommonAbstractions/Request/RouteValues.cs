@@ -4,9 +4,9 @@
 
 using System;
 using System.Collections.Generic;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
-namespace Nest
+namespace Nest7
 {
 	internal class ResolvedRouteValues : Dictionary<string, string>
 	{

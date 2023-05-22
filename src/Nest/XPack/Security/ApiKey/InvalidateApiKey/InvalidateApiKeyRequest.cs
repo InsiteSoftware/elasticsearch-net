@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("security.invalidate_api_key")]
 	public partial interface IInvalidateApiKeyRequest

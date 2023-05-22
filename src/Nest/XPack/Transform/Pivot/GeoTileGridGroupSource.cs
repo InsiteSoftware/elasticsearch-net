@@ -1,8 +1,8 @@
 using System;
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The geotile grid value source works on geo_point fields and groups points into buckets that represent

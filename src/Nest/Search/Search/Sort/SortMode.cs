@@ -3,10 +3,10 @@
 // See the LICENSE file in the project root for more information
 
 using System.Runtime.Serialization;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Elasticsearch supports sorting by array or multi-valued fields. The mode option controls what array value is picked for

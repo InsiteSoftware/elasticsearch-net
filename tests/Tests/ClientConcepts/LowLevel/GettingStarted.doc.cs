@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.Sdk;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Xunit;
 // ReSharper disable SuggestVarOrType_Elsewhere
@@ -21,7 +21,7 @@ namespace Tests.ClientConcepts.LowLevel
 	/**[[elasticsearch-net-getting-started]]
 	 * == Getting started
 	 *
-	 * Elasticsearch.Net is a low level Elasticsearch .NET client that has no dependencies on other libraries
+	 * Elasticsearch.Net7 is a low level Elasticsearch .NET client that has no dependencies on other libraries
 	 * and is unopinionated about how you build your requests and responses.
 	 *
 	 */
@@ -123,7 +123,7 @@ namespace Tests.ClientConcepts.LowLevel
 		}
 
 		/**
-		 * NOTE: All available methods within Elasticsearch.Net are exposed as both synchronous and asynchronous versions,
+		 * NOTE: All available methods within Elasticsearch.Net7 are exposed as both synchronous and asynchronous versions,
 		 * with the latter using the idiomatic *Async suffix for the method name.
 		 *
 		 * Both index requests will index the document to the endpoint `/people/person/1`.
@@ -236,9 +236,9 @@ namespace Tests.ClientConcepts.LowLevel
 		*
 		* [NOTE]
 		* --
-		* Elasticsearch.Net does not provide typed objects to represent responses; if you need this, you should consider
+		* Elasticsearch.Net7 does not provide typed objects to represent responses; if you need this, you should consider
 		* using <<nest, NEST, the high level client>>, that does map all requests and responses to types. You can work with
-		* strong types with Elasticsearch.Net but it will be up to you as the developer to configure Elasticsearch.Net so that
+		* strong types with Elasticsearch.Net7 but it will be up to you as the developer to configure Elasticsearch.Net7 so that
 		* it understands how to deserialize your types, most likely by providing your own <<custom-serialization, IElasticsearchSerializer>> implementation
 		* to `ConnectionConfiguration`.
 		* --
@@ -246,7 +246,7 @@ namespace Tests.ClientConcepts.LowLevel
 		* [float]
 		* === Handling Errors
 		*
-		* By default, Elasticsearch.Net is configured not to throw exceptions if a HTTP response status code is returned that is not in
+		* By default, Elasticsearch.Net7 is configured not to throw exceptions if a HTTP response status code is returned that is not in
 		* the 200-300 range, nor an expected response status code allowed for a given request e.g. checking if an index exists
 		* can return a 404.
 		*

@@ -8,13 +8,13 @@ using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
 #if DOTNETCORE
 using System.Runtime.InteropServices;
 #endif
 
-namespace Nest
+namespace Nest7
 {
 	/// <inheritdoc cref="IConnectionSettingsValues" />
 	public class ConnectionSettings : ConnectionSettingsBase<ConnectionSettings>

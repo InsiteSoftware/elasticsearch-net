@@ -5,7 +5,7 @@
 using System;
 using System.Text;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Core.Client;
 using Tests.Domain;
 using Tests.Framework;

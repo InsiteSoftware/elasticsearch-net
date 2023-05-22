@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("indices.put_template.json")]
 	public partial interface IPutIndexTemplateRequest : ITemplateMapping { }

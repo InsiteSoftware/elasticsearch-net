@@ -13,7 +13,7 @@ open System.Linq
 open System.Linq.Expressions
 open System.Threading.Tasks
 open Tests.YamlRunner.Models
-open Elasticsearch.Net
+open Elasticsearch.Net7
 
 type ApiInvoke = delegate of Object * Object[] -> Task<DynamicResponse>
 

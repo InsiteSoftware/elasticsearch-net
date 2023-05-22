@@ -4,9 +4,9 @@
 
 using System;
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Updates a datafeed for a machine learning job.
@@ -151,7 +151,7 @@ namespace Nest
 		public UpdateDatafeedDescriptor<TDocument> Indices<TOther>() => Assign(typeof(TOther), (a, v) => a.Indices = v);
 
 		///<summary>A shortcut into calling Indices(Indices.All)</summary>
-		public UpdateDatafeedDescriptor<TDocument> AllIndices() => Indices(Nest.Indices.All);
+		public UpdateDatafeedDescriptor<TDocument> AllIndices() => Indices(Nest7.Indices.All);
 
 		/// <inheritdoc />
 		[Obsolete("As of 7.4.0 the ability to associate a feed with a different job is being deprecated as it adds unnecessary complexity")]

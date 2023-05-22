@@ -1,7 +1,7 @@
 ﻿using System.Runtime.Serialization;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
-namespace Nest
+namespace Nest7
 {
 	[StringEnum]
 	public enum DiversifiedSamplerAggregationExecutionHint

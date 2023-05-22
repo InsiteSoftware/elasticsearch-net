@@ -4,9 +4,9 @@
 
 using System;
 using System.Collections.Generic;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Framework.EndpointTests;
@@ -40,7 +40,7 @@ namespace Tests.Indices.IndexManagement.SplitIndex
 
 		protected override SplitIndexRequest Initializer => new SplitIndexRequest(CallIsolatedValue, CallIsolatedValue + "-target")
 		{
-			Settings = new Nest.IndexSettings
+			Settings = new Nest7.IndexSettings
 			{
 				NumberOfShards = 8
 			}

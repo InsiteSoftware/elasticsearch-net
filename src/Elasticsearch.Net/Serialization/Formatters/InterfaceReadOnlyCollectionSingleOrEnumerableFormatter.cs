@@ -4,9 +4,9 @@
 
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	internal class InterfaceReadOnlyCollectionSingleOrEnumerableFormatter<T> : IJsonFormatter<IReadOnlyCollection<T>>
 	{

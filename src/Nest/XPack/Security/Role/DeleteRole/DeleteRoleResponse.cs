@@ -4,12 +4,12 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	public class DeleteRoleResponse : ResponseBase
 	{
 		[DataMember(Name ="found")]
 		public bool Found { get; internal set; }
-		
+
 	}
 }

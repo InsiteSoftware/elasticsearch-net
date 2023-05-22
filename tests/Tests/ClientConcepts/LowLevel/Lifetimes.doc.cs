@@ -8,9 +8,9 @@ using System.Collections.Specialized;
 using System.Net;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using System.Runtime.Serialization;
 using Tests.Framework;
 
@@ -32,7 +32,7 @@ namespace Tests.ClientConcepts.LowLevel
 		* In some applications ,it could make perfect sense to have multiple `ElasticClient` instances registered with different
 		* connection settings such as when your application connects to two different Elasticsearch clusters.
 		*
-		* IMPORTANT: Due to the semantic versioning of Elasticsearch.Net and NEST and their alignment to versions of Elasticsearch, all instances of `ElasticClient` and
+		* IMPORTANT: Due to the semantic versioning of Elasticsearch.Net7 and NEST and their alignment to versions of Elasticsearch, all instances of `ElasticClient` and
 		* Elasticsearch clusters that are connected to must be on the **same major version**
 		*
 		* Let's demonstrate which components are disposed by creating our own derived `ConnectionSettings`, `IConnectionPool` and `IConnection` types

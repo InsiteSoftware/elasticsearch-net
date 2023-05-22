@@ -10,7 +10,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
 
-namespace Nest
+namespace Nest7
 {
 	internal static class TypeExtensions
 	{

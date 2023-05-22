@@ -7,10 +7,10 @@ using System.IO;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using Newtonsoft.Json;
 
-namespace Nest.JsonNetSerializer
+namespace Nest7.JsonNetSerializer
 {
 	public abstract partial class ConnectionSettingsAwareSerializerBase : IElasticsearchSerializer
 	{

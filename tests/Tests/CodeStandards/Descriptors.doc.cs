@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Framework;
 using System.Reflection;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
@@ -28,7 +28,7 @@ namespace Tests.CodeStandards
 				from t in typeof(DescriptorBase<,>).Assembly.Types()
 				where t.IsClass
 					  && t.Name.Contains("Descriptor")
-					  && !t.Namespace.StartsWith("Nest.Json")
+					  && !t.Namespace.StartsWith("Nest7.Json")
 					  && !t.Namespace.StartsWith("Elastic.Internal")
 					  && !notDescriptors.Contains(t.Name)
 #if __MonoCS__
@@ -51,7 +51,7 @@ namespace Tests.CodeStandards
 				from t in typeof(SelectorBase).Assembly.Types()
 				where t.IsClass
 					  && t.Name.Contains("Selector")
-					  && !t.Namespace.StartsWith("Nest.Json")
+					  && !t.Namespace.StartsWith("Nest7.Json")
 					  && !notSelectors.Contains(t.Name)
 #if __MonoCS__
 					  && !t.FullName.Contains("c__AnonStore") //compiler generated

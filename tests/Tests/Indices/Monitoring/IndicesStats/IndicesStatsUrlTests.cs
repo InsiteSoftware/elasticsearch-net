@@ -4,11 +4,11 @@
 
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
-using Nest;
+using Elasticsearch.Net7;
+using Nest7;
 using Tests.Framework.EndpointTests;
 using static Tests.Framework.EndpointTests.UrlTester;
-using static Nest.Indices;
+using static Nest7.Indices;
 
 namespace Tests.Indices.Monitoring.IndicesStats
 {

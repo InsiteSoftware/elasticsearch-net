@@ -10,7 +10,7 @@ open Tests.YamlRunner.Models
 open Tests.YamlRunner.TestsReader
 open Tests.YamlRunner.OperationExecutor
 open Tests.YamlRunner.Stashes
-open Elasticsearch.Net
+open Elasticsearch.Net7
 open Skips
 
 type TestRunner(client:IElasticLowLevelClient, version: string, suite: TestSuite, progress:IProgressBar, barOptions:ProgressBarOptions) =

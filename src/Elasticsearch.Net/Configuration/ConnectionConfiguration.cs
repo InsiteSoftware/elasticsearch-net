@@ -18,9 +18,9 @@ using System.Reflection;
 using System.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
-using Elasticsearch.Net.Extensions;
+using Elasticsearch.Net7.Extensions;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
 	/// Allows you to control how <see cref="ElasticLowLevelClient"/> behaves and where/how it connects to Elasticsearch
@@ -88,7 +88,7 @@ namespace Elasticsearch.Net
 		public static readonly TimeSpan DefaultDnsRefreshTimeout = TimeSpan.FromMinutes(5);
 
 		/// <summary>
-		/// The default connection limit for both Elasticsearch.Net and Nest. Defaults to <c>80</c>
+		/// The default connection limit for both Elasticsearch.Net7 and Nest7. Defaults to <c>80</c>
 #if DOTNETCORE
 		/// <para>Except for <see cref="HttpClientHandler"/> implementations based on curl, which defaults to <see cref="Environment.ProcessorCount"/></para>
 #endif
@@ -96,7 +96,7 @@ namespace Elasticsearch.Net
 		public static readonly int DefaultConnectionLimit = UsingCurlHandler ? Environment.ProcessorCount : 80;
 
 		/// <summary>
-		/// The default user agent for Elasticsearch.Net
+		/// The default user agent for Elasticsearch.Net7
 		/// </summary>
 		public static readonly string DefaultUserAgent = $"elasticsearch-net/{typeof(IConnectionConfigurationValues).Assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>().InformationalVersion} ({RuntimeInformation.OSDescription}; {RuntimeInformation.FrameworkDescription}; Elasticsearch.Net)";
 
@@ -203,7 +203,7 @@ namespace Elasticsearch.Net
 		private IMemoryStreamFactory _memoryStreamFactory = RecyclableMemoryStreamFactory.Default;
 		private bool _enableTcpStats;
 		//public static IMemoryStreamFactory Default { get; } = RecyclableMemoryStreamFactory.Default;
-		public static IMemoryStreamFactory DefaultMemoryStreamFactory { get; } = Elasticsearch.Net.MemoryStreamFactory.Default;
+		public static IMemoryStreamFactory DefaultMemoryStreamFactory { get; } = Elasticsearch.Net7.MemoryStreamFactory.Default;
 		private bool _enableThreadPoolStats;
 
 		private string _userAgent = ConnectionConfiguration.DefaultUserAgent;

@@ -9,12 +9,12 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Diagnostics;
-using Elasticsearch.Net.Extensions;
-using Elasticsearch.Net.Specification.NodesApi;
-using static Elasticsearch.Net.AuditEvent;
+using Elasticsearch.Net7.Diagnostics;
+using Elasticsearch.Net7.Extensions;
+using Elasticsearch.Net7.Specification.NodesApi;
+using static Elasticsearch.Net7.AuditEvent;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public class RequestPipeline : IRequestPipeline
 	{

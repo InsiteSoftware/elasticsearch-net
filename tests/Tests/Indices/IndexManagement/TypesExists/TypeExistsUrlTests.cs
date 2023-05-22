@@ -4,7 +4,7 @@
 
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 
@@ -14,7 +14,7 @@ namespace Tests.Indices.IndexManagement.TypesExists
 	{
 		[U] public async Task Urls()
 		{
-			var indices = Nest.Indices.Index<Project>().And<Developer>();
+			var indices = Nest7.Indices.Index<Project>().And<Developer>();
 			var index = "project%2Cdevs";
 			var types = "_doc";
 			var type = "_doc";

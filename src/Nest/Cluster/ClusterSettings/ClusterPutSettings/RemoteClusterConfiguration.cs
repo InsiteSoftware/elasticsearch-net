@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Simplifies the creation of remote cluster configuration, can be combined with a dictionary using the overloaded + operator

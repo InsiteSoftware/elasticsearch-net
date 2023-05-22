@@ -14,7 +14,7 @@ of making a request, as well as be configured to provide the raw request and res
 [[logging]]
 == Logging
 
-Whilst developing with Elasticsearch using NEST, it can be extremely valuable to see the requests that
+Whilst developing with Elasticsearch using Nest7, it can be extremely valuable to see the requests that
 NEST generates and sends to Elasticsearch, as well as the responses returned.
 
 There are a couple of popular ways of capturing this information

@@ -5,7 +5,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	// Introduced for BWC for body introduced in https://github.com/elastic/elasticsearch/pull/57276
 	public partial interface IElasticLowLevelClient

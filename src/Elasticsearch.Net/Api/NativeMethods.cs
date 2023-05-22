@@ -5,7 +5,7 @@
 
 using System.Runtime.InteropServices;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	internal static class NativeMethods
 	{

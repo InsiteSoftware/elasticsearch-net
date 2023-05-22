@@ -33,7 +33,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Threading;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
 	/// MemoryStream implementation that deals with pooling and managing memory streams which use potentially large

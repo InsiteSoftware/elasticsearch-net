@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Normalizes as defined here: http://userguide.icu-project.org/transforms/normalization

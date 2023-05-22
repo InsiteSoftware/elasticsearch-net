@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Nest
+namespace Nest7
 {
 	public class ScrollAllObserver<T> : CoordinatedRequestObserverBase<IScrollAllResponse<T>> where T : class
 	{

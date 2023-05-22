@@ -3,11 +3,11 @@
 // See the LICENSE file in the project root for more information
 
 using System.IO;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace Nest.JsonNetSerializer
+namespace Nest7.JsonNetSerializer
 {
 	internal static class JTokenExtensions
 	{

@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Nest
+namespace Nest7
 {
 	/// <inheritdoc cref="ICoreProperty" />
 	public abstract class CorePropertyDescriptorBase<TDescriptor, TInterface, T>

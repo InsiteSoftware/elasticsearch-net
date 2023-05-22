@@ -3,8 +3,8 @@
 // See the LICENSE file in the project root for more information
 
 using System;
-using Elasticsearch.Net;
-using Nest;
+using Elasticsearch.Net7;
+using Nest7;
 using Tests.Domain;
 
 namespace Tests.ClientConcepts.Connection
@@ -14,7 +14,7 @@ namespace Tests.ClientConcepts.Connection
 		/**[[configuration-options]]
 		 * === Configuration options
 		 *
-		 * Connecting to Elasticsearch with <<elasticsearch-net-getting-started,Elasticsearch.Net>> and <<nest-getting-started,NEST>> is easy, but
+		 * Connecting to Elasticsearch with <<elasticsearch-net-getting-started,Elasticsearch.Net7>> and <<nest-getting-started,NEST>> is easy, but
 		 * it's entirely possible that you'd like to change the default connection behaviour. There are a number of configuration options available
 		 * on `ConnectionConfiguration` for the low level client and `ConnectionSettings` for the high level client that can be used to control
 		 * how the clients interact with Elasticsearch.
@@ -25,7 +25,7 @@ namespace Tests.ClientConcepts.Connection
 		 * `ConnectionSettings` derives from `ConnectionConfiguration`, these options are available for both
 		 * the low level and high level client:
 		 *
-		 * :xml-docs: Elasticsearch.Net:ConnectionConfiguration`1
+		 * :xml-docs: Elasticsearch.Net7:ConnectionConfiguration`1
 		 *
 		 * ==== ConnectionConfiguration with ElasticLowLevelClient
 		 *

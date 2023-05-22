@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	public interface IUpdateResponse<out TDocument> : IResponse where TDocument : class
 	{
@@ -15,9 +15,9 @@ namespace Nest
 	public class UpdateResponse<TDocument> : WriteResponseBase, IUpdateResponse<TDocument>
 		where TDocument : class
 	{
-		public override bool IsValid => base.IsValid && 
+		public override bool IsValid => base.IsValid &&
 			(Result != Result.NotFound && Result != Result.Error);
-		
+
 		[DataMember(Name ="get")]
 		public IInlineGet<TDocument> Get { get; internal set; }
 

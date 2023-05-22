@@ -3,9 +3,9 @@
 // See the LICENSE file in the project root for more information
 
 using System;
-using Elasticsearch.Net.Specification.SqlApi;
+using Elasticsearch.Net7.Specification.SqlApi;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("sql.translate.json")]
 	[ReadAs(typeof(TranslateSqlRequest))]

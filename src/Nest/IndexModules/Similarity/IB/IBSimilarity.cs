@@ -5,7 +5,7 @@
 using System.Runtime.Serialization;
 // ReSharper disable InconsistentNaming
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Information based model similarity.

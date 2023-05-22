@@ -11,9 +11,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.Sdk;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Client;
 using Tests.Core.Client.Settings;
 using Tests.Core.ManagedElasticsearch.Clusters;
@@ -27,7 +27,7 @@ namespace Tests.ClientConcepts.Troubleshooting
 	/**
 	 * === Debug mode
 	 *
-	 * The <<debug-information, Debug information>> explains that every response from Elasticsearch.Net
+	 * The <<debug-information, Debug information>> explains that every response from Elasticsearch.Net7
 	 * and NEST contains a `DebugInformation` property, and properties on `ConnectionSettings` and
 	 * `RequestConfiguration` can control which additional information is included in debug information,
 	 * for all requests or on a per request basis, respectively.

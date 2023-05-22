@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A bucket for an <see cref="IpRangeAggregation"/>

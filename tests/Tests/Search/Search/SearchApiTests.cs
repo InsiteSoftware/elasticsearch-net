@@ -6,9 +6,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
@@ -576,14 +576,14 @@ namespace Tests.Search.Search
 		protected override int ExpectStatusCode => 200;
 
 		protected override Func<SearchDescriptor<Project>, ISearchRequest> Fluent => s => s
-			.Index(Nest.Indices.Index<Project>().And("cluster_two:project"))
+			.Index(Nest7.Indices.Index<Project>().And("cluster_two:project"))
 			.Query(q => q
 				.MatchAll()
 			);
 
 		protected override HttpMethod HttpMethod => HttpMethod.POST;
 
-		protected override SearchRequest<Project> Initializer => new SearchRequest<Project>(Nest.Indices.Index<Project>().And("cluster_two:project"))
+		protected override SearchRequest<Project> Initializer => new SearchRequest<Project>(Nest7.Indices.Index<Project>().And("cluster_two:project"))
 		{
 			Query = new MatchAllQuery()
 		};
@@ -610,7 +610,7 @@ namespace Tests.Search.Search
 		: ApiTestBase<ReadOnlyCluster, ISearchResponse<Project>, ISearchRequest, SearchDescriptor<Project>, SearchRequest<Project>>
 	{
 		public SearchWithPointInTimeApiTests(ReadOnlyCluster cluster, EndpointUsage usage) : base(cluster, usage) { }
-		
+
 		protected override object ExpectJson => new
 		{
 			size = 1,
@@ -624,7 +624,7 @@ namespace Tests.Search.Search
 				keep_alive = "1m"
 			}
 		};
-		
+
 		protected override Func<SearchDescriptor<Project>, ISearchRequest> Fluent => s => s
 			.Size(1)
 			.Query(q => q.MatchAll())
@@ -633,11 +633,11 @@ namespace Tests.Search.Search
 
 		protected override HttpMethod HttpMethod => HttpMethod.POST;
 
-		protected override SearchRequest<Project> Initializer => new SearchRequest<Project>(Nest.Indices.All)
+		protected override SearchRequest<Project> Initializer => new SearchRequest<Project>(Nest7.Indices.All)
 		{
 			Size = 1,
 			Query = new QueryContainer(new MatchAllQuery()),
-			PointInTime = new Nest.PointInTime("a-long-id", "1m")
+			PointInTime = new Nest7.PointInTime("a-long-id", "1m")
 		};
 
 		protected override string UrlPath => "/_search";

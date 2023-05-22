@@ -10,9 +10,9 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
-using Nest;
-using Nest.JsonNetSerializer;
+using Elasticsearch.Net7;
+using Nest7;
+using Nest7.JsonNetSerializer;
 using System.Runtime.Serialization;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
@@ -44,7 +44,7 @@ namespace Tests.ClientConcepts.HighLevel.Serialization
 	 * - Serializer uses Reflection.Emit. Utf8Json uses Reflection.Emit to generate efficient formatters for serializing types that it sees.
 	 * Reflection.Emit is not supported on all platforms, for example, UWP, Xamarin.iOS, and Xamarin.Android.
 	 *
-	 * - Elasticsearch.Net.DynamicResponse deserializes JSON arrays to List<object>. SimpleJson deserialized JSON arrays to object[],
+	 * - Elasticsearch.Net7.DynamicResponse deserializes JSON arrays to List<object>. SimpleJson deserialized JSON arrays to object[],
 	 * but Utf8Json deserializes them to List<object>. This change is preferred for allocation and performance reasons.
 	 *
 	 * - Utf8Json is much stricter when deserializing JSON object field names to C# POCO properties. With the internal Json.NET serializer

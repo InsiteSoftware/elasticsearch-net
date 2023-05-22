@@ -5,7 +5,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("sql.query.json")]
 	[ReadAs(typeof(QuerySqlRequest))]

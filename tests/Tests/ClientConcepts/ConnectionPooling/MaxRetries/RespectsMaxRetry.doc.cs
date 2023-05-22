@@ -5,11 +5,11 @@
 using System;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
-using Elasticsearch.Net.VirtualizedCluster;
-using Elasticsearch.Net.VirtualizedCluster.Audit;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.VirtualizedCluster;
+using Elasticsearch.Net7.VirtualizedCluster.Audit;
 using Tests.Framework;
-using static Elasticsearch.Net.AuditEvent;
+using static Elasticsearch.Net7.AuditEvent;
 
 namespace Tests.ClientConcepts.ConnectionPooling.MaxRetries
 {
@@ -27,7 +27,7 @@ namespace Tests.ClientConcepts.ConnectionPooling.MaxRetries
 		public async Task DefaultMaxIsNumberOfNodes()
 		{
 			/**
-			 * Retry behaviour can be demonstrated using NEST's Virtual cluster test framework. In the following
+			 * Retry behaviour can be demonstrated using Nest7's Virtual cluster test framework. In the following
 			 * example, a ten node cluster is defined that always fails on all client calls, except on port 9209
 			 */
 			var audit = new Auditor(() => VirtualClusterWith

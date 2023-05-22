@@ -5,9 +5,9 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Elasticsearch.Net.Diagnostics;
+using Elasticsearch.Net7.Diagnostics;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	internal class Auditable : IDisposable
 	{

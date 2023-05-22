@@ -7,7 +7,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	public interface IDescriptor { }
 

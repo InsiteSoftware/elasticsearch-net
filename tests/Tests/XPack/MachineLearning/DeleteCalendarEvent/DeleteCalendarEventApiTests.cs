@@ -5,8 +5,8 @@
 using System;
 using System.Linq;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
-using Nest;
+using Elasticsearch.Net7;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Framework.EndpointTests.TestState;
 

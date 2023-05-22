@@ -3,9 +3,9 @@
 // See the LICENSE file in the project root for more information
 
 using System;
-using Nest;
+using Nest7;
 
-namespace Tests.Core.Serialization 
+namespace Tests.Core.Serialization
 {
 	public class IntermediateChangedSettings
 	{

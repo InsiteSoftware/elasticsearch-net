@@ -3,8 +3,8 @@
 // See the LICENSE file in the project root for more information
 
 using System;
-using Elasticsearch.Net;
-using Nest;
+using Elasticsearch.Net7;
+using Nest7;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
@@ -35,7 +35,7 @@ namespace Tests.Search.Request
 				keep_alive = "1m"
 			}
 		};
-		
+
 		protected override Func<SearchDescriptor<Project>, ISearchRequest> Fluent => s => s
 			.PointInTime("a-point-in-time-id", p => p
 			.KeepAlive("1m"));
@@ -43,9 +43,9 @@ namespace Tests.Search.Request
 		protected override SearchRequest<Project> Initializer =>
 			new SearchRequest<Project>
 			{
-				PointInTime = new Nest.PointInTime("a-point-in-time-id", "1m")
+				PointInTime = new Nest7.PointInTime("a-point-in-time-id", "1m")
 			};
-		
+
 		protected override string UrlPath => "/_search";
 
 		protected override HttpMethod HttpMethod => HttpMethod.POST;

@@ -5,7 +5,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[ReadAs(typeof(Policy))]
 	public interface IPolicy

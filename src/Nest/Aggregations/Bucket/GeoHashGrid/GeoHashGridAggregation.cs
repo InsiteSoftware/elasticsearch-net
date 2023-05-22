@@ -5,9 +5,9 @@
 using System;
 using System.Linq.Expressions;
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A multi-bucket aggregation that works on geo_point fields and groups points into buckets that represent cells in a grid.

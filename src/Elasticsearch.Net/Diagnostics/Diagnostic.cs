@@ -5,7 +5,7 @@
 using System;
 using System.Diagnostics;
 
-namespace Elasticsearch.Net.Diagnostics 
+namespace Elasticsearch.Net7.Diagnostics
 {
 	/// <summary>
 	/// Internal subclass of <see cref="Activity"/> that implements <see cref="IDisposable"/> to
@@ -17,7 +17,7 @@ namespace Elasticsearch.Net.Diagnostics
 			: base(operationName, source, state) =>
 			EndState = state;
 	}
-	
+
 	internal class Diagnostic<TState, TStateEnd> : Activity
 	{
 		public static Diagnostic<TState, TStateEnd> Default { get; } = new();
@@ -40,12 +40,12 @@ namespace Elasticsearch.Net.Diagnostics
 			get => _endState;
 			internal set
 			{
-				//do not store state on default instance 
+				//do not store state on default instance
 				if (_default) return;
-				_endState =  value;	
+				_endState =  value;
 			}
 		}
-		
+
 		protected override void Dispose(bool disposing)
 		{
 			if (_disposed) return;

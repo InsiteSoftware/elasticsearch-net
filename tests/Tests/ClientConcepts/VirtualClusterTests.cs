@@ -6,10 +6,10 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
-using Elasticsearch.Net.VirtualizedCluster;
-using Elasticsearch.Net.VirtualizedCluster.Audit;
-using Elasticsearch.Net.VirtualizedCluster.Rules;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.VirtualizedCluster;
+using Elasticsearch.Net7.VirtualizedCluster.Audit;
+using Elasticsearch.Net7.VirtualizedCluster.Rules;
 using FluentAssertions;
 using Xunit;
 

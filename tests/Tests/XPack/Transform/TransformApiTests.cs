@@ -3,13 +3,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 using Tests.Framework.EndpointTests.TestState;
-using static Nest.Infer;
+using static Nest7.Infer;
 
 namespace Tests.XPack.Transform
 {
@@ -292,7 +292,7 @@ namespace Tests.XPack.Transform
 			transform.Destination.Should().NotBeNull();
 			transform.Destination.Index.Should().Be($"transform-{v}");
 
-			Nest.Indices indices = "project";
+			Nest7.Indices indices = "project";
 			transform.Source.Index.Should().Be(indices);
 			((IQueryContainer)transform.Source.Query).MatchAll.Should().NotBeNull();
 

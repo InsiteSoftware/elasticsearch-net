@@ -5,7 +5,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public partial interface IElasticLowLevelClient
 	{
@@ -34,6 +34,6 @@ namespace Elasticsearch.Net
 			IRequestParameters requestParameters = null
 		)
 			where TResponse : class, IElasticsearchResponse, new();
-		
+
 	}
 }

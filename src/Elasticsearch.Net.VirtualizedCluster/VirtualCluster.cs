@@ -6,10 +6,10 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using Elasticsearch.Net.VirtualizedCluster.Providers;
-using Elasticsearch.Net.VirtualizedCluster.Rules;
+using Elasticsearch.Net7.VirtualizedCluster.Providers;
+using Elasticsearch.Net7.VirtualizedCluster.Rules;
 
-namespace Elasticsearch.Net.VirtualizedCluster
+namespace Elasticsearch.Net7.VirtualizedCluster
 {
 	public class VirtualCluster
 	{

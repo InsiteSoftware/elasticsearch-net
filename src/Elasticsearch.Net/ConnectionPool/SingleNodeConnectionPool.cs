@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary> A connection pool to a single node or endpoint </summary>
 	public class SingleNodeConnectionPool : IConnectionPool

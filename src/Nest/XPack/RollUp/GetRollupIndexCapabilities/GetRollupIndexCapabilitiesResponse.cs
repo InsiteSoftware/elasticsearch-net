@@ -6,10 +6,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Runtime.Serialization;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[JsonFormatter(typeof(ResolvableDictionaryResponseFormatter<GetRollupIndexCapabilitiesResponse, IndexName, RollupIndexCapabilities>))]
 	public class GetRollupIndexCapabilitiesResponse : DictionaryResponseBase<IndexName, RollupIndexCapabilities>
@@ -48,7 +48,7 @@ namespace Nest
 		) : base(c, b) { }
 
 		public IReadOnlyCollection<RollupFieldsIndexCapabilities> Field<T>(Expression<Func<T, object>> selector) => this[selector];
-		
+
 		public IReadOnlyCollection<RollupFieldsIndexCapabilities> Field<T, TValue>(Expression<Func<T, TValue>> selector) => this[selector];
 
 		internal class Converter : ResolvableDictionaryFormatterBase

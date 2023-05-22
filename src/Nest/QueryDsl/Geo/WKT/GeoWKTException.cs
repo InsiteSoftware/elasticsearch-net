@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Nest
+namespace Nest7
 {
 	// TODO: Change to WKTException in 8.x
 	/// <summary>

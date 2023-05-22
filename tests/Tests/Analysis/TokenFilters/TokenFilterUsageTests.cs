@@ -3,7 +3,7 @@
 // See the LICENSE file in the project root for more information
 
 using System;
-using Nest;
+using Nest7;
 using Tests.IndexModules;
 
 namespace Tests.Analysis.TokenFilters
@@ -187,9 +187,9 @@ namespace Tests.Analysis.TokenFilters
 		public static IndexSettings InitializerExample =>
 			new IndexSettings
 			{
-				Analysis = new Nest.Analysis
+				Analysis = new Nest7.Analysis
 				{
-					TokenFilters = new Nest.TokenFilters
+					TokenFilters = new Nest7.TokenFilters
 					{
 						{ "myAscii", new AsciiFoldingTokenFilter { PreserveOriginal = true } },
 						{

@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("close_point_in_time.json")]
 	public partial interface IClosePointInTimeRequest

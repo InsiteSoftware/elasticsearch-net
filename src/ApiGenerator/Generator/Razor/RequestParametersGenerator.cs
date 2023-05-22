@@ -14,7 +14,7 @@ namespace ApiGenerator.Generator.Razor
 {
 	public class RequestParametersGenerator : RazorGeneratorBase
 	{
-		public override string Title { get; } = "Elasticsearch.Net request parameters";
+		public override string Title { get; } = "Elasticsearch.Net7 request parameters";
 
 		public override async Task Generate(RestApiSpec spec, ProgressBar progressBar, CancellationToken token)
 		{

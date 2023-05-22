@@ -2,13 +2,13 @@
 // Elasticsearch B.V licenses this file to you under the Apache 2.0 License.
 // See the LICENSE file in the project root for more information
 
-namespace Nest
+namespace Nest7
 {
 	/// <inheritdoc cref="IGeoShapeProperty" />
 	public class GeoShapeAttribute : ElasticsearchDocValuesPropertyAttributeBase, IGeoShapeProperty
 	{
 		public GeoShapeAttribute() : base(FieldType.GeoShape) { }
-		
+
 		bool? IGeoShapeProperty.IgnoreMalformed { get; set; }
 		bool? IGeoShapeProperty.IgnoreZValue { get; set; }
 		GeoOrientation? IGeoShapeProperty.Orientation { get; set; }

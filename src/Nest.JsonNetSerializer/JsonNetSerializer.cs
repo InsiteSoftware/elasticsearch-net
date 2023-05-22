@@ -4,10 +4,10 @@
 
 using System;
 using System.Collections.Generic;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using Newtonsoft.Json;
 
-namespace Nest.JsonNetSerializer
+namespace Nest7.JsonNetSerializer
 {
 	public class JsonNetSerializer : ConnectionSettingsAwareSerializerBase
 	{
