@@ -21,11 +21,11 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Specification.SnapshotLifecycleManagementApi;
+using Elasticsearch.Net7.Specification.SnapshotLifecycleManagementApi;
 
 // ReSharper disable once CheckNamespace
 // ReSharper disable RedundantTypeArgumentsOfMethod
-namespace Nest.Specification.SnapshotLifecycleManagementApi
+namespace Nest7.Specification.SnapshotLifecycleManagementApi
 {
 	///<summary>
 	/// Snapshot Lifecycle Management APIs.

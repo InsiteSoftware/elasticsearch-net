@@ -14,9 +14,9 @@ using System.Net.Security;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Diagnostics;
+using Elasticsearch.Net7.Diagnostics;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 #if DOTNETCORE
 	[Obsolete(

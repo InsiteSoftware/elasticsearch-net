@@ -21,7 +21,7 @@ module Paths =
     let InplaceBuildTestOutput project tfm = 
         sprintf "tests/%s/bin/Release/%s" project tfm
     let MagicDocumentationFile  = 
-        "src/Elasticsearch.Net/obj/Release/netstandard2.1/Elasticsearch.Net.csprojAssemblyReference.cache" 
+        "src/Elasticsearch.Net7/obj/Release/netstandard2.1/Elasticsearch.Net7.csprojAssemblyReference.cache" 
   
     let Tool tool = sprintf "packages/build/%s" tool
     let CheckedInToolsFolder = "build/tools"

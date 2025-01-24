@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Concurrent;
 
-namespace Nest
+namespace Nest7
 {
 	public class RelationNameResolver
 	{

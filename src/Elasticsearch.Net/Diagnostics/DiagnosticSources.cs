@@ -5,7 +5,7 @@
 using System;
 using System.Diagnostics;
 
-namespace Elasticsearch.Net.Diagnostics
+namespace Elasticsearch.Net7.Diagnostics
 {
 	public static class DiagnosticSources
 	{

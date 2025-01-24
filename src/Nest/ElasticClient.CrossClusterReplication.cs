@@ -21,11 +21,11 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Specification.CrossClusterReplicationApi;
+using Elasticsearch.Net7.Specification.CrossClusterReplicationApi;
 
 // ReSharper disable once CheckNamespace
 // ReSharper disable RedundantTypeArgumentsOfMethod
-namespace Nest.Specification.CrossClusterReplicationApi
+namespace Nest7.Specification.CrossClusterReplicationApi
 {
 	///<summary>
 	/// Cross Cluster Replication APIs.

@@ -6,7 +6,7 @@ using System;
 using System.Linq.Expressions;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A date_histogram group aggregates a date field into time-based buckets. The date_histogram group is mandatory ,

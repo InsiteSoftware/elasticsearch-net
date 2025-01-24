@@ -8,9 +8,9 @@ using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Client.Settings;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
@@ -66,7 +66,7 @@ namespace Tests.Document.Multiple.MultiGet
 
 		[I] public void ReturnsDocsMatchingDistinctIdsFromDifferentIndices()
 		{
-			var developerIndex = Nest.Indices.Index<Developer>();
+			var developerIndex = Nest7.Indices.Index<Developer>();
 			var indexName = developerIndex.GetString(_client.ConnectionSettings);
 			var reindexName = $"{indexName}-getmany-distinctids";
 
@@ -112,7 +112,7 @@ namespace Tests.Document.Multiple.MultiGet
 
 		[I] public void ReturnsDocsMatchingDistinctIdsFromDifferentIndicesWithRequestLevelIndex()
 		{
-			var developerIndex = Nest.Indices.Index<Developer>();
+			var developerIndex = Nest7.Indices.Index<Developer>();
 			var indexName = developerIndex.GetString(_client.ConnectionSettings);
 			var reindexName = $"{indexName}-getmany-distinctidsindex";
 

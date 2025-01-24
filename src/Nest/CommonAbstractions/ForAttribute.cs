@@ -3,9 +3,9 @@
 // See the LICENSE file in the project root for more information
 
 using System;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Makes it explicit which API this request interface maps, the name of the interface informs

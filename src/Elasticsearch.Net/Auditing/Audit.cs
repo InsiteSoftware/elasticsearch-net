@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
 	/// An audit of the request made

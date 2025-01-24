@@ -9,10 +9,10 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Runtime.Serialization;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
-using Nest.JsonNetSerializer;
+using Nest7;
+using Nest7.JsonNetSerializer;
 using Newtonsoft.Json;
 using Tests.Core.Client;
 using Tests.Core.Client.Settings;
@@ -20,8 +20,8 @@ using Tests.Core.Xunit;
 using Tests.Domain;
 using Tests.Framework;
 using static Tests.Core.Serialization.SerializationTestHelper;
-using static Nest.Infer;
-using Field = Nest.Field;
+using static Nest7.Infer;
+using Field = Nest7.Field;
 // ReSharper disable ArrangeMethodOrOperatorBody
 
 namespace Tests.ClientConcepts.HighLevel.Inference
@@ -129,13 +129,13 @@ namespace Tests.ClientConcepts.HighLevel.Inference
 
 		/**
 		* [[nest-infer]]
-		* ==== Using Nest.Infer methods
+		* ==== Using Nest7.Infer methods
 		* To ease creating a `Field` instance from expressions, there is a static `Infer` class you can use
 		*
 		* [TIP]
 		* ====
-		* This example uses the https://msdn.microsoft.com/en-us/library/sf0df423.aspx#Anchor_0[static import] `using static Nest.Infer;`
-		 * in the using directives to shorthand `Nest.Infer.Field<T>()`
+		* This example uses the https://msdn.microsoft.com/en-us/library/sf0df423.aspx#Anchor_0[static import] `using static Nest7.Infer;`
+		 * in the using directives to shorthand `Nest7.Infer.Field<T>()`
 		* to simply `Field<T>()`. Be sure to include this static import if copying any of these examples.
 		* ====
 		*
@@ -157,7 +157,7 @@ namespace Tests.ClientConcepts.HighLevel.Inference
 				.WhenSerializing(fieldString)
 				.WhenSerializing(fieldExpression);
 
-			/** You can specify boosts in the field using a string, as well as using `Nest.Infer.Field` */
+			/** You can specify boosts in the field using a string, as well as using `Nest7.Infer.Field` */
 			fieldString = "name^2.1";
 			fieldString.Boost.Should().Be(2.1);
 
@@ -350,7 +350,7 @@ namespace Tests.ClientConcepts.HighLevel.Inference
 		* ==== Serializer specific attributes
 		*
 		* NEST can also use a serializer specific attribute to resolve a field value for a property.
-		* In this example, the {nuget}/NEST.JsonNetSerializer[`JsonNetSerializer`] is hooked up as the
+		* In this example, the {nuget}/Nest7.JsonNetSerializer[`JsonNetSerializer`] is hooked up as the
 		* <<custom-serialization, custom serializer>> for the client and we use the `JsonPropertyAttribute` to resolve a field
 		*/
 		public class SerializerSpecific
@@ -449,7 +449,7 @@ namespace Tests.ClientConcepts.HighLevel.Inference
 		*
 		* . A naming of the property on `ConnectionSettings` using `.PropertyName()`
 		* . A NEST `PropertyNameAttribute`
-		* . Ask the serializer if the property has a verbatim value, e.g. it has a `JsonPropertyAttribute` if using {nuget}/NEST.JsonNetSerializer[`JsonNetSerializer`]
+		* . Ask the serializer if the property has a verbatim value, e.g. it has a `JsonPropertyAttribute` if using {nuget}/Nest7.JsonNetSerializer[`JsonNetSerializer`]
 		* . See if the `MemberInfo` has a `DataMemberAttribute` applied
 		* . Pass the `MemberInfo` to the `DefaultFieldNameInferrer`, which by default will camel case the `Name` property
 		*

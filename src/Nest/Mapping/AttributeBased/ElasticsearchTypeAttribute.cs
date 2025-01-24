@@ -6,7 +6,7 @@ using System;
 using System.Collections.Concurrent;
 using System.Linq;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Applied to a CLR type to override the name of a CLR type and the property from which an _id is inferred

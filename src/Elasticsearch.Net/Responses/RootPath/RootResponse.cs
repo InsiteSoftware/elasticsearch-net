@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
 	/// Represents the response from a call to the root path of an Elasticsearch server.

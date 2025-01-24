@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Nest;
+using Nest7;
 using Tests.Domain;
 
 namespace Tests.Core.ManagedElasticsearch.Clusters

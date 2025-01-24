@@ -6,11 +6,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 using Tests.Framework.EndpointTests.TestState;
-using static Nest.Infer;
+using static Nest7.Infer;
 
 namespace Tests.XPack.Enrich
 {
@@ -113,7 +113,7 @@ namespace Tests.XPack.Enrich
 
 			policyConfig.Match.Should().NotBeNull();
 			policyConfig.Match.Name.Should().Be(v);
-			policyConfig.Match.Indices.Should().Be((Nest.Indices)"project");
+			policyConfig.Match.Indices.Should().Be((Nest7.Indices)"project");
 			policyConfig.Match.MatchField.Should().Be("name");
 			policyConfig.Match.EnrichFields.Should().HaveCount(2).And.Contain(new Field[] { "description", "tags" });
 

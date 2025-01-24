@@ -4,7 +4,7 @@
 
 using System;
 using System.Collections.Generic;
-using Nest;
+using Nest7;
 
 namespace Tests.IndexModules.Similarity
 {

@@ -29,7 +29,7 @@
 using System;
 using System.Globalization;
 
-namespace Elasticsearch.Net.Utf8Json.Internal.DoubleConversion
+namespace Elasticsearch.Net7.Utf8Json.Internal.DoubleConversion
 {
 	internal struct InternalStringBuilder
     {

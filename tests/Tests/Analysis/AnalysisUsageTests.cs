@@ -8,7 +8,7 @@ using System.Linq;
 using System.Reflection;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Analysis.Analyzers;
 using Tests.Analysis.CharFilters;
 using Tests.Analysis.Normalizers;
@@ -40,41 +40,41 @@ namespace Tests.Analysis
 			Fluent<AnalyzersDescriptor, IAnalyzerAssertion, IAnalyzers>(i => i.Fluent, (a, v) => a.Analyzers = v.Value);
 
 		public static IndexSettings AnalyzersInitializer =>
-			Init<Nest.Analyzers, IAnalyzerAssertion, IAnalyzer>(i => i.Initializer, (a, v) => a.Analyzers = v);
+			Init<Nest7.Analyzers, IAnalyzerAssertion, IAnalyzer>(i => i.Initializer, (a, v) => a.Analyzers = v);
 
 		public static IndexSettings CharFiltersFluent =>
 			Fluent<CharFiltersDescriptor, ICharFilterAssertion, ICharFilters>(i => i.Fluent, (a, v) => a.CharFilters = v.Value);
 
 		public static IndexSettings CharFiltersInitializer =>
-			Init<Nest.CharFilters, ICharFilterAssertion, ICharFilter>(i => i.Initializer, (a, v) => a.CharFilters = v);
+			Init<Nest7.CharFilters, ICharFilterAssertion, ICharFilter>(i => i.Initializer, (a, v) => a.CharFilters = v);
 
 		public static IndexSettings NormalizersFluent =>
 			Fluent<NormalizersDescriptor, INormalizerAssertion, INormalizers>(i => i.Fluent, (a, v) => a.Normalizers = v.Value);
 
 		public static IndexSettings NormalizersInitializer =>
-			Init<Nest.Normalizers, INormalizerAssertion, INormalizer>(i => i.Initializer, (a, v) => a.Normalizers = v);
+			Init<Nest7.Normalizers, INormalizerAssertion, INormalizer>(i => i.Initializer, (a, v) => a.Normalizers = v);
 
 		public static IndexSettings TokenFiltersFluent =>
 			Fluent<TokenFiltersDescriptor, ITokenFilterAssertion, ITokenFilters>(i => i.Fluent, (a, v) => a.TokenFilters = v.Value);
 
 		public static IndexSettings TokenFiltersInitializer =>
-			Init<Nest.TokenFilters, ITokenFilterAssertion, ITokenFilter>(i => i.Initializer, (a, v) => a.TokenFilters = v);
+			Init<Nest7.TokenFilters, ITokenFilterAssertion, ITokenFilter>(i => i.Initializer, (a, v) => a.TokenFilters = v);
 
 		public static IndexSettings TokenizersFluent =>
 			Fluent<TokenizersDescriptor, ITokenizerAssertion, ITokenizers>(i => i.Fluent, (a, v) => a.Tokenizers = v.Value);
 
 		public static IndexSettings TokenizersInitializer =>
-			Init<Nest.Tokenizers, ITokenizerAssertion, ITokenizer>(i => i.Initializer, (a, v) => a.Tokenizers = v);
+			Init<Nest7.Tokenizers, ITokenizerAssertion, ITokenizer>(i => i.Initializer, (a, v) => a.Tokenizers = v);
 
 		private static IndexSettings Fluent<TContainer, TAssertion, TValue>(Func<TAssertion, Func<string, TContainer, IPromise<TValue>>> fluent,
-			Action<Nest.Analysis, IPromise<TValue>> set
+			Action<Nest7.Analysis, IPromise<TValue>> set
 		)
 			where TAssertion : IAnalysisAssertion
 			where TContainer : IPromise<TValue>, new()
 			where TValue : class => Wrap(an => set(an, Apply<TContainer, TAssertion>((t, a) => fluent(a)(a.Name, t))));
 
 		private static IndexSettings Init<TContainer, TAssertion, TInitializer>(Func<TAssertion, TInitializer> value,
-			Action<Nest.Analysis, TContainer> set
+			Action<Nest7.Analysis, TContainer> set
 		)
 			where TAssertion : IAnalysisAssertion
 			where TContainer : IDictionary<string, TInitializer>, new() =>
@@ -89,9 +89,9 @@ namespace Tests.Analysis
 				return t;
 			}, t => t);
 
-		private static IndexSettings Wrap(Action<Nest.Analysis> set)
+		private static IndexSettings Wrap(Action<Nest7.Analysis> set)
 		{
-			var a = new Nest.Analysis();
+			var a = new Nest7.Analysis();
 			var s = new IndexSettings { Analysis = a };
 			set(a);
 			return s;

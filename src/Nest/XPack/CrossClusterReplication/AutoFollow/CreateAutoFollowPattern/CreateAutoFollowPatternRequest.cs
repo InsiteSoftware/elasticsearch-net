@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Creates a new named collection of auto-follow patterns against the remote cluster specified

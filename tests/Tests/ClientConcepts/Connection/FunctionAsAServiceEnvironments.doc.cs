@@ -30,7 +30,7 @@ namespace Tests.ClientConcepts.Connection
 		 * ----
 		 * using System;
 		 * using System.Threading.Tasks;
-		 * using Elasticsearch.Net;
+		 * using Elasticsearch.Net7;
 		 * using ElasticsearchExampleAzure;
 		 * using Microsoft.AspNetCore.Http;
 		 * using Microsoft.AspNetCore.Mvc;
@@ -39,7 +39,7 @@ namespace Tests.ClientConcepts.Connection
 		 * using Microsoft.Azure.WebJobs.Extensions.Http;
 		 * using Microsoft.Extensions.DependencyInjection;
 		 * using Microsoft.Extensions.Logging;
-		 * using Nest;
+		 * using Nest7;
 
 		 * [assembly: FunctionsStartup(typeof(Startup))]
 
@@ -92,10 +92,10 @@ namespace Tests.ClientConcepts.Connection
 		 *
 		 * [source,csharp]
 		 * ----
-		 * using Elasticsearch.Net;
+		 * using Elasticsearch.Net7;
 		 * using Google.Cloud.Functions.Framework;
 		 * using Microsoft.AspNetCore.Http;
-		 * using Nest;
+		 * using Nest7;
 		 * using System;
 		 * using System.Threading.Tasks;
 		 * 
@@ -136,8 +136,8 @@ namespace Tests.ClientConcepts.Connection
 		 * using System;
 		 * using Amazon.Lambda.Core;
 		 * using Amazon.Lambda.Serialization.SystemTextJson;
-		 * using Elasticsearch.Net;
-		 * using Nest;
+		 * using Elasticsearch.Net7;
+		 * using Nest7;
 		 * 
 		 * // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 		 * [assembly: LambdaSerializer(typeof(DefaultLambdaJsonSerializer))]

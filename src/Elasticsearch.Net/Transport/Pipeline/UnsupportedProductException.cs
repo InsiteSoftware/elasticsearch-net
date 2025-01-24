@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
 	/// Thrown when the client pre-flight check determines that the server is not a supported Elasticsearch product.

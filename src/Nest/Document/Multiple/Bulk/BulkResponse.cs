@@ -6,9 +6,9 @@
 using System.Linq;
 using System.Text;
 using System.Runtime.Serialization;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
-namespace Nest
+namespace Nest7
 {
 	[DataContract]
 	public class BulkResponse : ResponseBase

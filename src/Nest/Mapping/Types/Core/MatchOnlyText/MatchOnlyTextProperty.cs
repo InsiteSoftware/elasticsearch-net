@@ -3,9 +3,9 @@
 // See the LICENSE file in the project root for more information
 
 using System.Diagnostics;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A variant of text that trades scoring and efficiency of positional queries for space efficiency. 

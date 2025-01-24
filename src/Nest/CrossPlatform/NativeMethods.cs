@@ -9,7 +9,7 @@
 
 using System.Runtime.InteropServices;
 
-namespace Nest
+namespace Nest7
 {
 	internal static class NativeMethods
 	{

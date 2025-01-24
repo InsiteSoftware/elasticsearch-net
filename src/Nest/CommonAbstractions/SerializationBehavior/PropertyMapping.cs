@@ -6,7 +6,7 @@ using System.Collections.Concurrent;
 using System.Reflection;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>Determines how a POCO property maps to the property on a JSON object when serialized</summary>
 	public interface IPropertyMapping

@@ -5,12 +5,12 @@
 using System;
 using System.Collections.Generic;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 
 namespace Tests.IndexModules.IndexSettings.Settings
 {
 	[SkipVersion("<=5.2.0", "setting introduced in 5.3.0")]
-	public class RoutingPartitionSizeIndexSettingsUsage : PromiseUsageTestBase<IIndexSettings, IndexSettingsDescriptor, Nest.IndexSettings>
+	public class RoutingPartitionSizeIndexSettingsUsage : PromiseUsageTestBase<IIndexSettings, IndexSettingsDescriptor, Nest7.IndexSettings>
 	{
 		protected override object ExpectJson => new Dictionary<string, object>
 		{
@@ -25,8 +25,8 @@ namespace Tests.IndexModules.IndexSettings.Settings
 
 		/**
 		 */
-		protected override Nest.IndexSettings Initializer =>
-			new Nest.IndexSettings
+		protected override Nest7.IndexSettings Initializer =>
+			new Nest7.IndexSettings
 			{
 				RoutingPartitionSize = 6,
 			};

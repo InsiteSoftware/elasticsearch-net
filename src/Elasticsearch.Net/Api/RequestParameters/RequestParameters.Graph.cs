@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.GraphApi
+namespace Elasticsearch.Net7.Specification.GraphApi
 {
 	///<summary>Request options for Explore <para>https://www.elastic.co/guide/en/elasticsearch/reference/current/graph-explore-api.html</para></summary>
 	public class GraphExploreRequestParameters : RequestParameters<GraphExploreRequestParameters>

@@ -21,11 +21,11 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Specification.MigrationApi;
+using Elasticsearch.Net7.Specification.MigrationApi;
 
 // ReSharper disable once CheckNamespace
 // ReSharper disable RedundantTypeArgumentsOfMethod
-namespace Nest.Specification.MigrationApi
+namespace Nest7.Specification.MigrationApi
 {
 	///<summary>
 	/// Migration APIs.

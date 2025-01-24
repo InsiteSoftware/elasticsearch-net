@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 using System.Collections.Specialized;
-using Elasticsearch.Net.Extensions;
+using Elasticsearch.Net7.Extensions;
 using FluentAssertions;
 using Xunit;
 

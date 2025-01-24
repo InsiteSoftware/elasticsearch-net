@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.IndexLifecycleManagementApi
+namespace Elasticsearch.Net7.Specification.IndexLifecycleManagementApi
 {
 	///<summary>Request options for DeleteLifecycle <para>https://www.elastic.co/guide/en/elasticsearch/reference/current/ilm-delete-lifecycle.html</para></summary>
 	public class DeleteLifecycleRequestParameters : RequestParameters<DeleteLifecycleRequestParameters>

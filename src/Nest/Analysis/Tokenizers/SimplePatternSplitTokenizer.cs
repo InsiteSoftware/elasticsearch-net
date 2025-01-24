@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The simple_pattern tokenizer uses a regular expression to capture matching text as terms.

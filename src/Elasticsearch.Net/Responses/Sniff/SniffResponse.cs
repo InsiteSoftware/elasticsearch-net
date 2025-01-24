@@ -7,9 +7,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Elasticsearch.Net.Extensions;
+using Elasticsearch.Net7.Extensions;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public static class SniffParser
 	{

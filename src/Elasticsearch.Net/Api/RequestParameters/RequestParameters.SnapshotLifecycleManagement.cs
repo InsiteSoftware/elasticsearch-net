@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.SnapshotLifecycleManagementApi
+namespace Elasticsearch.Net7.Specification.SnapshotLifecycleManagementApi
 {
 	///<summary>Request options for DeleteSnapshotLifecycle <para>https://www.elastic.co/guide/en/elasticsearch/reference/current/slm-api-delete-policy.html</para></summary>
 	public class DeleteSnapshotLifecycleRequestParameters : RequestParameters<DeleteSnapshotLifecycleRequestParameters>

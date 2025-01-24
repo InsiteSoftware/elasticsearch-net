@@ -6,7 +6,7 @@ using System;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Nest
+namespace Nest7
 {
 	public static class ExpressionExtensions
 	{
@@ -52,7 +52,7 @@ namespace Nest
 					// type Doc = { Message: string; State: string }
 					// let field (f:Expr<'a -> 'b>) =
 					//     Microsoft.FSharp.Linq.RuntimeHelpers.LeafExpressionConverter.QuotationToExpression f
-					//     |> Nest.Field.op_Implicit
+					//     |> Nest7.Field.op_Implicit
 					//
 					// let fieldExpression = field <@ fun (d: Doc) -> d.Message @>
 					//

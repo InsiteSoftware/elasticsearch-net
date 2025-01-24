@@ -2,7 +2,7 @@
 // Elasticsearch B.V licenses this file to you under the Apache 2.0 License.
 // See the LICENSE file in the project root for more information
 
-using Nest;
+using Nest7;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
 using Tests.Framework.EndpointTests.TestState;
@@ -11,7 +11,7 @@ namespace Tests.QueryDsl.NestSpecific.Raw
 {
 	/**
 	 * Allows a query represented as a string of JSON to be passed to NEST's Fluent API or Object Initializer syntax.
-	 * This can be useful when porting over a query expressed in the query DSL over to NEST.
+	 * This can be useful when porting over a query expressed in the query DSL over to Nest7.
 	 */
 	public class RawUsageTests : QueryDslUsageTestsBase
 	{

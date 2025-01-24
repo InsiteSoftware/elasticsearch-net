@@ -3,10 +3,10 @@
 // See the LICENSE file in the project root for more information
 
 using FluentAssertions;
-using Nest;
+using Nest7;
 using System;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using Tests.Core.Client;
 using Tests.Core.Client.Settings;
 using Tests.Domain;
@@ -14,7 +14,7 @@ using Tests.Framework;
 using Tests.Framework.DocumentationTests;
 using Xunit;
 using static Tests.Core.Serialization.SerializationTestHelper;
-using static Nest.Infer;
+using static Nest7.Infer;
 
 namespace Tests.ClientConcepts.HighLevel.Inference
 {
@@ -29,7 +29,7 @@ namespace Tests.ClientConcepts.HighLevel.Inference
 	public class IndexNameInference : DocumentationTestBase
 	{
 		//hide
-		private class ConnectionSettings : Nest.ConnectionSettings
+		private class ConnectionSettings : Nest7.ConnectionSettings
 		{
 			public ConnectionSettings() : base(new InMemoryConnection())
 			{
@@ -265,8 +265,8 @@ namespace Tests.ClientConcepts.HighLevel.Inference
 			Index<Project>().Should().NotBe(Index<Developer>());
 			Index<Project>("cluster_one").Should().NotBe(Index<Developer>("cluster_one"));
 
-			Nest.Indices indices1 = "foo,bar";
-			Nest.Indices indices2 = "bar,foo";
+			Nest7.Indices indices1 = "foo,bar";
+			Nest7.Indices indices2 = "bar,foo";
 			indices1.Should().Be(indices2);
 			(indices1 == indices2).Should().BeTrue();
 		}

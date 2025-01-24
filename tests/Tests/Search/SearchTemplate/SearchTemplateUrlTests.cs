@@ -4,7 +4,7 @@
 
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 
@@ -37,9 +37,9 @@ namespace Tests.Search.SearchTemplate
 				;
 			await UrlTester.POST("/_all/_search/template")
 					.Fluent(c => c.SearchTemplate<Project>(s => s.AllIndices()))
-					.Request(c => c.SearchTemplate<Project>(new SearchTemplateRequest<Project>(Nest.Indices.All)))
+					.Request(c => c.SearchTemplate<Project>(new SearchTemplateRequest<Project>(Nest7.Indices.All)))
 					.FluentAsync(c => c.SearchTemplateAsync<Project>(s => s.AllIndices()))
-					.RequestAsync(c => c.SearchTemplateAsync<Project>(new SearchTemplateRequest<Project>(Nest.Indices.All)))
+					.RequestAsync(c => c.SearchTemplateAsync<Project>(new SearchTemplateRequest<Project>(Nest7.Indices.All)))
 				;
 		}
 	}

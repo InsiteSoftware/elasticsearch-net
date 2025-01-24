@@ -5,7 +5,7 @@
  using System;
  using System.Threading;
 
-namespace Elasticsearch.Net.VirtualizedCluster.Rules
+namespace Elasticsearch.Net7.VirtualizedCluster.Rules
 {
 	public interface IRule
 	{

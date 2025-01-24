@@ -5,10 +5,10 @@
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Specification.ClusterApi;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Specification.ClusterApi;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("cluster.delete_voting_config_exclusions")]
 	public partial interface IDeleteVotingConfigExclusionsRequest { }

@@ -4,11 +4,11 @@
 
 using System;
 using System.Reflection;
-using Elasticsearch.Net.Utf8Json;
-using Elasticsearch.Net.Utf8Json.Formatters;
-using Elasticsearch.Net.Utf8Json.Internal;
+using Elasticsearch.Net7.Utf8Json;
+using Elasticsearch.Net7.Utf8Json.Formatters;
+using Elasticsearch.Net7.Utf8Json.Internal;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	internal sealed class ElasticsearchNetEnumResolver : IJsonFormatterResolver
 	{

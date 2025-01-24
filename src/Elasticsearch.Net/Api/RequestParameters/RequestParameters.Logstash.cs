@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.LogstashApi
+namespace Elasticsearch.Net7.Specification.LogstashApi
 {
 	///<summary>Request options for DeletePipeline <para>https://www.elastic.co/guide/en/elasticsearch/reference/current/logstash-api-delete-pipeline.html</para></summary>
 	public class DeletePipelineRequestParameters : RequestParameters<DeletePipelineRequestParameters>

@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.SnapshotApi
+namespace Elasticsearch.Net7.Specification.SnapshotApi
 {
 	///<summary>Request options for CleanupRepository <para>https://www.elastic.co/guide/en/elasticsearch/reference/master/clean-up-snapshot-repo-api.html</para></summary>
 	public class CleanupRepositoryRequestParameters : RequestParameters<CleanupRepositoryRequestParameters>

@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.TasksApi
+namespace Elasticsearch.Net7.Specification.TasksApi
 {
 	///<summary>Request options for Cancel <para>https://www.elastic.co/guide/en/elasticsearch/reference/master/tasks.html</para></summary>
 	public class CancelTasksRequestParameters : RequestParameters<CancelTasksRequestParameters>

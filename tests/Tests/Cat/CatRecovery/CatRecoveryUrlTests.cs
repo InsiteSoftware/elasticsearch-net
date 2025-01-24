@@ -4,7 +4,7 @@
 
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 using static Tests.Framework.EndpointTests.UrlTester;
@@ -24,9 +24,9 @@ namespace Tests.Cat.CatRecovery
 
 			await GET("/_cat/recovery/project")
 				.Fluent(c => c.Cat.Recovery(r => r.Index<Project>()))
-				.Request(c => c.Cat.Recovery(new CatRecoveryRequest(Nest.Indices.Index<Project>())))
+				.Request(c => c.Cat.Recovery(new CatRecoveryRequest(Nest7.Indices.Index<Project>())))
 				.FluentAsync(c => c.Cat.RecoveryAsync(r => r.Index<Project>()))
-				.RequestAsync(c => c.Cat.RecoveryAsync(new CatRecoveryRequest(Nest.Indices.Index<Project>())));
+				.RequestAsync(c => c.Cat.RecoveryAsync(new CatRecoveryRequest(Nest7.Indices.Index<Project>())));
 		}
 	}
 }

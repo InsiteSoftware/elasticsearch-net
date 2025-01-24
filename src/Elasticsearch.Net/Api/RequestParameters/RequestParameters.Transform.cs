@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.TransformApi
+namespace Elasticsearch.Net7.Specification.TransformApi
 {
 	///<summary>Request options for Delete <para>https://www.elastic.co/guide/en/elasticsearch/reference/current/delete-transform.html</para></summary>
 	public class DeleteTransformRequestParameters : RequestParameters<DeleteTransformRequestParameters>

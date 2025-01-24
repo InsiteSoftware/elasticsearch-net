@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.EnrichApi
+namespace Elasticsearch.Net7.Specification.EnrichApi
 {
 	///<summary>Request options for DeletePolicy <para>https://www.elastic.co/guide/en/elasticsearch/reference/current/delete-enrich-policy-api.html</para></summary>
 	public class DeleteEnrichPolicyRequestParameters : RequestParameters<DeleteEnrichPolicyRequestParameters>

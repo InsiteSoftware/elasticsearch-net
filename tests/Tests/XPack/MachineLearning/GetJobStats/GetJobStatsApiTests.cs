@@ -4,9 +4,9 @@
 
 using System;
 using System.Linq;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Configuration;
 using Tests.Core.Extensions;
 using Tests.Framework.EndpointTests.TestState;

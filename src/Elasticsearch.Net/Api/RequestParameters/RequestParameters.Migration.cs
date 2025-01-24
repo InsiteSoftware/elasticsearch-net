@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.MigrationApi
+namespace Elasticsearch.Net7.Specification.MigrationApi
 {
 	///<summary>Request options for DeprecationInfo <para>https://www.elastic.co/guide/en/elasticsearch/reference/current/migration-api-deprecation.html</para></summary>
 	public class DeprecationInfoRequestParameters : RequestParameters<DeprecationInfoRequestParameters>

@@ -4,7 +4,7 @@
 
 using System.Security.Cryptography.X509Certificates;
 
-namespace Elasticsearch.Net.Extensions
+namespace Elasticsearch.Net7.Extensions
 {
 	internal static class X509CertificateExtensions
 	{

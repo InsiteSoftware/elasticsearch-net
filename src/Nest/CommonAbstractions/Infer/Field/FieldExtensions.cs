@@ -4,7 +4,7 @@
 
 using System.Linq;
 
-namespace Nest
+namespace Nest7
 {
 	internal static class FieldExtensions
 	{

@@ -11,7 +11,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace Nest
+namespace Nest7
 {
 	internal class ToStringExpressionVisitor : ExpressionVisitor
 	{

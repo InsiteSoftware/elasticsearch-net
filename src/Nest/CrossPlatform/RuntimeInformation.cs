@@ -7,7 +7,7 @@ using System;
 using System.Linq;
 using System.Reflection;
 
-namespace Nest
+namespace Nest7
 {
 	internal static class RuntimeInformation
 	{

@@ -4,9 +4,9 @@
 
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Named word_delimiter, it Splits words into subwords and performs optional transformations on subword groups.

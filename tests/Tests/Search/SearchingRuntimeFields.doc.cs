@@ -3,7 +3,7 @@
 // See the LICENSE file in the project root for more information
 
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Core.Client;
 using Tests.Domain;
 using static Tests.Core.Serialization.SerializationTestHelper;

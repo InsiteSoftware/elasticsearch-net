@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[ReadAs(typeof(SourceField))]
 	public interface ISourceField : IFieldMapping

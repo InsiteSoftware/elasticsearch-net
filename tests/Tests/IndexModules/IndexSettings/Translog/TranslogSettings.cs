@@ -4,7 +4,7 @@
 
 using System;
 using System.Collections.Generic;
-using Nest;
+using Nest7;
 
 namespace Tests.IndexModules.IndexSettings.Translog
 {
@@ -13,7 +13,7 @@ namespace Tests.IndexModules.IndexSettings.Translog
 		/**
 		 */
 
-		public class Usage : PromiseUsageTestBase<IIndexSettings, IndexSettingsDescriptor, Nest.IndexSettings>
+		public class Usage : PromiseUsageTestBase<IIndexSettings, IndexSettingsDescriptor, Nest7.IndexSettings>
 		{
 			protected override object ExpectJson => new Dictionary<string, object>
 			{
@@ -39,8 +39,8 @@ namespace Tests.IndexModules.IndexSettings.Translog
 
 			/**
 			 */
-			protected override Nest.IndexSettings Initializer =>
-				new Nest.IndexSettings
+			protected override Nest7.IndexSettings Initializer =>
+				new Nest7.IndexSettings
 				{
 					Translog = new TranslogSettings
 					{

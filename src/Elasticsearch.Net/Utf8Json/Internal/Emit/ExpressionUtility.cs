@@ -30,7 +30,7 @@ using System;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace Elasticsearch.Net.Utf8Json.Internal.Emit
+namespace Elasticsearch.Net7.Utf8Json.Internal.Emit
 {
     internal static class ExpressionUtility
     {

@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Nest
+namespace Nest7
 {
 	public interface IDocumentPath
 	{
@@ -14,7 +14,7 @@ namespace Nest
 
 	public class DocumentPath<T> : IEquatable<DocumentPath<T>>, IDocumentPath where T : class
 	{
-		public DocumentPath(T document) : this(Nest.Id.From(document)) => Document = document;
+		public DocumentPath(T document) : this(Nest7.Id.From(document)) => Document = document;
 
 		public DocumentPath(Id id)
 		{

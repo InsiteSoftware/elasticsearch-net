@@ -5,7 +5,7 @@
 using System;
 using System.Runtime.CompilerServices;
 
-namespace Nest
+namespace Nest7
 {
 	internal static class Fluent
 	{

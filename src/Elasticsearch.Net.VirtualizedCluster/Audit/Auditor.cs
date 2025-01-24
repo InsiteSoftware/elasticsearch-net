@@ -7,9 +7,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Elasticsearch.Net.VirtualizedCluster.Extensions;
+using Elasticsearch.Net7.VirtualizedCluster.Extensions;
 
-namespace Elasticsearch.Net.VirtualizedCluster.Audit
+namespace Elasticsearch.Net7.VirtualizedCluster.Audit
 {
 	public class Auditor
 	{
@@ -31,8 +31,8 @@ namespace Elasticsearch.Net.VirtualizedCluster.Audit
 		public Action<IConnectionPool> AssertPoolBeforeCall { get; set; }
 		public Action<IConnectionPool> AssertPoolBeforeStartup { get; set; }
 
-		public List<Elasticsearch.Net.Audit> AsyncAuditTrail { get; set; }
-		public List<Elasticsearch.Net.Audit> AuditTrail { get; set; }
+		public List<Elasticsearch.Net7.Audit> AsyncAuditTrail { get; set; }
+		public List<Elasticsearch.Net7.Audit> AuditTrail { get; set; }
 		public Func<VirtualizedCluster> Cluster { get; set; }
 
 		public IElasticsearchResponse Response { get; internal set; }
@@ -210,7 +210,7 @@ namespace Elasticsearch.Net.VirtualizedCluster.Audit
 			return new Auditor(_cluster, _clusterAsync);
 
 			// These happen one time only so should not be counted when comparing equality of audit trails
-			static bool Predicate(Net.Audit auditEvent) =>
+			static bool Predicate(Net7.Audit auditEvent) =>
 				auditEvent.Event != AuditEvent.ProductCheckOnStartup &&
 				auditEvent.Event != AuditEvent.ProductCheckFailure &&
 				auditEvent.Event != AuditEvent.ProductCheckSuccess;
@@ -231,7 +231,7 @@ namespace Elasticsearch.Net.VirtualizedCluster.Audit
 			throw new Exception(string.Join(Environment.NewLine, messages));
 		}
 
-		private static string AuditTrailToString(List<Elasticsearch.Net.Audit> auditTrail)
+		private static string AuditTrailToString(List<Elasticsearch.Net7.Audit> auditTrail)
 		{
 			var actualAuditTrail = auditTrail.Aggregate(new StringBuilder(),
 				(sb, a) => sb.AppendLine($"-> {a}"),
@@ -256,7 +256,7 @@ namespace Elasticsearch.Net.VirtualizedCluster.Audit
 			return auditor;
 		}
 
-		private static void AssertTrailOnResponse(ClientCall callTrace, IReadOnlyCollection<Net.Audit> auditTrail, bool sync, int nthCall)
+		private static void AssertTrailOnResponse(ClientCall callTrace, IReadOnlyCollection<Net7.Audit> auditTrail, bool sync, int nthCall)
 		{
 			var typeOfTrail = (sync ? "synchronous" : "asynchronous") + " audit trail";
 			var nthClientCall = (nthCall + 1).ToOrdinal();

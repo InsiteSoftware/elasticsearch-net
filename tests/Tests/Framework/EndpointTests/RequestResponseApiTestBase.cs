@@ -8,7 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
  using Elastic.Elasticsearch.Ephemeral;
  using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Configuration;
 using Tests.Core.Client;
 using Tests.Core.ManagedElasticsearch.Clusters;

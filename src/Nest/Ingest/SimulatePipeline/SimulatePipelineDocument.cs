@@ -5,9 +5,9 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[InterfaceDataContract]
 	public interface ISimulatePipelineDocument
@@ -57,7 +57,7 @@ namespace Nest
 		{
 			a.Source = v;
 			a.Index = a.Index ?? v.GetType();
-			a.Id = a.Id ?? Nest.Id.From(v);
+			a.Id = a.Id ?? Nest7.Id.From(v);
 		});
 	}
 

@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public interface IRequestParameters
 	{

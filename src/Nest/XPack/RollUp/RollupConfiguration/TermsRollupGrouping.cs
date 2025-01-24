@@ -5,7 +5,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The terms group can be used on keyword or numeric fields, to allow bucketing via the terms aggregation at a

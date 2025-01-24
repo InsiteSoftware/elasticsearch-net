@@ -6,9 +6,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
-namespace Nest
+namespace Nest7
 {
 	internal class PreviewDatafeedResponseBuilder<TDocument> : CustomResponseBuilderBase where TDocument : class
 	{

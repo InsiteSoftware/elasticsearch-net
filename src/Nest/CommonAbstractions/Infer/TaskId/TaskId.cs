@@ -5,10 +5,10 @@
 using System;
 using System.Diagnostics;
 using System.Globalization;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[DebuggerDisplay("{DebugDisplay,nq}")]
 	[JsonFormatter(typeof(TaskIdFormatter))]

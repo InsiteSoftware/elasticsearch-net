@@ -4,7 +4,7 @@
 
 using System;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 
 namespace Tests.Analysis.Tokenizers
 {

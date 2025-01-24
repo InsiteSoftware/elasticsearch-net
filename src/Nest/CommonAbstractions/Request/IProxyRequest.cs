@@ -3,9 +3,9 @@
 // See the LICENSE file in the project root for more information
 
 using System.IO;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary> A request that that does not necessarily (de)serializes itself </summary>
 	public interface IProxyRequest : IRequest

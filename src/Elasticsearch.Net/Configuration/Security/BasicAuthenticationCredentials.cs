@@ -5,7 +5,7 @@
 using System;
 using System.Security;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
 	/// Credentials for Basic Authentication

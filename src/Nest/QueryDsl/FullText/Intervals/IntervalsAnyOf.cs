@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A rule that emits intervals produced by any of its sub-rules.

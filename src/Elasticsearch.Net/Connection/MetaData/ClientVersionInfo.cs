@@ -7,7 +7,7 @@ using System.Diagnostics;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	internal sealed class ClientVersionInfo : VersionInfo
 	{

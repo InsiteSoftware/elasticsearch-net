@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public class StickySniffingConnectionPool : SniffingConnectionPool
 	{

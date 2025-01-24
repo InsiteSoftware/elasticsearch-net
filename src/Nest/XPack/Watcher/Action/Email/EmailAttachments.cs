@@ -4,11 +4,11 @@
 
 using System;
 using System.Collections.Generic;
-using Elasticsearch.Net.Utf8Json;
-using Elasticsearch.Net.Utf8Json.Internal;
+using Elasticsearch.Net7.Utf8Json;
+using Elasticsearch.Net7.Utf8Json.Internal;
 
 
-namespace Nest
+namespace Nest7
 {
 	[JsonFormatter(typeof(EmailAttachmentsFormatter))]
 	public interface IEmailAttachments : IIsADictionary<string, IEmailAttachment> { }

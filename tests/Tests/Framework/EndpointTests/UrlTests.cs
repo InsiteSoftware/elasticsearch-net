@@ -5,9 +5,9 @@
 using System;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Client;
 using Tests.Core.Client.Settings;
 using Tests.Framework.Extensions;

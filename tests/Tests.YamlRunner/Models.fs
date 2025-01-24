@@ -4,7 +4,7 @@
 
 module Tests.YamlRunner.Models
 
-open Elasticsearch.Net
+open Elasticsearch.Net7
 open System
 open System.Collections.Generic
 open System.Collections.Specialized

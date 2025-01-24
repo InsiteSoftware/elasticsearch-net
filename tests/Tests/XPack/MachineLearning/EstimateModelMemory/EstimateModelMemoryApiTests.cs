@@ -4,12 +4,12 @@
 
 using System;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
-using Nest;
+using Elasticsearch.Net7;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Domain;
 using Tests.Framework.EndpointTests.TestState;
-using static Nest.Infer;
+using static Nest7.Infer;
 
 namespace Tests.XPack.MachineLearning.EstimateModelMemory
 {

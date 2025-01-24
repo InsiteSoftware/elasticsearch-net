@@ -5,7 +5,7 @@
 using System.Linq;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 
 namespace Tests.QueryDsl.BoolDsl.Operators
 {

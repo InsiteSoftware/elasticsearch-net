@@ -6,7 +6,7 @@ using System.IO;
 using System.Text;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 
 namespace Tests.Aggregations
 {

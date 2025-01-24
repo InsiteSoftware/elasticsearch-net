@@ -8,9 +8,9 @@ using System.Collections.Specialized;
 using System.Net;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using System.Runtime.Serialization;
 using Tests.Framework;
 

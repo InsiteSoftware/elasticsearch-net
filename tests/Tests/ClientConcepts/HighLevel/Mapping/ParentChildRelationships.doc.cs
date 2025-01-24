@@ -7,16 +7,16 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using System.Runtime.Serialization;
 using Newtonsoft.Json.Linq;
 using Tests.Core.Client;
 using Tests.Framework;
 using Tests.Framework.DocumentationTests;
 using static Tests.Core.Serialization.SerializationTestHelper;
-using static Nest.Infer;
+using static Nest7.Infer;
 
 namespace Tests.ClientConcepts.HighLevel.Mapping
 {
@@ -283,7 +283,7 @@ namespace Tests.ClientConcepts.HighLevel.Mapping
 
 			/**
 			 * The same goes for when we index a child, we can pass the instance directly to `Routing` and NEST will use the parent id
-			 * already specified on `child`. Here we use the static import `using static Nest.Infer` and it's `Route()` static method to
+			 * already specified on `child`. Here we use the static import `using static Nest7.Infer` and it's `Route()` static method to
 			 * create an instance of `Routing`
 			 */
 			indexResponse = client.Index(child, i => i.Routing(Route(child)));

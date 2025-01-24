@@ -17,7 +17,7 @@
 // 		Windows 	:	build.bat codegen
 //
 // -----------------------------------------------
-namespace Nest
+namespace Nest7
 {
 	internal static class ApiUrlsLookups
 	{

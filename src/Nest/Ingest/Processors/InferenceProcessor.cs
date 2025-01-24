@@ -6,11 +6,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Runtime.Serialization;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Utf8Json;
-using Nest;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Utf8Json;
+using Nest7;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Uses a pre-trained data frame analytics model to infer against the data that is being ingested in the pipeline.

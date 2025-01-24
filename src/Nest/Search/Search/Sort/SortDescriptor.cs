@@ -5,9 +5,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
-namespace Nest
+namespace Nest7
 {
 	public class SortDescriptor<T> : DescriptorPromiseBase<SortDescriptor<T>, IList<ISort>>
 		where T : class

@@ -5,7 +5,7 @@
 using System;
 using System.Diagnostics;
 
-namespace Elasticsearch.Net.Diagnostics
+namespace Elasticsearch.Net7.Diagnostics
 {
 	/// <summary>
 	/// Diagnostic that creates, starts and stops <see cref="Activity"/> that implements <see cref="IDisposable"/> to

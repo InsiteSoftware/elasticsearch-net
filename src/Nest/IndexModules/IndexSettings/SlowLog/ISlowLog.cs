@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Nest
+namespace Nest7
 {
 	public interface ISlowLog
 	{

@@ -7,12 +7,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Elasticsearch.Net.Utf8Json;
-using static Nest.FixedIndexSettings;
-using static Nest.IndexSortSettings;
-using static Nest.UpdatableIndexSettings;
+using Elasticsearch.Net7.Utf8Json;
+using static Nest7.FixedIndexSettings;
+using static Nest7.IndexSortSettings;
+using static Nest7.UpdatableIndexSettings;
 
-namespace Nest
+namespace Nest7
 {
 	internal class IndexSettingsFormatter : IJsonFormatter<IIndexSettings>
 	{

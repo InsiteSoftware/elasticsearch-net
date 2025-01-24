@@ -4,9 +4,9 @@
 
 using System.Diagnostics;
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A specialised version of the <see cref="IObjectProperty"/> datatype that allows arrays of objects

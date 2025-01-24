@@ -5,13 +5,13 @@
 using System;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
 using Tests.Framework.EndpointTests.TestState;
-using static Nest.Infer;
-using ValueType = Nest.ValueType;
+using static Nest7.Infer;
+using ValueType = Nest7.ValueType;
 
 namespace Tests.Aggregations.Metric.WeightedAverage
 {

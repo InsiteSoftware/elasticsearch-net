@@ -5,16 +5,16 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Core.ManagedElasticsearch.NodeSeeders;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 using Tests.Framework.EndpointTests.TestState;
-using static Nest.Infer;
+using static Nest7.Infer;
 
 namespace Tests.Document.Multiple.DeleteByQuery
 {
@@ -65,7 +65,7 @@ namespace Tests.Document.Multiple.DeleteByQuery
 		protected override bool SupportsDeserialization => false;
 
 		protected override string UrlPath => $"/{CallIsolatedValue}%2C{SecondIndex}/_delete_by_query?ignore_unavailable=true";
-		private Nest.Indices Indices => Index(CallIsolatedValue).And(SecondIndex);
+		private Nest7.Indices Indices => Index(CallIsolatedValue).And(SecondIndex);
 
 		private string SecondIndex => $"{CallIsolatedValue}-clone";
 

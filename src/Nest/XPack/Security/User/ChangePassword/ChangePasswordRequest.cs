@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("security.change_password.json")]
 	public partial interface IChangePasswordRequest

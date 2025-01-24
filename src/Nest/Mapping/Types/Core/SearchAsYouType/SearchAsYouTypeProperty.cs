@@ -4,9 +4,9 @@
 
 using System.Diagnostics;
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A text-like field that is optimized to provide out-of-the-box support for the "search as you type" completion use case.
@@ -33,7 +33,7 @@ namespace Nest
 		bool? Index { get; set; }
 
 		/// <summary>
-		/// What information should be stored in the index, for search and highlighting purposes. Defaults to <see cref="Nest.IndexOptions.Positions"/>.
+		/// What information should be stored in the index, for search and highlighting purposes. Defaults to <see cref="Nest7.IndexOptions.Positions"/>.
 		/// </summary>
 		[DataMember(Name = "index_options")]
 		IndexOptions? IndexOptions { get; set; }

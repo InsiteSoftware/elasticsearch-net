@@ -142,7 +142,7 @@ module Build =
             let dependentAssemblies =
                 let injectEsNet = 
                     match deps |> Seq.contains "NEST" with
-                    | true -> List.append deps ["Elasticsearch.Net"]
+                    | true -> List.append deps ["Elasticsearch.Net7"]
                     | false -> deps
                 injectEsNet
                 |> Seq.map (fun id ->

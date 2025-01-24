@@ -6,13 +6,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
-using Nest;
+using Elasticsearch.Net7;
+using Nest7;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 using Tests.Framework.EndpointTests.TestState;
-using static Nest.Infer;
+using static Nest7.Infer;
 
 namespace Tests.Search.Request
 {
@@ -413,7 +413,7 @@ namespace Tests.Search.Request
 		
 		protected override void IntegrationSetup(IElasticClient client, CallUniqueValues values)
 		{
-			var response = client.OpenPointInTime(Nest.Indices.Index<Project>(), f => f.KeepAlive("1m"));
+			var response = client.OpenPointInTime(Nest7.Indices.Index<Project>(), f => f.KeepAlive("1m"));
 			_pit = response.Id;
 		}
 
@@ -441,7 +441,7 @@ namespace Tests.Search.Request
 
 		protected override SearchRequest<Project> Initializer => new()
 			{
-				PointInTime = new Nest.PointInTime(_pit),
+				PointInTime = new Nest7.PointInTime(_pit),
 				Sort = new List<ISort>
 				{
 					FieldSort.ShardDocumentOrderAscending

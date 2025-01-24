@@ -21,11 +21,11 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Specification.EqlApi;
+using Elasticsearch.Net7.Specification.EqlApi;
 
 // ReSharper disable once CheckNamespace
 // ReSharper disable RedundantTypeArgumentsOfMethod
-namespace Nest.Specification.EqlApi
+namespace Nest7.Specification.EqlApi
 {
 	///<summary>
 	/// Eql APIs.

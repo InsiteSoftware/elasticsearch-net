@@ -6,7 +6,7 @@ using System;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
@@ -239,7 +239,7 @@ namespace Tests.XPack.Slm
 			metadata.Policy.Repository.Should().Be(v);
 			metadata.Policy.Schedule.Should().BeEquivalentTo(new CronExpression("0 0 0 1 1 ? *"));
 			metadata.Policy.Config.Should().NotBeNull();
-			metadata.Policy.Config.Indices.Should().NotBeNull().And.Be(Nest.Indices.Parse("project"));
+			metadata.Policy.Config.Indices.Should().NotBeNull().And.Be(Nest7.Indices.Parse("project"));
 			metadata.Policy.Retention.ExpireAfter.Should().Be("30d");
 			metadata.Policy.Retention.MinimumCount.Should().Be(1);
 			metadata.Policy.Retention.MaximumCount.Should().Be(5);

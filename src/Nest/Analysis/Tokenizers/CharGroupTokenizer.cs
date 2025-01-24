@@ -4,9 +4,9 @@
 
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A tokenizer that breaks text into terms whenever it encounters a character which is in a defined set. It is mostly useful

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using System.Runtime.Serialization;
 using Tests.ClientConcepts.HighLevel.Mapping;
 using Tests.Core.Client;
@@ -29,7 +29,7 @@ namespace Tests.ClientConcepts.HighLevel.Serialization
 	 *
 	 * As an example, let's imagine we're using a third party plugin that provides support for additional data type
 	 * for field mapping. We can implement a custom `IProperty` implementation so that we can use the field mapping
-	 * type with NEST.
+	 * type with Nest7.
 	 */
 	public class ExtendingNestTypes
 	{

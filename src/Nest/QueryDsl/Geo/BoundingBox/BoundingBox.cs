@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[ReadAs(typeof(BoundingBox))]
 	public interface IBoundingBox

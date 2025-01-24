@@ -8,8 +8,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Diagnostics;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Diagnostics;
 using Xunit;
 
 namespace Tests.Reproduce

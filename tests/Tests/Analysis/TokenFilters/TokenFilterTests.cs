@@ -5,7 +5,7 @@
 using System;
 using System.Runtime.Serialization;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Core.Serialization;
 
 namespace Tests.Analysis.TokenFilters
@@ -1115,9 +1115,9 @@ namespace Tests.Analysis.TokenFilters
 						{
 							Settings = new IndexSettings
 							{
-								Analysis = new Nest.Analysis
+								Analysis = new Nest7.Analysis
 								{
-									TokenFilters = new Nest.TokenFilters
+									TokenFilters = new Nest7.TokenFilters
 									{
 										{ FilterName, UserDefinedFilter }
 									}

@@ -7,9 +7,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
-namespace Nest
+namespace Nest7
 {
 	public class RestoreObservable : IDisposable, IObservable<RecoveryStatusResponse>
 	{

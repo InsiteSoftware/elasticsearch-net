@@ -4,7 +4,7 @@
 
 using System;
 using System.Collections.Generic;
-using Nest;
+using Nest7;
 using Tests.Domain;
 using Tests.IndexModules;
 

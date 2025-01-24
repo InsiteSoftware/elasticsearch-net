@@ -28,7 +28,7 @@
 
 using System;
 
-namespace Elasticsearch.Net.Utf8Json
+namespace Elasticsearch.Net7.Utf8Json
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct | AttributeTargets.Interface | AttributeTargets.Field | AttributeTargets.Property)]
 	internal class JsonFormatterAttribute : Attribute

@@ -8,9 +8,9 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Net.NetworkInformation;
 using System.Text;
-using Elasticsearch.Net.Diagnostics;
+using Elasticsearch.Net7.Diagnostics;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
 	/// Details about the API call

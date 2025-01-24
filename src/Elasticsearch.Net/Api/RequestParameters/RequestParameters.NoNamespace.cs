@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	///<summary>Request options for Bulk <para>https://www.elastic.co/guide/en/elasticsearch/reference/master/docs-bulk.html</para></summary>
 	public class BulkRequestParameters : RequestParameters<BulkRequestParameters>

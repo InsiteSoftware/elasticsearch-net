@@ -8,7 +8,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace Nest
+namespace Nest7
 {
 	internal class GetEnumerator<TSource> : IEnumerator<TSource>, IObserver<TSource>
 	{

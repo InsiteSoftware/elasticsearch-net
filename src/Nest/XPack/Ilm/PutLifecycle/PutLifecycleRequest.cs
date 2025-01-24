@@ -5,7 +5,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("ilm.put_lifecycle")]
 	public partial interface IPutLifecycleRequest

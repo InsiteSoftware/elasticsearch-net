@@ -5,11 +5,11 @@
 using System;
 using System.Linq.Expressions;
 using System.Runtime.Serialization;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Utf8Json;
 
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Converts a field in the currently ingested document to a different type,

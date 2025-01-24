@@ -4,7 +4,7 @@
 
 ﻿using System.Collections.Generic;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
 	/// Holds meta data about a client request.

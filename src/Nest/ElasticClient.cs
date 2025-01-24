@@ -5,10 +5,10 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Specification.MachineLearningApi;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Specification.MachineLearningApi;
 
-namespace Nest
+namespace Nest7
 {
 
 	public class NamespacedClientProxy

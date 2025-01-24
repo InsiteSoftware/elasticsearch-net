@@ -5,7 +5,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("scroll.json")]
 	public partial interface IScrollRequest : ITypedSearchRequest

@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 
-namespace Nest
+namespace Nest7
 {
 	using Containers = List<QueryContainer>;
 

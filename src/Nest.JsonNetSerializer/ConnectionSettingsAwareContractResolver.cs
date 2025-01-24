@@ -6,13 +6,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
 using JsonProperty = Newtonsoft.Json.Serialization.JsonProperty;
 
-namespace Nest.JsonNetSerializer
+namespace Nest7.JsonNetSerializer
 {
 	public class ConnectionSettingsAwareContractResolver : DefaultContractResolver
 	{

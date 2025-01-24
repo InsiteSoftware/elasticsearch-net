@@ -21,11 +21,11 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Specification.CatApi;
+using Elasticsearch.Net7.Specification.CatApi;
 
 // ReSharper disable once CheckNamespace
 // ReSharper disable RedundantTypeArgumentsOfMethod
-namespace Nest.Specification.CatApi
+namespace Nest7.Specification.CatApi
 {
 	///<summary>
 	/// Cat APIs.

@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Case folding of Unicode characters based on UTR#30, like the ASCII-folding token filter on steroids.

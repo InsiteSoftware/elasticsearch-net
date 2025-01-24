@@ -5,7 +5,7 @@
 using System;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Framework;
 using static Tests.Core.Serialization.SerializationTestHelper;
 
@@ -95,7 +95,7 @@ namespace Tests.ClientConcepts.HighLevel.Inference
 		* If your class has a property of type JoinField, NEST will automatically infer the parentid as the routing value.
 		 *
 		* The name of this property can be anything. Be sure the read the <<parent-child-relationships, section on Parent/Child relationships>> to get a complete
-		 * walkthrough on using Parent Child joins with NEST.
+		 * walkthrough on using Parent Child joins with Nest7.
 		*/
 		class MyOtherDTO
 		{

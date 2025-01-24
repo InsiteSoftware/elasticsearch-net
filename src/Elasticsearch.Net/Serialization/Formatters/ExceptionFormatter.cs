@@ -7,10 +7,10 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Reflection;
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Extensions;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Extensions;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	internal class ExceptionFormatterResolver : IJsonFormatterResolver
 	{

@@ -31,7 +31,7 @@ using System.Runtime.CompilerServices;
 using System;
 using System.IO;
 
-namespace Elasticsearch.Net.Utf8Json.Internal
+namespace Elasticsearch.Net7.Utf8Json.Internal
 {
     // for string key property name write optimization.
 

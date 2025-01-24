@@ -8,16 +8,16 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.VirtualizedCluster.MockResponses;
-using Elasticsearch.Net.VirtualizedCluster.Providers;
-using Elasticsearch.Net.VirtualizedCluster.Rules;
+using Elasticsearch.Net7.VirtualizedCluster.MockResponses;
+using Elasticsearch.Net7.VirtualizedCluster.Providers;
+using Elasticsearch.Net7.VirtualizedCluster.Rules;
 #if DOTNETCORE
 using TheException = System.Net.Http.HttpRequestException;
 #else
 using TheException = System.Net.WebException;
 #endif
 
-namespace Elasticsearch.Net.VirtualizedCluster
+namespace Elasticsearch.Net7.VirtualizedCluster
 {
 	/// <summary>
 	/// An in memory connection that uses a rule engine to return different responses for sniffs/pings and API calls.

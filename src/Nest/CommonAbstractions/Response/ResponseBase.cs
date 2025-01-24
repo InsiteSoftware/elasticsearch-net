@@ -5,9 +5,9 @@
  using System;
 using System.Runtime.Serialization;
 using System.Text;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A response from Elasticsearch
@@ -54,7 +54,7 @@ namespace Nest
 		/// <summary>
 		/// If the response results in an error on Elasticsearch's side an <pre>error</pre> element will be returned, this is
 		/// mapped to
-		/// <see cref="ServerError" /> in NEST.
+		/// <see cref="ServerError" /> in Nest7.
 		/// <para>Possibly set when <see cref="IsValid" /> is false, depending on the cause of the error</para>
 		/// <para>
 		/// You can also configure the client to always throw an <see cref="ElasticsearchClientException" /> using

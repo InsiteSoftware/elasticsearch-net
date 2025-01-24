@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("watcher.query_watches.json")]
 	[ReadAs(typeof(QueryWatchesRequest))]

@@ -11,10 +11,10 @@ using System.Diagnostics;
 using System.Threading;
 using Elastic.Elasticsearch.Xunit.Sdk;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Diagnostics;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Diagnostics;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Client.Settings;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
@@ -31,7 +31,7 @@ namespace Tests.ClientConcepts.Troubleshooting
 	 * `System.Diagnostics` namespace.
 	 *
 	 * To aid with the discoverability of the topics you can subscribe to and the event names they emit,
-	 * both topics and event names are exposed as strongly typed strings under `Elasticsearch.Net.Diagnostics.DiagnosticSources`
+	 * both topics and event names are exposed as strongly typed strings under `Elasticsearch.Net7.Diagnostics.DiagnosticSources`
 	 */
 	public class DiagnosticSourceUsageDocumentation : IClusterFixture<ReadOnlyCluster>
 	{

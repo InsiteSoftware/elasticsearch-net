@@ -8,7 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Core.Xunit;
@@ -218,7 +218,7 @@ namespace Tests.XPack.Rollup
 		}
 
 		//make sure we query a rolled up index and a live index
-		protected static Nest.Indices CreateRollupSearchIndices(string rollupIndex) =>
+		protected static Nest7.Indices CreateRollupSearchIndices(string rollupIndex) =>
 			$"{CreateRollupName(rollupIndex)},logs-{DateTime.UtcNow:yyyy-MM-dd}";
 
 		protected RollupSearchRequest RollupSearchInitializer(string index) => new RollupSearchRequest(CreateRollupSearchIndices(index))

@@ -7,7 +7,7 @@ using System;
 using System.Net.Http;
 #endif
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public static class ConnectionInfo
 	{

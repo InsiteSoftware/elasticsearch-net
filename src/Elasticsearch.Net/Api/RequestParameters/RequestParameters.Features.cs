@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.FeaturesApi
+namespace Elasticsearch.Net7.Specification.FeaturesApi
 {
 	///<summary>Request options for Get <para>https://www.elastic.co/guide/en/elasticsearch/reference/master/get-features-api.html</para></summary>
 	public class GetFeaturesRequestParameters : RequestParameters<GetFeaturesRequestParameters>

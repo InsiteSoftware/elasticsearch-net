@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Serialization;
 
 namespace Tests.XPack.Security.RoleMapping

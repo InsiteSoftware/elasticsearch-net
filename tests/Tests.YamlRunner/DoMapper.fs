@@ -13,7 +13,7 @@ open System.Linq
 open System.Linq.Expressions
 open System.Threading.Tasks
 open Tests.YamlRunner.Models
-open Elasticsearch.Net
+open Elasticsearch.Net7
 
 type ApiInvoke = delegate of Object * Object[] -> Task<DynamicResponse>
 
@@ -197,7 +197,7 @@ let private createApiLookup (invokers: FastApiInvoke list) : (YamlMap -> FastApi
     
 let createDoMap (client:IElasticLowLevelClient) =
     let t = client.GetType()
-    let mapsApiAttribute = t.Assembly.GetType("Elasticsearch.Net.MapsApiAttribute")
+    let mapsApiAttribute = t.Assembly.GetType("Elasticsearch.Net7.MapsApiAttribute")
     
     let rootMethods = methodsWithAttribute client mapsApiAttribute
     let namespaces =

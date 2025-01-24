@@ -4,7 +4,7 @@
 
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 using static Tests.Framework.EndpointTests.UrlTester;
@@ -39,9 +39,9 @@ namespace Tests.XPack.Eql.Search
 
 			await POST("/_all/_eql/search")
 					.Fluent(c => c.Eql.Search<Log>(s => s.AllIndices()))
-					.Request(c => c.Eql.Search<Log>(new EqlSearchRequest<Project>(Nest.Indices.All)))
+					.Request(c => c.Eql.Search<Log>(new EqlSearchRequest<Project>(Nest7.Indices.All)))
 					.FluentAsync(c => c.Eql.SearchAsync<Log>(s => s.AllIndices()))
-					.RequestAsync(c => c.Eql.SearchAsync<Log>(new EqlSearchRequest<Project>(Nest.Indices.All)));
+					.RequestAsync(c => c.Eql.SearchAsync<Log>(new EqlSearchRequest<Project>(Nest7.Indices.All)));
 		}
 	}
 }

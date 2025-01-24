@@ -6,7 +6,7 @@ using System;
 using System.Linq.Expressions;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Matches terms that start with a specified set of characters. This prefix can expand to match at most 128 terms.

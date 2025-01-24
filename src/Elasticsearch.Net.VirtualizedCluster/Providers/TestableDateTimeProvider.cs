@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Elasticsearch.Net.VirtualizedCluster.Providers
+namespace Elasticsearch.Net7.VirtualizedCluster.Providers
 {
 	public class TestableDateTimeProvider : DateTimeProvider
 	{

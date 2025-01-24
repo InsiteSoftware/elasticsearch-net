@@ -3,9 +3,9 @@
 // See the LICENSE file in the project root for more information
 
 using System.Runtime.Serialization;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Normalization forms https://en.wikipedia.org/wiki/Unicode_equivalence#Normal_forms

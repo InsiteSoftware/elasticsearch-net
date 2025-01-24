@@ -2,10 +2,10 @@
 // Elasticsearch B.V licenses this file to you under the Apache 2.0 License.
 // See the LICENSE file in the project root for more information
 
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Configures the destination for a reindex API request
@@ -19,7 +19,7 @@ namespace Nest
 		IndexName Index { get; set; }
 
 		/// <summary>
-		/// Setting to <see cref="Elasticsearch.Net.OpType.Create" /> will cause reindex to only
+		/// Setting to <see cref="Elasticsearch.Net7.OpType.Create" /> will cause reindex to only
 		/// create missing documents in the destination index.
 		/// </summary>
 		[DataMember(Name ="op_type")]
@@ -39,7 +39,7 @@ namespace Nest
 		ReindexRouting Routing { get; set; }
 
 		/// <summary>
-		/// Setting to <see cref="Elasticsearch.Net.VersionType.External" /> will cause Elasticsearch
+		/// Setting to <see cref="Elasticsearch.Net7.VersionType.External" /> will cause Elasticsearch
 		/// to preserve the version from the source, create any documents that are missing,
 		/// and update any documents that have an older version in the destination index
 		/// than they do in the source index
