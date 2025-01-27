@@ -14,20 +14,6 @@ namespace Tests.ClientConcepts
 {
 	public class ProductCheckTests
 	{
-		[U] public void MissingProductNameHeaderCausesExceptionOnVersion7_14()
-		{
-			var productCheckResponse = InMemoryConnection.ValidProductCheckResponse();
-			productCheckResponse.Headers.Clear();
-
-			var connectionPool = new SingleNodeConnectionPool(new Uri("http://localhost:9200"));
-			var connectionSettings = new ConnectionSettings(connectionPool, new InMemoryConnection(productCheckResponse));
-			var client = new ElasticClient(connectionSettings);
-
-			client.Invoking(y => y.Cluster.Health())
-				.Should()
-				.Throw<UnsupportedProductException>();
-		}
-
 		[U] public void InvalidProductNameHeaderCausesException()
 		{
 			var productCheckResponse = InMemoryConnection.ValidProductCheckResponse();

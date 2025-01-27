@@ -803,8 +803,7 @@ namespace Elasticsearch.Net7
 				var version = new Version(versionNumber);
 
 				if (VersionTooLow(version) ||
-					TagLineInvalid(version, response) ||
-					Version714InvalidHeader(version, productName))
+					TagLineInvalid(version, response))
 					_connectionPool.ProductCheckStatus = ProductCheckStatus.InvalidProduct;
 
 				ValidateBuildFlavor(version);
@@ -823,12 +822,6 @@ namespace Elasticsearch.Net7
 			static bool TagLineInvalid(Version version, RootResponse response)
 			{
 				return version > MinVersion && !ExpectedTagLine.Equals(response.Tagline, StringComparison.Ordinal);
-			}
-
-			// After v7.14.0 we expect the product header to be present and include the expected product name
-			static bool Version714InvalidHeader(Version version, string productName)
-			{
-				return version >= Version714 && !ExpectedProductName.Equals(productName, StringComparison.Ordinal);
 			}
 
 			// After v7.0.0, we expect the build flavor to match expected values.
