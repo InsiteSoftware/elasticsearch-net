@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Tokenizes text into words on word boundaries, as defined in UAX #29: Unicode Text Segmentation. It behaves much

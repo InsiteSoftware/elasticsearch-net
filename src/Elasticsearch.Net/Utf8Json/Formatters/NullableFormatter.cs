@@ -29,7 +29,7 @@
 
 using System;
 
-namespace Elasticsearch.Net.Utf8Json.Formatters
+namespace Elasticsearch.Net7.Utf8Json.Formatters
 {
 	internal sealed class NullableFormatter<T> : IJsonFormatter<T?>
         where T : struct

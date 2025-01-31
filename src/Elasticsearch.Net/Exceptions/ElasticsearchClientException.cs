@@ -6,10 +6,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Elasticsearch.Net.Extensions;
-using static Elasticsearch.Net.ResponseStatics;
+using Elasticsearch.Net7.Extensions;
+using static Elasticsearch.Net7.ResponseStatics;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public class ElasticsearchClientException : Exception
 	{

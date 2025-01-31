@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// This action sets the index priority on the index as soon as the policy enters the hot, warm, or cold phase. Indices

@@ -8,7 +8,7 @@ using System.Collections.Specialized;
 using System.Security;
 using System.Security.Cryptography.X509Certificates;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public interface IRequestConfiguration
 	{

@@ -3,9 +3,9 @@
 // See the LICENSE file in the project root for more information
 
 using System.Diagnostics;
-using static Elasticsearch.Net.AuditEvent;
+using static Elasticsearch.Net7.AuditEvent;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public enum AuditEvent
 	{

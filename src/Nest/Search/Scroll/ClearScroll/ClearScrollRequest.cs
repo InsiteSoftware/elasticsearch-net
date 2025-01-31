@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("clear_scroll.json")]
 	public partial interface IClearScrollRequest

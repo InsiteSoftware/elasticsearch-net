@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
@@ -39,7 +39,7 @@ namespace Tests.Mapping.RuntimeFields
 						{
 							Mappings = new TypeMapping
 							{
-								RuntimeFields = new Nest.RuntimeFields
+								RuntimeFields = new Nest7.RuntimeFields
 								{
 									{RuntimeFieldNameOne, new RuntimeField
 									{
@@ -103,7 +103,7 @@ namespace Tests.Mapping.RuntimeFields
 					u.Calls<PutMappingDescriptor<Project>, PutMappingRequest, IPutMappingRequest, PutMappingResponse>(
 						v => new PutMappingRequest(IndexName(v))
 						{
-							RuntimeFields = new Nest.RuntimeFields
+							RuntimeFields = new Nest7.RuntimeFields
 							{
 								{RuntimeFieldNameOne, new RuntimeField
 								{

@@ -4,8 +4,8 @@
 
 using System;
 using System.Collections.Generic;
-using Elasticsearch.Net;
-using Nest;
+using Elasticsearch.Net7;
+using Nest7;
 
 namespace Tests.Core.Client.Settings
 {

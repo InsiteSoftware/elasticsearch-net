@@ -6,7 +6,7 @@ using System;
 using System.Linq.Expressions;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Matches the analyzed text

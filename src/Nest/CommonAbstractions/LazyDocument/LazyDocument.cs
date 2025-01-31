@@ -5,10 +5,10 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A lazily deserialized document

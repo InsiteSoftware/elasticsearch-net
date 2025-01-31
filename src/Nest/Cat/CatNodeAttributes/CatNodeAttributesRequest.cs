@@ -4,7 +4,7 @@
 
 #pragma warning disable 612, 618
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("cat.nodeattrs.json")]
 	public partial interface ICatNodeAttributesRequest { }

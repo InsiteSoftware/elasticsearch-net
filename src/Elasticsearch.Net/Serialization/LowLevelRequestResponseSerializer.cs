@@ -6,9 +6,9 @@ using System;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public class LowLevelRequestResponseSerializer : IElasticsearchSerializer, IInternalSerializer
 	{

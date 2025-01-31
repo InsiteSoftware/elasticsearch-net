@@ -1639,7 +1639,7 @@
           "System.Xml.XPath": "4.3.0"
         }
       },
-      "elasticsearch.net": {
+      "Elasticsearch.Net7": {
         "type": "Project",
         "dependencies": {
           "Microsoft.CSharp": "4.6.0",
@@ -1647,10 +1647,10 @@
           "System.Diagnostics.DiagnosticSource": "5.0.0"
         }
       },
-      "nest": {
+      "NEST7": {
         "type": "Project",
         "dependencies": {
-          "Elasticsearch.Net": "7.0.0"
+          "Elasticsearch.Net7": "7.17.0"
         }
       }
     }

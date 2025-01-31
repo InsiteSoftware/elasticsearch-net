@@ -34,7 +34,7 @@ using Microsoft.Win32;
 using System.Linq;
 #endif
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
 	/// Represents the current .NET Runtime version.

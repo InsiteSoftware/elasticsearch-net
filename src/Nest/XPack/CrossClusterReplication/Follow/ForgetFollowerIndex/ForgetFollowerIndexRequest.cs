@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("ccr.forget_follower.json")]
 	[ReadAs(typeof(ForgetFollowerIndexRequest))]

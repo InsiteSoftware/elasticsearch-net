@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("ml.stop_datafeed.json")]
 	public partial interface IStopDatafeedRequest

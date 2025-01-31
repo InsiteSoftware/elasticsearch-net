@@ -5,9 +5,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Elasticsearch.Net.Extensions;
+using Elasticsearch.Net7.Extensions;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
 	/// A formatter that can utilize <see cref="IConnectionConfigurationValues" /> to resolve <see cref="IUrlParameter" />'s passed

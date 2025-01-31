@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("ingest.put_pipeline.json")]
 	public partial interface IPutPipelineRequest : IPipeline { }

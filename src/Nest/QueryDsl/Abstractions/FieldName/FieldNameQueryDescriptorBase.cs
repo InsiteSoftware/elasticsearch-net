@@ -5,7 +5,7 @@
 using System;
 using System.Linq.Expressions;
 
-namespace Nest
+namespace Nest7
 {
 	public abstract class FieldNameQueryDescriptorBase<TDescriptor, TInterface, T>
 		: QueryDescriptorBase<TDescriptor, TInterface>, IFieldNameQuery

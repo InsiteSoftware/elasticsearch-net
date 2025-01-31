@@ -87,7 +87,7 @@
         "resolved": "5.0.0",
         "contentHash": "ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA=="
       },
-      "elasticsearch.net": {
+      "Elasticsearch.Net7": {
         "type": "Project",
         "dependencies": {
           "Microsoft.CSharp": "4.6.0",
@@ -96,10 +96,10 @@
           "System.Memory": "4.5.4"
         }
       },
-      "nest": {
+      "NEST7": {
         "type": "Project",
         "dependencies": {
-          "Elasticsearch.Net": "7.0.0"
+          "Elasticsearch.Net7": "7.17.0"
         }
       }
     },
@@ -290,7 +290,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "elasticsearch.net": {
+      "Elasticsearch.Net7": {
         "type": "Project",
         "dependencies": {
           "Microsoft.CSharp": "4.6.0",
@@ -301,10 +301,10 @@
           "System.Reflection.Emit.Lightweight": "4.3.0"
         }
       },
-      "nest": {
+      "NEST7": {
         "type": "Project",
         "dependencies": {
-          "Elasticsearch.Net": "7.0.0"
+          "Elasticsearch.Net7": "7.17.0"
         }
       }
     }

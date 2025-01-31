@@ -6,12 +6,12 @@ module Tests.YamlRunner.TestSuiteBootstrap
 
 open System
 open System.Linq
-open Elasticsearch.Net
-open Elasticsearch.Net.Specification.CatApi
-open Elasticsearch.Net.Specification.IndicesApi
+open Elasticsearch.Net7
+open Elasticsearch.Net7.Specification.CatApi
+open Elasticsearch.Net7.Specification.IndicesApi
 open Tests.YamlRunner.Models
 open System.Collections.Generic
-open Elasticsearch.Net.Specification.ClusterApi
+open Elasticsearch.Net7.Specification.ClusterApi
 
 let DefaultSetup : Operation list = [Actions("Setup", fun (client, suite) ->
     let firstFailure (responses:DynamicResponse seq) =

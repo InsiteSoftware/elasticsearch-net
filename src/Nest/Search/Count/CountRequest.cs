@@ -3,10 +3,10 @@
 // See the LICENSE file in the project root for more information
 
 using System;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("count.json")]
 	[ReadAs(typeof(CountRequest))]

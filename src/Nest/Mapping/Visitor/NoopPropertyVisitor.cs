@@ -4,7 +4,7 @@
 
 using System.Reflection;
 
-namespace Nest
+namespace Nest7
 {
 	// TODO: Make all methods virtual
 	public class NoopPropertyVisitor : IPropertyVisitor

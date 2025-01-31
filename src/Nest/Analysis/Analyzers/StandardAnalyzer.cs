@@ -4,9 +4,9 @@
 
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// An analyzer of type standard that is built of using Standard Tokenizer, with Standard Token Filter, Lower Case Token Filter, and Stop Token

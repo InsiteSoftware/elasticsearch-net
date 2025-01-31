@@ -7,13 +7,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Extensions;
+using Elasticsearch.Net7.Extensions;
 
 #if !DOTNETCORE
 using System.Net;
 #endif
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public class Transport<TConnectionSettings> : ITransport<TConnectionSettings>
 		where TConnectionSettings : class, IConnectionConfigurationValues
@@ -45,7 +45,7 @@ namespace Elasticsearch.Net
 
 			Settings = configurationValues;
 			PipelineProvider = pipelineProvider ?? new RequestPipelineFactory();
-			DateTimeProvider = dateTimeProvider ?? Net.DateTimeProvider.Default;
+			DateTimeProvider = dateTimeProvider ?? Net7.DateTimeProvider.Default;
 			MemoryStreamFactory = memoryStreamFactory ?? configurationValues.MemoryStreamFactory;
 		}
 
@@ -90,12 +90,6 @@ namespace Elasticsearch.Net
 							pipeline.MarkDead(node);
 							pipeline.SniffOnConnectionFailure();
 						}
-					}
-					catch (PipelineException pipelineException) when (pipelineException.FailureReason == PipelineFailure.FailedProductCheck)
-					{
-						// We don't mark nodes dead in this situation
-						HandlePipelineException(ref response, pipelineException, pipeline, node, seenExceptions, false);
-						break;
 					}
 					catch (PipelineException pipelineException) when (!pipelineException.Recoverable)
 					{
@@ -153,12 +147,6 @@ namespace Elasticsearch.Net
 						pipeline.MarkDead(node);
 						await pipeline.SniffOnConnectionFailureAsync(cancellationToken).ConfigureAwait(false);
 					}
-				}
-				catch (PipelineException pipelineException) when (pipelineException.FailureReason == PipelineFailure.FailedProductCheck)
-				{
-					// We don't mark nodes dead in this situation
-					HandlePipelineException(ref response, pipelineException, pipeline, node, seenExceptions, false);
-					break;
 				}
 				catch (PipelineException pipelineException) when (!pipelineException.Recoverable)
 				{

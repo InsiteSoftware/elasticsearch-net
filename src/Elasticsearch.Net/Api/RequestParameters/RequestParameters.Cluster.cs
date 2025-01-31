@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.ClusterApi
+namespace Elasticsearch.Net7.Specification.ClusterApi
 {
 	///<summary>Request options for AllocationExplain <para>https://www.elastic.co/guide/en/elasticsearch/reference/master/cluster-allocation-explain.html</para></summary>
 	public class ClusterAllocationExplainRequestParameters : RequestParameters<ClusterAllocationExplainRequestParameters>

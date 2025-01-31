@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
@@ -49,7 +49,7 @@ namespace Tests.Indices.IndexTemplates
 						},
 						Template = new Template
 						{
-							Settings = new Nest.IndexSettings
+							Settings = new Nest7.IndexSettings
 							{
 								NumberOfShards = 2,
 								NumberOfReplicas = 0

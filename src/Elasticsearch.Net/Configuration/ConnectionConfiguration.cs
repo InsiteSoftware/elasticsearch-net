@@ -18,9 +18,9 @@ using System.Reflection;
 using System.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
-using Elasticsearch.Net.Extensions;
+using Elasticsearch.Net7.Extensions;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
 	/// Allows you to control how <see cref="ElasticLowLevelClient"/> behaves and where/how it connects to Elasticsearch
@@ -59,7 +59,7 @@ namespace Elasticsearch.Net
 		public static readonly TimeSpan DefaultDnsRefreshTimeout = TimeSpan.FromMinutes(5);
 
 		/// <summary>
-		/// The default connection limit for both Elasticsearch.Net and Nest. Defaults to <c>80</c>
+		/// The default connection limit for both Elasticsearch.Net and Nest7. Defaults to <c>80</c>
 #if DOTNETCORE
 		/// <para>Except for <see cref="HttpClientHandler"/> implementations based on curl, which defaults to <see cref="Environment.ProcessorCount"/></para>
 #endif
@@ -175,7 +175,7 @@ namespace Elasticsearch.Net
 		private bool _transferEncodingChunked;
 		private IMemoryStreamFactory _memoryStreamFactory = DefaultMemoryStreamFactory;
 		private bool _enableTcpStats;
-		public static IMemoryStreamFactory DefaultMemoryStreamFactory { get; } = Elasticsearch.Net.MemoryStreamFactory.Default;
+		public static IMemoryStreamFactory DefaultMemoryStreamFactory { get; } = Elasticsearch.Net7.MemoryStreamFactory.Default;
 		private bool _enableThreadPoolStats;
 		private bool _enableApiVersioningHeader;
 		private string _certificateFingerprint;
@@ -612,7 +612,7 @@ namespace Elasticsearch.Net
 		public T TransferEncodingChunked(bool transferEncodingChunked = true) => Assign(transferEncodingChunked, (a, v) => a._transferEncodingChunked = v);
 
 		/// <summary>
-		/// The memory stream factory to use, defaults to <see cref="Elasticsearch.Net.MemoryStreamFactory.Default"/>
+		/// The memory stream factory to use, defaults to <see cref="Elasticsearch.Net7.MemoryStreamFactory.Default"/>
 		/// </summary>
 		public T MemoryStreamFactory(IMemoryStreamFactory memoryStreamFactory) => Assign(memoryStreamFactory, (a, v) => a._memoryStreamFactory = v);
 

@@ -5,7 +5,7 @@
 using System;
 using System.Linq;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	internal abstract class VersionInfo
 	{

@@ -5,7 +5,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// An alias to one or more indices

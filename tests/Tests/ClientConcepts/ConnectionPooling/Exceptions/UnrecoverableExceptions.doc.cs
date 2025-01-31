@@ -8,11 +8,11 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
-using Elasticsearch.Net.VirtualizedCluster;
-using Elasticsearch.Net.VirtualizedCluster.Audit;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.VirtualizedCluster;
+using Elasticsearch.Net7.VirtualizedCluster.Audit;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Domain;
 using Tests.Framework;
 using Tests.Framework.SerializationTests;
@@ -48,8 +48,10 @@ namespace Tests.ClientConcepts.ConnectionPooling.Exceptions
 			var failures = Enum.GetValues(typeof(PipelineFailure)).Cast<PipelineFailure>();
 			foreach (var failure in failures)
 			{
+
 				switch (failure)
 				{
+
 					/** The followinig pipeline failures are recoverable and will be retried */
 					case PipelineFailure.PingFailure:
 					case PipelineFailure.BadRequest:
@@ -66,12 +68,12 @@ namespace Tests.ClientConcepts.ConnectionPooling.Exceptions
 					case PipelineFailure.MaxRetriesReached:
 					case PipelineFailure.Unexpected:
 					case PipelineFailure.NoNodesAttempted:
-					case PipelineFailure.FailedProductCheck:
 						var unrecoverable = new PipelineException(failure);
 						unrecoverable.Recoverable.Should().BeFalse(failure.GetStringValue());
 						break;
 					default:
 						throw new ArgumentOutOfRangeException(failure.GetStringValue());
+
 				}
 			}
 		}
@@ -107,7 +109,9 @@ namespace Tests.ClientConcepts.ConnectionPooling.Exceptions
 			);
 		}
 
+#pragma warning disable IDE0044 // Add readonly modifier
 		private static byte[] HtmlNginx401Response = Encoding.UTF8.GetBytes(StubResponse.NginxHtml401Response);
+#pragma warning restore IDE0044 // Add readonly modifier
 
 		/**
 		 * When a bad authentication response occurs, the client attempts to deserialize the response body returned;

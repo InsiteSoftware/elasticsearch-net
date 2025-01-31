@@ -6,9 +6,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-using Elasticsearch.Net.Extensions;
+using Elasticsearch.Net7.Extensions;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public class StaticConnectionPool : IConnectionPool
 	{
@@ -77,9 +77,6 @@ namespace Elasticsearch.Net
 		protected Random Random { get; }
 		protected bool Randomize { get; }
 
-		/// <inheritdoc />
-		ProductCheckStatus IConnectionPool.ProductCheckStatus { get; set; } = ProductCheckStatus.NotChecked;
-
 		/// <summary>
 		/// Creates a view of all the live nodes with changing starting positions that wraps over on each call
 		/// e.g Thread A might get 1,2,3,4,5 and thread B will get 2,3,4,5,1.
@@ -113,7 +110,7 @@ namespace Elasticsearch.Net
 		{
 			var nodesProvided = nodes?.ToList() ?? throw new ArgumentNullException(nameof(nodes));
 			nodesProvided.ThrowIfEmpty(nameof(nodes));
-			DateTimeProvider = dateTimeProvider ?? Net.DateTimeProvider.Default;
+			DateTimeProvider = dateTimeProvider ?? Net7.DateTimeProvider.Default;
 
 			string scheme = null;
 			foreach (var node in nodesProvided)

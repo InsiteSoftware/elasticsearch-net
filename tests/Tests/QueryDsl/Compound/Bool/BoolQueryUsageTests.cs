@@ -6,7 +6,7 @@ using System;
 using System.Linq;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
 using Tests.Framework.EndpointTests.TestState;
@@ -32,7 +32,7 @@ namespace Tests.QueryDsl.Compound.Bool
 	 * `must_not`::
 	 * The clause (query) must not appear in the matching documents.
 	 *
-	 * Check out the <<bool-queries,`bool` queries section>> for more details on `bool` queries with NEST.
+	 * Check out the <<bool-queries,`bool` queries section>> for more details on `bool` queries with Nest7.
 	 *
 	 * See the Elasticsearch documentation on {ref_current}/query-dsl-bool-query.html[bool query] for more details.
 	 */

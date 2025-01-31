@@ -29,10 +29,10 @@
 using System;
 using System.IO;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Utf8Json.Internal;
-using Elasticsearch.Net.Utf8Json.Resolvers;
+using Elasticsearch.Net7.Utf8Json.Internal;
+using Elasticsearch.Net7.Utf8Json.Resolvers;
 
-namespace Elasticsearch.Net.Utf8Json
+namespace Elasticsearch.Net7.Utf8Json
 {
     /// <summary>
     /// High-Level API of Utf8Json.

@@ -29,11 +29,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
-using Elasticsearch.Net.Utf8Json.Internal;
-using Elasticsearch.Net.Utf8Json.Internal.Emit;
-using Elasticsearch.Net.Utf8Json.Resolvers;
+using Elasticsearch.Net7.Utf8Json.Internal;
+using Elasticsearch.Net7.Utf8Json.Internal.Emit;
+using Elasticsearch.Net7.Utf8Json.Resolvers;
 
-namespace Elasticsearch.Net.Utf8Json.Formatters
+namespace Elasticsearch.Net7.Utf8Json.Formatters
 {
     internal sealed class DynamicObjectTypeFallbackFormatter : IJsonFormatter<object>
     {

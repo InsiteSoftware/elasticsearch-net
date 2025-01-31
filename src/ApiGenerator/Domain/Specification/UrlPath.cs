@@ -63,7 +63,7 @@ namespace ApiGenerator.Domain.Specification
 		public string AutoResolveBaseArguments(string generic) => string.Join(", ", Parts.Select(p => !ResolvableFromT.Contains(p.Name) ? p.Name : $"typeof({generic})"));
 
 		public string DocumentPathBaseArgument(string generic) => string.Join(", ",
-			_additionalPartsForConstructor.Select(p => p.Name =="id" ? $"id ?? Nest.Id.From(documentWithId)"
+			_additionalPartsForConstructor.Select(p => p.Name =="id" ? $"id ?? Nest7.Id.From(documentWithId)"
 				: ResolvableFromT.Contains(p.Name) ? $"{p.Name} ?? typeof({generic})" : p.Name));
 
 		public string DocumentPathConstructorArgument(string generic) => string.Join(", ",

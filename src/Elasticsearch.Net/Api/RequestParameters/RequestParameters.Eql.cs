@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.EqlApi
+namespace Elasticsearch.Net7.Specification.EqlApi
 {
 	///<summary>Request options for Delete <para>https://www.elastic.co/guide/en/elasticsearch/reference/current/eql-search-api.html</para></summary>
 	public class EqlDeleteRequestParameters : RequestParameters<EqlDeleteRequestParameters>

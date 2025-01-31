@@ -5,9 +5,9 @@
 using System;
 using System.Linq.Expressions;
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A query that uses a query parser in order to parse its content
@@ -76,7 +76,7 @@ namespace Nest
 		Fields Fields { get; set; }
 
 		/// <summary>
-		/// Set the fuzziness for fuzzy queries. Defaults to <see cref="Nest.Fuzziness.Auto" />
+		/// Set the fuzziness for fuzzy queries. Defaults to <see cref="Nest7.Fuzziness.Auto" />
 		/// </summary>
 		[DataMember(Name = "fuzziness")]
 		Fuzziness Fuzziness { get; set; }

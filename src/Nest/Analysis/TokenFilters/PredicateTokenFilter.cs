@@ -5,7 +5,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The predicate_token_filter token filter takes a predicate script, and removes tokens that do

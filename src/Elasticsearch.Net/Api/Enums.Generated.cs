@@ -26,7 +26,7 @@ using System.Text;
 using System.Reflection;
 using System.Runtime.Serialization;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	[Flags, StringEnum]
 	public enum ClusterStateMetric

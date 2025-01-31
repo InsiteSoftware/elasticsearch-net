@@ -6,7 +6,7 @@ using System;
 using System.Security;
 using System.Text;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
 	/// Credentials for Api Key Authentication

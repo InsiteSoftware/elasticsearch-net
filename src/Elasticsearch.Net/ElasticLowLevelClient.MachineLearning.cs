@@ -25,14 +25,14 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net;
-using static Elasticsearch.Net.HttpMethod;
+using Elasticsearch.Net7;
+using static Elasticsearch.Net7.HttpMethod;
 
 // ReSharper disable InterpolatedStringExpressionIsNotIFormattable
 // ReSharper disable once CheckNamespace
 // ReSharper disable InterpolatedStringExpressionIsNotIFormattable
 // ReSharper disable RedundantExtendsListEntry
-namespace Elasticsearch.Net.Specification.MachineLearningApi
+namespace Elasticsearch.Net7.Specification.MachineLearningApi
 {
 	///<summary>
 	/// Machine Learning APIs.

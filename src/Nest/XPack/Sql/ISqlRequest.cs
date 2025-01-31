@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary> Shared properties of <see cref="IQuerySqlRequest" /> and <see cref="ITranslateSqlRequest" /> </summary>
 	public interface ISqlRequest

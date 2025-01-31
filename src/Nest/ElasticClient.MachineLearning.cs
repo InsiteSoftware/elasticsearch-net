@@ -21,11 +21,11 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Specification.MachineLearningApi;
+using Elasticsearch.Net7.Specification.MachineLearningApi;
 
 // ReSharper disable once CheckNamespace
 // ReSharper disable RedundantTypeArgumentsOfMethod
-namespace Nest.Specification.MachineLearningApi
+namespace Nest7.Specification.MachineLearningApi
 {
 	///<summary>
 	/// Machine Learning APIs.

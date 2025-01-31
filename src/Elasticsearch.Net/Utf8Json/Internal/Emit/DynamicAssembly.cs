@@ -30,7 +30,7 @@ using System;
 using System.Reflection;
 using System.Reflection.Emit;
 
-namespace Elasticsearch.Net.Utf8Json.Internal.Emit
+namespace Elasticsearch.Net7.Utf8Json.Internal.Emit
 {
 	internal class DynamicAssembly
 	{

@@ -4,11 +4,11 @@
 
 using System;
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Extensions;
-using Elasticsearch.Net.Utf8Json;
-using Elasticsearch.Net.Utf8Json.Internal;
+using Elasticsearch.Net7.Extensions;
+using Elasticsearch.Net7.Utf8Json;
+using Elasticsearch.Net7.Utf8Json.Internal;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A source repository enables you to create minimal, source-only snapshots that take up to 50% less space on disk.

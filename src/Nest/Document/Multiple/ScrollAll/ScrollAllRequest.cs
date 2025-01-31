@@ -4,9 +4,9 @@
 
 using System;
 using System.Linq.Expressions;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
-namespace Nest
+namespace Nest7
 {
 	public interface IScrollAllRequest 
 	{

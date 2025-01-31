@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.TextStructureApi
+namespace Elasticsearch.Net7.Specification.TextStructureApi
 {
 	///<summary>Request options for FindStructure <para>https://www.elastic.co/guide/en/elasticsearch/reference/current/find-structure.html</para></summary>
 	public class FindStructureRequestParameters : RequestParameters<FindStructureRequestParameters>

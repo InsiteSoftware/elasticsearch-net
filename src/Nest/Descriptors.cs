@@ -19,7 +19,7 @@
 // -----------------------------------------------
 using System.Collections.Generic;
 
-namespace Nest
+namespace Nest7
 {
 	// ReSharper disable UnusedTypeParameter
 	public abstract partial class RequestDescriptorBase<TDescriptor, TParameters, TInterface>

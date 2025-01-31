@@ -5,7 +5,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace Nest.JsonNetSerializer.Converters
+namespace Nest7.JsonNetSerializer.Converters
 {
 	/// <summary>
 	/// Included for compatibility reasons

@@ -3,14 +3,14 @@
 // See the LICENSE file in the project root for more information
 
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 
 namespace Tests.Mapping.Types.Core.Range.LongRange
 {
 	public class LongRangeTest
 	{
 		[LongRange]
-		public Nest.LongRange Range { get; set; }
+		public Nest7.LongRange Range { get; set; }
 	}
 
 	[SkipVersion("<5.2.0", "dedicated range types is a new 5.2.0 feature")]

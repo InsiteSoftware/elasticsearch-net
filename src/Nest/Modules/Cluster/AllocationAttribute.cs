@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Nest
+namespace Nest7
 {
 	public interface IAllocationAttributes : IIsADictionary<string, IList<string>>
 	{

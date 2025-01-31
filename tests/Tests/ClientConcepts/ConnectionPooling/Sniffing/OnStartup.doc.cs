@@ -6,12 +6,12 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
-using Elasticsearch.Net.VirtualizedCluster;
-using Elasticsearch.Net.VirtualizedCluster.Audit;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.VirtualizedCluster;
+using Elasticsearch.Net7.VirtualizedCluster.Audit;
 using Tests.Framework;
-using static Elasticsearch.Net.VirtualizedCluster.Rules.TimesHelper;
-using static Elasticsearch.Net.AuditEvent;
+using static Elasticsearch.Net7.VirtualizedCluster.Rules.TimesHelper;
+using static Elasticsearch.Net7.AuditEvent;
 
 namespace Tests.ClientConcepts.ConnectionPooling.Sniffing
 {

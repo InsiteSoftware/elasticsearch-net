@@ -5,9 +5,9 @@
 using System;
 using System.Diagnostics;
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A field of type token_count is really an integer field which accepts string values,

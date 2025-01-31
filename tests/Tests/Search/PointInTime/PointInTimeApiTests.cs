@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
@@ -29,13 +29,13 @@ namespace Tests.Search.PointInTime
 			{
 				OpenPointInTimeStep, u =>
 					u.Calls<OpenPointInTimeDescriptor, OpenPointInTimeRequest, IOpenPointInTimeRequest, OpenPointInTimeResponse>(
-						v => new OpenPointInTimeRequest(Nest.Indices.Index<Project>())
+						v => new OpenPointInTimeRequest(Nest7.Indices.Index<Project>())
 						{
 							KeepAlive = "1m"
 						},
 						(v, d) => d.KeepAlive("1m"),
-						(v, c, f) => c.OpenPointInTime(Nest.Indices.Index<Project>(), f),
-						(v, c, f) => c.OpenPointInTimeAsync(Nest.Indices.Index<Project>(), f),
+						(v, c, f) => c.OpenPointInTime(Nest7.Indices.Index<Project>(), f),
+						(v, c, f) => c.OpenPointInTimeAsync(Nest7.Indices.Index<Project>(), f),
 						(v, c, r) => c.OpenPointInTime(r),
 						(v, c, r) => c.OpenPointInTimeAsync(r),
 						(r, values) => values.ExtendedValue("pitId", r.Id)
@@ -48,7 +48,7 @@ namespace Tests.Search.PointInTime
 						{
 							Size = 1,
 							Query = new QueryContainer(new MatchAllQuery()),
-							PointInTime = new Nest.PointInTime(v, "1m")
+							PointInTime = new Nest7.PointInTime(v, "1m")
 						},
 						(v, d) => d
 							.Size(1)
@@ -68,7 +68,7 @@ namespace Tests.Search.PointInTime
 						{
 							Size = 1,
 							Query = new QueryContainer(new MatchAllQuery()),
-							PointInTime = new Nest.PointInTime(v, "1m"),
+							PointInTime = new Nest7.PointInTime(v, "1m"),
 							Sort =new List<ISort>
 							{
 								FieldSort.ShardDocumentOrderDescending

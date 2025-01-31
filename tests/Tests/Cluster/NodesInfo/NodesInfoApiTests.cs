@@ -5,9 +5,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Framework.EndpointTests;
@@ -57,7 +57,7 @@ namespace Tests.Cluster.NodesInfo
 			nodesMetada.Successful.Should().BeGreaterThan(0);
 		}
 
-		protected void Assert(Nest.NodeInfo node)
+		protected void Assert(Nest7.NodeInfo node)
 		{
 			node.Should().NotBeNull();
 			node.Name.Should().NotBeNullOrWhiteSpace();
@@ -135,7 +135,7 @@ namespace Tests.Cluster.NodesInfo
 			transport.PublishAddress.Should().NotBeNullOrWhiteSpace();
 		}
 
-		protected void Assert(Nest.NodeInfoHttp http)
+		protected void Assert(Nest7.NodeInfoHttp http)
 		{
 			http.Should().NotBeNull();
 			http.BoundAddress.Should().NotBeEmpty();

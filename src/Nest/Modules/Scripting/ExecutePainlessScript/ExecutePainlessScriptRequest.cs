@@ -5,7 +5,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary> The Painless execute API allows an arbitrary script to be executed and a result to be returned. </summary>
 	[MapsApi("scripts_painless_execute.json")]

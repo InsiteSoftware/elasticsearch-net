@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Similarity that implements the divergence from independence model

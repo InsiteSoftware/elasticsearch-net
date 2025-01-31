@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.FleetApi
+namespace Elasticsearch.Net7.Specification.FleetApi
 {
 	///<summary>Request options for GlobalCheckpoints <para>https://www.elastic.co/guide/en/elasticsearch/reference/current/get-global-checkpoints.html</para></summary>
 	public class GlobalCheckpointsRequestParameters : RequestParameters<GlobalCheckpointsRequestParameters>

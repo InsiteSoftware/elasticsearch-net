@@ -3,10 +3,10 @@
 // See the LICENSE file in the project root for more information
 
 using System.Collections.Generic;
-using static Elasticsearch.Net.ElasticsearchUrlFormatter;
+using static Elasticsearch.Net7.ElasticsearchUrlFormatter;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
 	/// Used by the raw client to compose querystring parameters in a matter that still exposes some xmldocs

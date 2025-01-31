@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.NodesApi
+namespace Elasticsearch.Net7.Specification.NodesApi
 {
 	///<summary>Request options for ClearRepositoriesMeteringArchive <para>https://www.elastic.co/guide/en/elasticsearch/reference/current/clear-repositories-metering-archive-api.html</para></summary>
 	public class ClearRepositoriesMeteringArchiveRequestParameters : RequestParameters<ClearRepositoriesMeteringArchiveRequestParameters>

@@ -24,14 +24,14 @@ using System.Linq;
 using System.Text;
 using System.Linq.Expressions;
 using System.Runtime.Serialization;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Utf8Json;
 
 // ReSharper disable RedundantBaseConstructorCall
 // ReSharper disable UnusedTypeParameter
 // ReSharper disable PartialMethodWithSinglePart
 // ReSharper disable RedundantNameQualifier
-namespace Nest
+namespace Nest7
 {
 	[InterfaceDataContract]
 	public partial interface IBulkRequest : IRequest<BulkRequestParameters>
@@ -92,7 +92,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -302,7 +302,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -370,7 +370,7 @@ namespace Nest
 
 		///<summary>/{index}/_create/{id}</summary>
 		///<param name = "id">The document used to resolve the path from</param>
-		public CreateRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
+		public CreateRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest7.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
 		partial void DocumentFromPath(TDocument document);
 		///<summary>Used for serialization purposes, making sure we have a parameterless constructor</summary>
 		[SerializationConstructor]
@@ -406,7 +406,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -521,7 +521,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -581,7 +581,7 @@ namespace Nest
 
 		///<summary>/{index}/_doc/{id}</summary>
 		///<param name = "id">The document used to resolve the path from</param>
-		public DeleteRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
+		public DeleteRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest7.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
 		partial void DocumentFromPath(TDocument document);
 		///<summary>Used for serialization purposes, making sure we have a parameterless constructor</summary>
 		[SerializationConstructor]
@@ -738,7 +738,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -1013,7 +1013,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -1083,7 +1083,7 @@ namespace Nest
 
 		///<summary>/{index}/_doc/{id}</summary>
 		///<param name = "id">The document used to resolve the path from</param>
-		public DocumentExistsRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
+		public DocumentExistsRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest7.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
 		partial void DocumentFromPath(TDocument document);
 		///<summary>Used for serialization purposes, making sure we have a parameterless constructor</summary>
 		[SerializationConstructor]
@@ -1162,7 +1162,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -1225,7 +1225,7 @@ namespace Nest
 
 		///<summary>/{index}/_source/{id}</summary>
 		///<param name = "id">The document used to resolve the path from</param>
-		public SourceExistsRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
+		public SourceExistsRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest7.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
 		partial void DocumentFromPath(TDocument document);
 		///<summary>Used for serialization purposes, making sure we have a parameterless constructor</summary>
 		[SerializationConstructor]
@@ -1339,7 +1339,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -1388,7 +1388,7 @@ namespace Nest
 
 		///<summary>/{index}/_explain/{id}</summary>
 		///<param name = "id">The document used to resolve the path from</param>
-		public ExplainRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
+		public ExplainRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest7.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
 		partial void DocumentFromPath(TDocument document);
 		///<summary>Used for serialization purposes, making sure we have a parameterless constructor</summary>
 		[SerializationConstructor]
@@ -1536,7 +1536,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -1606,7 +1606,7 @@ namespace Nest
 
 		///<summary>/{index}/_doc/{id}</summary>
 		///<param name = "id">The document used to resolve the path from</param>
-		public GetRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
+		public GetRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest7.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
 		partial void DocumentFromPath(TDocument document);
 		///<summary>Used for serialization purposes, making sure we have a parameterless constructor</summary>
 		[SerializationConstructor]
@@ -1724,7 +1724,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -1787,7 +1787,7 @@ namespace Nest
 
 		///<summary>/{index}/_source/{id}</summary>
 		///<param name = "id">The document used to resolve the path from</param>
-		public SourceRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
+		public SourceRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest7.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
 		partial void DocumentFromPath(TDocument document);
 		///<summary>Used for serialization purposes, making sure we have a parameterless constructor</summary>
 		[SerializationConstructor]
@@ -1843,7 +1843,7 @@ namespace Nest
 
 		///<summary>/{index}/_doc/{id}</summary>
 		///<param name = "id">The document used to resolve the path from</param>
-		public IndexRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
+		public IndexRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest7.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
 		partial void DocumentFromPath(TDocument document);
 		// values part of the url path
 		[IgnoreDataMember]
@@ -1904,7 +1904,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -2023,7 +2023,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -2298,7 +2298,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -2396,7 +2396,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -2853,7 +2853,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -3025,7 +3025,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -3137,7 +3137,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -3222,7 +3222,7 @@ namespace Nest
 
 		///<summary>/{index}/_termvectors/{id}</summary>
 		///<param name = "id">The document used to resolve the path from</param>
-		public TermVectorsRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
+		public TermVectorsRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest7.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
 		partial void DocumentFromPath(TDocument document);
 		// values part of the url path
 		[IgnoreDataMember]
@@ -3284,7 +3284,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -3351,7 +3351,7 @@ namespace Nest
 
 		///<summary>/{index}/_update/{id}</summary>
 		///<param name = "id">The document used to resolve the path from</param>
-		public UpdateRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
+		public UpdateRequest(TDocument documentWithId, IndexName index = null, Id id = null): this(index ?? typeof(TDocument), id ?? Nest7.Id.From(documentWithId)) => DocumentFromPath(documentWithId);
 		partial void DocumentFromPath(TDocument document);
 		///<summary>Used for serialization purposes, making sure we have a parameterless constructor</summary>
 		[SerializationConstructor]
@@ -3415,7 +3415,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing
@@ -3605,7 +3605,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing

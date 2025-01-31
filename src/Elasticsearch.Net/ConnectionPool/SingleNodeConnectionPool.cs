@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary> A connection pool to a single node or endpoint </summary>
 	public class SingleNodeConnectionPool : IConnectionPool
@@ -42,9 +42,6 @@ namespace Elasticsearch.Net
 
 		/// <inheritdoc />
 		public bool UsingSsl { get; }
-
-		/// <inheritdoc />
-		ProductCheckStatus IConnectionPool.ProductCheckStatus { get; set; } = ProductCheckStatus.NotChecked;
 
 		/// <inheritdoc />
 		public IEnumerable<Node> CreateView(Action<AuditEvent, Node> audit = null) => Nodes;

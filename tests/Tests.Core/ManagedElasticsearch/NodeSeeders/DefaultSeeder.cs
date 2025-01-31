@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Nest;
+using Nest7;
 using Tests.Configuration;
 using Tests.Core.Client;
 using Tests.Core.Extensions;

@@ -4,9 +4,9 @@
 
 using System;
 using System.Collections.Generic;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	///  A reindex implementation that uses ScrollAll() BulkAll() to compose a reindex pipeline.

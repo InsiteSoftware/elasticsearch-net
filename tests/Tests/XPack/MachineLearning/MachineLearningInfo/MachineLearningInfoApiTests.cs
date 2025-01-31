@@ -3,9 +3,9 @@
 // See the LICENSE file in the project root for more information
 
 using System;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Client;
 using Tests.Core.Extensions;
 using Tests.Framework.EndpointTests.TestState;

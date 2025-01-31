@@ -21,11 +21,11 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Specification.DanglingIndicesApi;
+using Elasticsearch.Net7.Specification.DanglingIndicesApi;
 
 // ReSharper disable once CheckNamespace
 // ReSharper disable RedundantTypeArgumentsOfMethod
-namespace Nest.Specification.DanglingIndicesApi
+namespace Nest7.Specification.DanglingIndicesApi
 {
 	///<summary>
 	/// Dangling Indices APIs.

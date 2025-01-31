@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.SqlApi
+namespace Elasticsearch.Net7.Specification.SqlApi
 {
 	///<summary>Request options for ClearCursor <para>https://www.elastic.co/guide/en/elasticsearch/reference/current/clear-sql-cursor-api.html</para></summary>
 	public class ClearSqlCursorRequestParameters : RequestParameters<ClearSqlCursorRequestParameters>

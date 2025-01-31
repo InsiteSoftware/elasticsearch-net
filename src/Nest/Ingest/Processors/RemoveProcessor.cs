@@ -4,9 +4,9 @@
 
 using System;
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// Removes existing fields. If one field doesn't exist, an exception will be thrown.
@@ -21,7 +21,7 @@ namespace Nest
 		Fields Field { get; set; }
 
 		/// <summary>
-		/// If <c>true</c> and <see cref="Nest.Field" /> does not exist or is null,
+		/// If <c>true</c> and <see cref="Nest7.Field" /> does not exist or is null,
 		/// the processor quietly exits without modifying the document. Default is <c>false</c>
 		/// </summary>
 		[DataMember(Name ="ignore_missing")]

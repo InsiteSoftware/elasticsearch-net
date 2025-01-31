@@ -3,10 +3,10 @@
 // See the LICENSE file in the project root for more information
 
 using System.Collections.Generic;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	public class GraphExploreResponse : ResponseBase
 	{

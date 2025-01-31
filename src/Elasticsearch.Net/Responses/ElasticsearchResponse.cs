@@ -7,9 +7,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.NetworkInformation;
 using System.Text;
-using Elasticsearch.Net.Diagnostics;
+using Elasticsearch.Net7.Diagnostics;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
 	/// A response from Elasticsearch including details about the request/response life cycle

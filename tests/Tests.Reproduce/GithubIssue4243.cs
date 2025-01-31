@@ -4,8 +4,8 @@
 
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Specification.CatApi;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Specification.CatApi;
 using FluentAssertions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 

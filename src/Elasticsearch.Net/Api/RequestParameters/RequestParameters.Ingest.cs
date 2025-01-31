@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.IngestApi
+namespace Elasticsearch.Net7.Specification.IngestApi
 {
 	///<summary>Request options for DeletePipeline <para>https://www.elastic.co/guide/en/elasticsearch/reference/master/delete-pipeline-api.html</para></summary>
 	public class DeletePipelineRequestParameters : RequestParameters<DeletePipelineRequestParameters>

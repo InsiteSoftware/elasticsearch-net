@@ -11,7 +11,7 @@ using System;
 using System.Diagnostics;
 using System.Threading;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
     /// Thread-safety: We treat this class as immutable except for the timer. Creating a new object

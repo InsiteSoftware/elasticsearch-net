@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public interface IConnectionPool : IDisposable
 	{
@@ -33,12 +33,6 @@ namespace Elasticsearch.Net
 		/// responsible for setting this in a thread safe fashion.
 		/// </summary>
 		bool SniffedOnStartup { get; set; }
-
-		/// <summary>
-		/// Whether a product check is seen on startup. The implementation is
-		/// responsible for setting this in a thread safe fashion.
-		/// </summary>
-		ProductCheckStatus ProductCheckStatus { get; set; }
 
 		/// <summary>
 		/// Whether pinging is supported

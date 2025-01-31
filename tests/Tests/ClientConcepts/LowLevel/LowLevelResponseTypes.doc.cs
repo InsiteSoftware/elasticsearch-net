@@ -8,13 +8,13 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Framework;
 using System.Threading;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net.Extensions;
+using Elasticsearch.Net7.Extensions;
 using Tests.Domain.Extensions;
 
 // ReSharper disable SuggestVarOrType_Elsewhere

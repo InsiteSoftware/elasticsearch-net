@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("security.get_token.json")]
 	public partial interface IGetUserAccessTokenRequest

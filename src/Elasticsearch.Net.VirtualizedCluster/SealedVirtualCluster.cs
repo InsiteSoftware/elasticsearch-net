@@ -3,9 +3,9 @@
 // See the LICENSE file in the project root for more information
 
 using System;
-using Elasticsearch.Net.VirtualizedCluster.Providers;
+using Elasticsearch.Net7.VirtualizedCluster.Providers;
 
-namespace Elasticsearch.Net.VirtualizedCluster
+namespace Elasticsearch.Net7.VirtualizedCluster
 {
 	public class SealedVirtualCluster
 	{

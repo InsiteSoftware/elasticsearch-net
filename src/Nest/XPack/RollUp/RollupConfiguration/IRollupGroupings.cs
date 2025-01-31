@@ -5,7 +5,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The groups section of the configuration is where you decide which fields should be grouped on, and with what aggregations.

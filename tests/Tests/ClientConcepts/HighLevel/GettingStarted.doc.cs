@@ -8,8 +8,8 @@ using System.Linq;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
-using Elasticsearch.Net;
-using Nest;
+using Elasticsearch.Net7;
+using Nest7;
 
 namespace Tests.ClientConcepts.HighLevel
 {
@@ -22,7 +22,7 @@ namespace Tests.ClientConcepts.HighLevel
 	 * All requests and responses are exposed through types, making it ideal for getting up and running quickly.
 	 *
 	 * Under the covers, NEST uses the <<elasticsearch-net,Elasticsearch.Net low level client>> to dispatch requests and
-	 * responses, using and extending many of the types within Elasticsearch.Net. The low level client itself is still
+	 * responses, using and extending many of the types within Elasticsearch.Net7. The low level client itself is still
 	 * exposed on the high level client through the `.LowLevel` property.
 	 */
 	public class GettingStarted
@@ -212,7 +212,7 @@ namespace Tests.ClientConcepts.HighLevel
 		 */
 		public async Task ObjectInitializerSyntax()
 		{
-			var searchRequest = new SearchRequest<Person>(Nest.Indices.All) //<1> All indices and types are specified in the constructor
+			var searchRequest = new SearchRequest<Person>(Nest7.Indices.All) //<1> All indices and types are specified in the constructor
 			{
 				From = 0,
 				Size = 10,
@@ -262,7 +262,7 @@ namespace Tests.ClientConcepts.HighLevel
 		}
 		/**
 		 * Here, the query is represented as an anonymous type, but the body of the response is a concrete
-		 * implementation of the same response type returned from the high level client, NEST.
+		 * implementation of the same response type returned from the high level client, Nest7.
 		 * --
 		 */
 

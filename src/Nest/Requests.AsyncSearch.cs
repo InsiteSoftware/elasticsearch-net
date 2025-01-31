@@ -24,15 +24,15 @@ using System.Linq;
 using System.Text;
 using System.Linq.Expressions;
 using System.Runtime.Serialization;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Utf8Json;
-using Elasticsearch.Net.Specification.AsyncSearchApi;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Utf8Json;
+using Elasticsearch.Net7.Specification.AsyncSearchApi;
 
 // ReSharper disable RedundantBaseConstructorCall
 // ReSharper disable UnusedTypeParameter
 // ReSharper disable PartialMethodWithSinglePart
 // ReSharper disable RedundantNameQualifier
-namespace Nest
+namespace Nest7
 {
 	[InterfaceDataContract]
 	public partial interface IAsyncSearchDeleteRequest : IRequest<AsyncSearchDeleteRequestParameters>
@@ -344,7 +344,7 @@ namespace Nest
 		/// <para> shard_num = hash(_routing) % num_primary_shards</para>
 		/// <para>Elasticsearch will use the document id if not provided. </para>
 		/// <para>For requests that are constructed from/for a document NEST will automatically infer the routing key
-		/// if that document has a <see cref = "Nest.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest.ConnectionSettings"
+		/// if that document has a <see cref = "Nest7.JoinField"/> or a routing mapping on for its type exists on <see cref = "Nest7.ConnectionSettings"
 		////></para>
 		///</summary>
 		public Routing Routing

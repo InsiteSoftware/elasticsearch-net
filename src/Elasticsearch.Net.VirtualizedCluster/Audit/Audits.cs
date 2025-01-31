@@ -5,19 +5,19 @@
 using System;
 using System.Collections.Generic;
 
-namespace Elasticsearch.Net.VirtualizedCluster.Audit
+namespace Elasticsearch.Net7.VirtualizedCluster.Audit
 {
 	public class CallTraceState
 	{
 		public CallTraceState(AuditEvent e) => Event = e;
 
-		public Action<string, Elasticsearch.Net.Audit> AssertWithBecause { get; set; }
+		public Action<string, Elasticsearch.Net7.Audit> AssertWithBecause { get; set; }
 
 		public AuditEvent Event { get; private set; }
 
 		public int? Port { get; set; }
 
-		public Action<Elasticsearch.Net.Audit> SimpleAssert { get; set; }
+		public Action<Elasticsearch.Net7.Audit> SimpleAssert { get; set; }
 	}
 
 	public class ClientCall : List<CallTraceState>
@@ -30,7 +30,7 @@ namespace Elasticsearch.Net.VirtualizedCluster.Audit
 		public Action<IElasticsearchResponse> AssertResponse { get; private set; }
 		public Func<RequestConfigurationDescriptor, IRequestConfiguration> RequestOverrides { get; }
 
-		public void Add(AuditEvent key, Action<Elasticsearch.Net.Audit> value) => Add(new CallTraceState(key) { SimpleAssert = value });
+		public void Add(AuditEvent key, Action<Elasticsearch.Net7.Audit> value) => Add(new CallTraceState(key) { SimpleAssert = value });
 
 		public void Add(AuditEvent key, int port) => Add(new CallTraceState(key) { Port = port });
 

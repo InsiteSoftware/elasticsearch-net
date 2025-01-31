@@ -1295,7 +1295,7 @@
           "xunit.extensibility.core": "[2.3.1]"
         }
       },
-      "elasticsearch.net": {
+      "Elasticsearch.Net7": {
         "type": "Project",
         "dependencies": {
           "Microsoft.CSharp": "4.6.0",
@@ -1306,17 +1306,17 @@
           "System.Reflection.Emit.Lightweight": "4.3.0"
         }
       },
-      "nest": {
-        "type": "Project",
-        "dependencies": {
-          "Elasticsearch.Net": "7.0.0"
-        }
-      },
       "nest.jsonnetserializer": {
         "type": "Project",
         "dependencies": {
-          "NEST": "7.0.0",
+          "NEST7": "7.17.0",
           "Newtonsoft.Json": "13.0.1"
+        }
+      },
+      "NEST7": {
+        "type": "Project",
+        "dependencies": {
+          "Elasticsearch.Net7": "7.17.0"
         }
       },
       "tests.configuration": {
@@ -1330,7 +1330,7 @@
         "dependencies": {
           "Bogus": "22.1.2",
           "Elastic.Elasticsearch.Managed": "0.2.6",
-          "NEST": "7.0.0",
+          "NEST7": "7.17.0",
           "Newtonsoft.Json": "13.0.1",
           "Tests.Configuration": "7.0.0"
         }

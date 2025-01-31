@@ -5,9 +5,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Newtonsoft.Json.Linq;
 using Tests.Core.Client.Settings;
 using Tests.Core.Extensions;

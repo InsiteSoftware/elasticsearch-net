@@ -72,7 +72,7 @@ Execution hints can be provided anywhere on the command line
     let private (|IsProject|_|) (candidate:string) =
         let c = candidate.ToLowerInvariant()
         match c with
-        | "nest" | "elasticsearch.net" | "nest.jsonnetserializer" -> Some c
+        | "nest" | "Elasticsearch.Net7" | "nest.jsonnetserializer" -> Some c
         | _ -> None     
         
     let private (|IsFormat|_|) (candidate:string) =

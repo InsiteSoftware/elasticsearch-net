@@ -6,10 +6,10 @@ using System;
 using System.Text;
 using System.Runtime.Serialization;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Extensions;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Extensions;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Newtonsoft.Json;
 using Tests.Core.Client;
 using Tests.Framework.DocumentationTests;
@@ -187,7 +187,7 @@ namespace Tests.ClientConcepts.HighLevel.Serialization
 		 *
 		 * The `System.Runtime.Serialization.DataMember` attribute can be used to control how a POCO property is serialized. in a similar
 		 * fashion to `PropertyName` attribute. The `DataMember` attribute may be preferred over `PropertyName` attribute in situations where
-		 * the project in which the POCOs are defined does not have a dependency on NEST.
+		 * the project in which the POCOs are defined does not have a dependency on Nest7.
 		 *
 		 * The following example uses the `DataMember` attribute to control how the POCO property
 		 * named `StringProperty` is serialized

@@ -3,10 +3,10 @@
 // See the LICENSE file in the project root for more information
 
 using System.Runtime.Serialization;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[ReadAs(typeof(MultiGetHit<>))]
 	public interface IMultiGetHit<out TDocument> where TDocument : class

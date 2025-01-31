@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// This API enables you to create a rollup job. The job will be created in a STOPPED state, and must be started with the Start Job API.

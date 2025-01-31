@@ -21,11 +21,11 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Specification.LicenseApi;
+using Elasticsearch.Net7.Specification.LicenseApi;
 
 // ReSharper disable once CheckNamespace
 // ReSharper disable RedundantTypeArgumentsOfMethod
-namespace Nest.Specification.LicenseApi
+namespace Nest7.Specification.LicenseApi
 {
 	///<summary>
 	/// License APIs.

@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public class InMemoryHttpResponse
 	{
@@ -28,7 +28,6 @@ namespace Elasticsearch.Net
 		private readonly string _basePath = "/";
 		private readonly string _contentType;
 		private readonly Exception _exception;
-		private readonly InMemoryHttpResponse _productCheckResponse;
 		private readonly string _productHeader;
 		private readonly byte[] _responseBody;
 		private readonly int _statusCode;
@@ -37,20 +36,13 @@ namespace Elasticsearch.Net
 		/// Every request will succeed with this overload, note that it won't actually return mocked responses
 		/// so using this overload might fail if you are using it to test high level bits that need to deserialize the response.
 		/// </summary>
-		public InMemoryConnection()
-		{
-			_statusCode = 200;
-			_productCheckResponse = ValidProductCheckResponse();
-		}
+		public InMemoryConnection() => _statusCode = 200;
 
 		public InMemoryConnection(string basePath) : this() => _basePath = $"/{basePath.Trim('/')}/";
 
-		public InMemoryConnection(InMemoryHttpResponse productCheckResponse) : this(productCheckResponse, 200, null) { }
-
-		public InMemoryConnection(InMemoryHttpResponse productCheckResponse, int statusCode, string productHeader)
+		public InMemoryConnection(int statusCode, string productHeader)
 		{
 			_statusCode = statusCode;
-			_productCheckResponse = productCheckResponse ?? ValidProductCheckResponse();
 			_productHeader = productHeader;
 		}
 
@@ -61,7 +53,7 @@ namespace Elasticsearch.Net
 			int statusCode = 200,
 			Exception exception = null,
 			string contentType = null
-		) : this(productCheckResponse, statusCode, productNameFromHeader)
+		) : this(statusCode, productNameFromHeader)
 		{
 			_responseBody = responseBody;
 			_exception = exception;
@@ -90,34 +82,6 @@ namespace Elasticsearch.Net
 
 		void IDisposable.Dispose() => DisposeManagedResources();
 
-		public static InMemoryHttpResponse ValidProductCheckResponse(string productName = null)
-		{
-			var responseJson = new
-			{
-				name = "es01",
-				cluster_name = "elasticsearch-test-cluster",
-				version = new
-				{
-					number = "7.14.0",
-					build_flavor = "default",
-					build_hash = "af1dc6d8099487755c3143c931665b709de3c764",
-					build_timestamp = "2020-08-11T21:36:48.204330Z",
-					build_snapshot = false,
-					lucene_version = "8.6.0"
-				},
-				tagline = "You Know, for Search"
-			};
-
-			using var ms = RecyclableMemoryStreamFactory.Default.Create();
-			LowLevelRequestResponseSerializer.Instance.Serialize(responseJson, ms);
-
-			var response = new InMemoryHttpResponse { ResponseBytes = ms.ToArray() };
-
-			response.Headers.Add("X-elastic-product", new List<string> { productName ?? DefaultProductName });
-
-			return response;
-		}
-
 		protected TResponse ReturnConnectionStatus<TResponse>(
 			RequestData requestData,
 			byte[] responseBody = null,
@@ -135,9 +99,6 @@ namespace Elasticsearch.Net
 		)
 			where TResponse : class, IElasticsearchResponse, new()
 		{
-			if (_basePath.Equals(requestData.Uri.AbsolutePath, StringComparison.Ordinal) && requestData.Method == HttpMethod.GET)
-				return ReturnProductCheckResponse<TResponse>(requestData, statusCode, productCheckResponse);
-
 			var body = responseBody ?? _responseBody;
 			var data = requestData.PostData;
 
@@ -180,9 +141,6 @@ namespace Elasticsearch.Net
 		)
 			where TResponse : class, IElasticsearchResponse, new()
 		{
-			if (_basePath.Equals(requestData.Uri.AbsolutePath, StringComparison.Ordinal) && requestData.Method == HttpMethod.GET)
-				return ReturnProductCheckResponse<TResponse>(requestData, statusCode, productCheckResponse);
-
 			var body = responseBody ?? _responseBody;
 			var data = requestData.PostData;
 
@@ -203,24 +161,6 @@ namespace Elasticsearch.Net
 				.ToResponseAsync<TResponse>(requestData, _exception, statusCode, null, s, _productHeader, contentType ?? _contentType,
 					cancellationToken)
 				.ConfigureAwait(false);
-		}
-
-		private TResponse ReturnProductCheckResponse<TResponse>(
-			RequestData requestData,
-			int? statusCode,
-			InMemoryHttpResponse productCheckResponse
-		) where TResponse : class, IElasticsearchResponse, new()
-		{
-			productCheckResponse ??= _productCheckResponse;
-			productCheckResponse.Headers.TryGetValue("X-elastic-product", out var productNames);
-
-			requestData.MadeItToResponse = true;
-
-			using var ms = requestData.MemoryStreamFactory.Create(productCheckResponse.ResponseBytes);
-
-			return ResponseBuilder.ToResponse<TResponse>(
-				requestData, _exception, statusCode ?? productCheckResponse.StatusCode, null, ms,
-				productNames?.FirstOrDefault(), RequestData.DefaultJsonMimeType);
 		}
 
 		protected virtual void DisposeManagedResources() { }

@@ -3,9 +3,9 @@
 // See the LICENSE file in the project root for more information
 
 using System;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	// This does not extend from Union because its intended to be used on folk's _source's
 	// And the union serialization will bleed into their own JSON.NET serializer should they

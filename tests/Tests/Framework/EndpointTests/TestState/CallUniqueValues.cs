@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
 namespace Tests.Framework.EndpointTests.TestState
 {

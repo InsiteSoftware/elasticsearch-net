@@ -7,10 +7,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Core.Client;
 using Tests.Domain;
-using static Nest.Infer;
+using static Nest7.Infer;
 
 namespace Tests.Ingest
 {

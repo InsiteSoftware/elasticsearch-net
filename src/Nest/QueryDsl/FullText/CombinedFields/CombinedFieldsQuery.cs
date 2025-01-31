@@ -4,9 +4,9 @@
 
 using System;
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	[InterfaceDataContract]
 	[ReadAs(typeof(CombinedFieldsQuery))]
@@ -39,7 +39,7 @@ namespace Nest
 
 		/// <summary>
 		/// The operator used if no explicit operator is specified.
-		/// The default operator is <see cref="Nest.Operator.Or" />
+		/// The default operator is <see cref="Nest7.Operator.Or" />
 		/// </summary>
 		/// <remarks>
 		/// <see cref="TextQueryType.BestFields" /> and <see cref="TextQueryType.MostFields" /> types are field-centric?;
@@ -52,8 +52,8 @@ namespace Nest
 
 		/// <summary>
 		/// If the analyzer used removes all tokens in a query like a stop filter does, the default behavior is
-		/// to match no documents at all. In order to change that, <see cref="Nest.ZeroTermsQuery" /> can be used,
-		/// which accepts <see cref="Nest.ZeroTermsQuery.None" /> (default) and <see cref="Nest.ZeroTermsQuery.All" />
+		/// to match no documents at all. In order to change that, <see cref="Nest7.ZeroTermsQuery" /> can be used,
+		/// which accepts <see cref="Nest7.ZeroTermsQuery.None" /> (default) and <see cref="Nest7.ZeroTermsQuery.All" />
 		/// which corresponds to a match_all query.
 		/// </summary>
 		[DataMember(Name = "zero_terms_query")]

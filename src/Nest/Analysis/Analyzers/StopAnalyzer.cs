@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// An analyzer of type stop that is built using a Lower Case Tokenizer, with Stop Token Filter.

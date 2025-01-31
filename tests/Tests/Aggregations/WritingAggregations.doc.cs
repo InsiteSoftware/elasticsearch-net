@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Aggregations.Bucket.Children;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
@@ -14,7 +14,7 @@ using Tests.Domain;
 using Tests.Framework;
 using Tests.Framework.EndpointTests.TestState;
 using Tests.IndexModules;
-using static Nest.Infer;
+using static Nest7.Infer;
 
 namespace Tests.Aggregations
 {

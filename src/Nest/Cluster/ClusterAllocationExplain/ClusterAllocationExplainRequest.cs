@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("cluster.allocation_explain.json")]
 	[ReadAs(typeof(ClusterAllocationExplainRequest))]

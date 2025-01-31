@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public class StickyConnectionPool : StaticConnectionPool
 	{

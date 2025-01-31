@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Nest;
+using Nest7;
 
 namespace Tests.Framework.EndpointTests.TestState
 {

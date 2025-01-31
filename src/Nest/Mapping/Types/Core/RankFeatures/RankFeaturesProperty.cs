@@ -4,9 +4,9 @@
 
 using System.Diagnostics;
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A field that can index numeric feature vectors, so that they can later be used to boost documents in queries with a rank_feature query.

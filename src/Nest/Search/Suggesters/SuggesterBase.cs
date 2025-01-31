@@ -6,7 +6,7 @@ using System;
 using System.Linq.Expressions;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A suggester that suggests similar looking terms based on a provided text

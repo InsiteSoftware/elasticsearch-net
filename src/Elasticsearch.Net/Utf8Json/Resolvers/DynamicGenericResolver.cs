@@ -33,10 +33,10 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Utf8Json.Formatters;
-using Elasticsearch.Net.Utf8Json.Internal;
+using Elasticsearch.Net7.Utf8Json.Formatters;
+using Elasticsearch.Net7.Utf8Json.Internal;
 
-namespace Elasticsearch.Net.Utf8Json.Resolvers
+namespace Elasticsearch.Net7.Utf8Json.Resolvers
 {
 	internal sealed class DynamicGenericResolver : IJsonFormatterResolver
 	{

@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The response from a migrate to data tiers request.

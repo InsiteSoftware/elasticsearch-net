@@ -5,7 +5,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[MapsApi("security.grant_api_key.json")]
 	[ReadAs(typeof(GrantApiKeyRequest))]
@@ -69,7 +69,7 @@ namespace Nest
 		string IGrantApiKeyRequest.AccessToken { get; set; }
 
 		/// <inheritdoc cref="IGrantApiKeyRequest.GrantType" />
-		GrantType? IGrantApiKeyRequest.GrantType { get; set; } = Nest.GrantType.AccessToken;
+		GrantType? IGrantApiKeyRequest.GrantType { get; set; } = Nest7.GrantType.AccessToken;
 
 		/// <inheritdoc cref="IGrantApiKeyRequest.Password" />
 		string IGrantApiKeyRequest.Password { get; set; }

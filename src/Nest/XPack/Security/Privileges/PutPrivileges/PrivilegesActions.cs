@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Nest
+namespace Nest7
 {
 	public interface IPrivilegesActions
 	{

@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
 	/// Information about the build version.

@@ -23,15 +23,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Linq.Expressions;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Utf8Json;
-using Elasticsearch.Net.Specification.TransformApi;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Utf8Json;
+using Elasticsearch.Net7.Specification.TransformApi;
 
 // ReSharper disable RedundantBaseConstructorCall
 // ReSharper disable UnusedTypeParameter
 // ReSharper disable PartialMethodWithSinglePart
 // ReSharper disable RedundantNameQualifier
-namespace Nest
+namespace Nest7
 {
 	///<summary>Descriptor for Delete <para>https://www.elastic.co/guide/en/elasticsearch/reference/current/delete-transform.html</para></summary>
 	public partial class DeleteTransformDescriptor : RequestDescriptorBase<DeleteTransformDescriptor, DeleteTransformRequestParameters, IDeleteTransformRequest>, IDeleteTransformRequest

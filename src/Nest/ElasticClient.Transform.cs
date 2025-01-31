@@ -21,11 +21,11 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Specification.TransformApi;
+using Elasticsearch.Net7.Specification.TransformApi;
 
 // ReSharper disable once CheckNamespace
 // ReSharper disable RedundantTypeArgumentsOfMethod
-namespace Nest.Specification.TransformApi
+namespace Nest7.Specification.TransformApi
 {
 	///<summary>
 	/// Transform APIs.

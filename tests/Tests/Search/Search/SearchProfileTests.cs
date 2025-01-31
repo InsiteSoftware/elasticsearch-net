@@ -3,7 +3,7 @@
 // See the LICENSE file in the project root for more information
 
 #if FEATURE_PROFILING
-using Nest;
+using Nest7;
 using Tests.Framework;
 using Tests.Framework.MockData;
 using Tests.Framework.Profiling;

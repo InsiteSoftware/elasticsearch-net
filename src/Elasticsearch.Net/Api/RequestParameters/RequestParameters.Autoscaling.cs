@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.AutoscalingApi
+namespace Elasticsearch.Net7.Specification.AutoscalingApi
 {
 	///<summary>Request options for DeletePolicy <para>https://www.elastic.co/guide/en/elasticsearch/reference/current/autoscaling-delete-autoscaling-policy.html</para></summary>
 	public class DeleteAutoscalingPolicyRequestParameters : RequestParameters<DeleteAutoscalingPolicyRequestParameters>

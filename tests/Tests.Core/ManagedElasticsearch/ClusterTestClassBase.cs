@@ -4,7 +4,7 @@
 
 using Elastic.Elasticsearch.Ephemeral;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Core.ManagedElasticsearch.Clusters;
 
 namespace Tests.Core.ManagedElasticsearch

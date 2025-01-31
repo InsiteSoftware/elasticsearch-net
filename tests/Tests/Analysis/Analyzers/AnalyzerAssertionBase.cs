@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 
 namespace Tests.Analysis.Analyzers
 {
@@ -24,8 +24,8 @@ namespace Tests.Analysis.Analyzers
 		protected override IAnalysis FluentAnalysis(AnalysisDescriptor an) =>
 			an.Analyzers(d => AssertionSetup.Fluent(AssertionSetup.Name, d));
 
-		protected override Nest.Analysis InitializerAnalysis() =>
-			new Nest.Analysis { Analyzers = new Nest.Analyzers { { AssertionSetup.Name, AssertionSetup.Initializer } } };
+		protected override Nest7.Analysis InitializerAnalysis() =>
+			new Nest7.Analysis { Analyzers = new Nest7.Analyzers { { AssertionSetup.Name, AssertionSetup.Initializer } } };
 
 		// https://youtrack.jetbrains.com/issue/RIDER-19912
 		[U] public override Task TestPutSettingsRequest() => base.TestPutSettingsRequest();

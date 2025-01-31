@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.IndicesApi
+namespace Elasticsearch.Net7.Specification.IndicesApi
 {
 	///<summary>Request options for AddBlock <para>https://www.elastic.co/guide/en/elasticsearch/reference/master/index-modules-blocks.html</para></summary>
 	public class AddIndexBlockRequestParameters : RequestParameters<AddIndexBlockRequestParameters>

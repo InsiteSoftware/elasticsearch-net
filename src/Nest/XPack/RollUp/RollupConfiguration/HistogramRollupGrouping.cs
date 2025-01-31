@@ -5,7 +5,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary> The histogram group aggregates one or more numeric fields into numeric histogram intervals. </summary>
 	[ReadAs(typeof(HistogramRollupGrouping))]

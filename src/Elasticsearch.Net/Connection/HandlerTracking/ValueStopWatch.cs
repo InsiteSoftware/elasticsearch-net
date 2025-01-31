@@ -10,7 +10,7 @@
 using System;
 using System.Threading;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	/// <summary>
 	/// A convenience API for interacting with System.Threading.Timer in a way

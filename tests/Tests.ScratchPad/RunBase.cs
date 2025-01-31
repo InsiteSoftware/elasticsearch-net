@@ -7,7 +7,7 @@ using System.Diagnostics;
 using System.Threading;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Engines;
-using Nest;
+using Nest7;
 using Tests.Core.Client;
 
 namespace Tests.ScratchPad

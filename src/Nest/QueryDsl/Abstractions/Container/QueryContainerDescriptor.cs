@@ -6,7 +6,7 @@ using System;
 using System.Linq.Expressions;
 using System.Runtime.Serialization;
 
-namespace Nest
+namespace Nest7
 {
 	[DataContract]
 	public class QueryContainerDescriptor<T> : QueryContainer where T : class

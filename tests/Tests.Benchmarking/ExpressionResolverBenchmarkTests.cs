@@ -5,7 +5,7 @@
 using System;
 using System.Linq.Expressions;
 using BenchmarkDotNet.Attributes;
-using Nest;
+using Nest7;
 using Tests.Benchmarking.Framework;
 using Tests.Core.Client;
 using Tests.Domain;

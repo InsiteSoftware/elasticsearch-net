@@ -4,9 +4,9 @@
 
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// The response from creating a calendar.

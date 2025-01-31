@@ -17,7 +17,7 @@ open Tests.YamlRunner.DoMapper
 open Tests.YamlRunner.Models
 open Tests.YamlRunner.Stashes
 open ShellProgressBar
-open Elasticsearch.Net
+open Elasticsearch.Net7
 open Newtonsoft.Json
 open Newtonsoft.Json.Linq
 open System.Collections.Generic

@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace Nest
+namespace Nest7
 {
 	public partial interface IElasticClient
 	{
@@ -14,7 +14,7 @@ namespace Nest
 		/// BulkAll is a generic helper that will partition any lazy stream of documents and send them to Elasticsearch as concurrent bulk requests.
 		/// <para />
 		/// The index to target will be inferred from <typeparamref name="T" />. If no default index has been mapped for <typeparamref name="T" />
-		/// using <see cref="ConnectionSettingsBase{TConnectionSettings}.DefaultMappingFor{TDocument}"/> on <see cref="Nest.ConnectionSettings"/>, an exception will be thrown.
+		/// using <see cref="ConnectionSettingsBase{TConnectionSettings}.DefaultMappingFor{TDocument}"/> on <see cref="Nest7.ConnectionSettings"/>, an exception will be thrown.
 		/// Inference can be overridden using <see cref="BulkAllDescriptor{T}.Index"/>, and in addition,
 		/// an index can be specified for each document using <see cref="BulkAllDescriptor{T}.BufferToBulk"/>.
 		/// </summary>
@@ -30,7 +30,7 @@ namespace Nest
 		/// BulkAll is a generic helper that will partition any lazy stream of documents and send them to Elasticsearch as concurrent bulk requests
 		/// <para />
 		/// The index to target will be inferred from <typeparamref name="T" />. If no default index has been mapped for <typeparamref name="T" />
-		/// using <see cref="ConnectionSettingsBase{TConnectionSettings}.DefaultMappingFor{TDocument}"/> on <see cref="Nest.ConnectionSettings"/>, an exception will be thrown.
+		/// using <see cref="ConnectionSettingsBase{TConnectionSettings}.DefaultMappingFor{TDocument}"/> on <see cref="Nest7.ConnectionSettings"/>, an exception will be thrown.
 		/// Inference can be overridden using <see cref="IBulkAllRequest{T}.Index"/>, and in addition,
 		/// an index can be specified for each document using <see cref="IBulkAllRequest{T}.BufferToBulk"/>.
 		/// </summary>

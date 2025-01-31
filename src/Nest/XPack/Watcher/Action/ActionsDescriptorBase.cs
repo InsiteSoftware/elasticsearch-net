@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Nest
+namespace Nest7
 {
 	/// <inheritdoc cref="IAction"/>
 	public abstract class ActionsDescriptorBase<TDescriptor, TInterface>

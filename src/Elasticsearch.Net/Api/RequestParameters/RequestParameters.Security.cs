@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.SecurityApi
+namespace Elasticsearch.Net7.Specification.SecurityApi
 {
 	///<summary>Request options for Authenticate <para>https://www.elastic.co/guide/en/elasticsearch/reference/current/security-api-authenticate.html</para></summary>
 	public class AuthenticateRequestParameters : RequestParameters<AuthenticateRequestParameters>

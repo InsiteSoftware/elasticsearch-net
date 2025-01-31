@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
@@ -46,7 +46,7 @@ namespace Tests.Cluster.ComponentTemplate
 						{
 							{ "foo", "bar" }
 						},
-						Template = new Nest.Template
+						Template = new Nest7.Template
 						{
 							Settings = new IndexSettings
 							{

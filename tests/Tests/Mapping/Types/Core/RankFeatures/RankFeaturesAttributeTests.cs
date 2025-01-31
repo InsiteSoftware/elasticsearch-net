@@ -3,7 +3,7 @@
 // See the LICENSE file in the project root for more information
 
 using System.Collections.Generic;
-using Nest;
+using Nest7;
 
 namespace Tests.Mapping.Types.Core.RankFeatures
 {

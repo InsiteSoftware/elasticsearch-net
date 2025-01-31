@@ -4,11 +4,11 @@
 
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 using static Tests.Framework.EndpointTests.UrlTester;
-using static Nest.Infer;
+using static Nest7.Infer;
 
 namespace Tests.XPack.Rollup.RollupSearch
 {
@@ -25,9 +25,9 @@ namespace Tests.XPack.Rollup.RollupSearch
 
 			await POST($"/_all/_rollup_search")
 				.Fluent(c => c.Rollup.Search<Log>(s => s.Index(AllIndices)))
-				.Request(c => c.Rollup.Search<Log>(new RollupSearchRequest(Nest.Indices.All)))
+				.Request(c => c.Rollup.Search<Log>(new RollupSearchRequest(Nest7.Indices.All)))
 				.FluentAsync(c => c.Rollup.SearchAsync<Log>(s => s.Index(AllIndices)))
-				.RequestAsync(c => c.Rollup.SearchAsync<Log>(new RollupSearchRequest(Nest.Indices.All)));
+				.RequestAsync(c => c.Rollup.SearchAsync<Log>(new RollupSearchRequest(Nest7.Indices.All)));
 		}
 	}
 }

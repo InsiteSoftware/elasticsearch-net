@@ -4,8 +4,8 @@
 
 using System;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
-using Nest;
+using Elasticsearch.Net7;
+using Nest7;
 
 namespace Tests.ClientConcepts.Connection
 {

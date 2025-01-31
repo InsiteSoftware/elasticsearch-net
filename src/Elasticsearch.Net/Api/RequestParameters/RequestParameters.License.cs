@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.LicenseApi
+namespace Elasticsearch.Net7.Specification.LicenseApi
 {
 	///<summary>Request options for Delete <para>https://www.elastic.co/guide/en/elasticsearch/reference/master/delete-license.html</para></summary>
 	public class DeleteLicenseRequestParameters : RequestParameters<DeleteLicenseRequestParameters>

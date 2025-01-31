@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.MachineLearningApi
+namespace Elasticsearch.Net7.Specification.MachineLearningApi
 {
 	///<summary>Request options for CloseJob <para>https://www.elastic.co/guide/en/elasticsearch/reference/current/ml-close-job.html</para></summary>
 	public class CloseJobRequestParameters : RequestParameters<CloseJobRequestParameters>

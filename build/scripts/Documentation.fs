@@ -39,7 +39,7 @@ module Documentation =
                 fn(times)
                 
         // This seems silly? That's because it is!
-        // If `Paths.MagicDocumentationFile` (a cache in Elasticsearch.Net `obj` folder) is missing
+        // If `Paths.MagicDocumentationFile` (a cache in Elasticsearch.Net7 `obj` folder) is missing
         // `BuildAlyzer` has problems loading the project.
         //
         // This file only appears however when running the generation command multiple times

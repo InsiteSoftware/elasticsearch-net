@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core;
 using Tests.Core.Client;
 using Tests.Domain;
 using Tests.Framework;
 using Tests.QueryDsl.BoolDsl.Operators;
-using static Nest.Infer;
+using static Nest7.Infer;
 using static Tests.Core.Serialization.SerializationTestHelper;
 
 namespace Tests.QueryDsl.BoolDsl

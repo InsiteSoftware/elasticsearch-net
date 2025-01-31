@@ -21,11 +21,11 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Specification.GraphApi;
+using Elasticsearch.Net7.Specification.GraphApi;
 
 // ReSharper disable once CheckNamespace
 // ReSharper disable RedundantTypeArgumentsOfMethod
-namespace Nest.Specification.GraphApi
+namespace Nest7.Specification.GraphApi
 {
 	///<summary>
 	/// Graph APIs.

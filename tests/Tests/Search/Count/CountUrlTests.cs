@@ -4,7 +4,7 @@
 
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 using static Tests.Framework.EndpointTests.UrlTester;
@@ -63,9 +63,9 @@ namespace Tests.Search.Count
 
 			await POST("/_all/_count")
 					.Fluent(c => c.Count<Project>(s => s.AllIndices().Query(q => q.MatchAll())))
-					.Request(c => c.Count(new CountRequest<Project>(Nest.Indices.All) { Query = new MatchAllQuery() }))
+					.Request(c => c.Count(new CountRequest<Project>(Nest7.Indices.All) { Query = new MatchAllQuery() }))
 					.FluentAsync(c => c.CountAsync<Project>(s => s.AllIndices().Query(q => q.MatchAll())))
-					.RequestAsync(c => c.CountAsync(new CountRequest<Project>(Nest.Indices.All) { Query = new MatchAllQuery() }))
+					.RequestAsync(c => c.CountAsync(new CountRequest<Project>(Nest7.Indices.All) { Query = new MatchAllQuery() }))
 				;
 		}
 	}

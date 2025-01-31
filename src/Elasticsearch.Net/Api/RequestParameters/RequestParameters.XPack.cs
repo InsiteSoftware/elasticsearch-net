@@ -25,7 +25,7 @@ using System.Text;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
-namespace Elasticsearch.Net.Specification.XPackApi
+namespace Elasticsearch.Net7.Specification.XPackApi
 {
 	///<summary>Request options for Info <para>https://www.elastic.co/guide/en/elasticsearch/reference/current/info-api.html</para></summary>
 	public class XPackInfoRequestParameters : RequestParameters<XPackInfoRequestParameters>

@@ -11,13 +11,13 @@ using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.ManagedElasticsearch;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
-using static Nest.Infer;
+using static Nest7.Infer;
 
 namespace Tests.ClientConcepts.Connection
 {

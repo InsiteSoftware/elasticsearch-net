@@ -3,8 +3,8 @@
 // See the LICENSE file in the project root for more information
 
 using System;
-using Elasticsearch.Net;
-using Nest;
+using Elasticsearch.Net7;
+using Nest7;
 using Tests.Framework.DocumentationTests;
 
 namespace Tests.ClientConcepts.HighLevel.Indexing

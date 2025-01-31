@@ -6,7 +6,7 @@ using System;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	internal static class CertificateHelpers
 	{

@@ -4,7 +4,7 @@
 
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Domain;
 using Tests.Framework.EndpointTests;
 using static Tests.Framework.EndpointTests.UrlTester;
@@ -54,9 +54,9 @@ namespace Tests.Search.Validate
 
 			await POST("/_all/_validate/query")
 					.Fluent(c => c.Indices.ValidateQuery<Project>(s => s.AllIndices()))
-					.Request(c => c.Indices.ValidateQuery(new ValidateQueryRequest<Project>(Nest.Indices.All)))
+					.Request(c => c.Indices.ValidateQuery(new ValidateQueryRequest<Project>(Nest7.Indices.All)))
 					.FluentAsync(c => c.Indices.ValidateQueryAsync<Project>(s => s.AllIndices()))
-					.RequestAsync(c => c.Indices.ValidateQueryAsync(new ValidateQueryRequest<Project>(Nest.Indices.All)))
+					.RequestAsync(c => c.Indices.ValidateQueryAsync(new ValidateQueryRequest<Project>(Nest7.Indices.All)))
 				;
 
 			await POST("/_validate/query")

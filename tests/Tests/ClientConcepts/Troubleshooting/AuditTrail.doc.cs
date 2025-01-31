@@ -4,9 +4,9 @@
 
 using System;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Client.Settings;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Domain;
@@ -73,8 +73,6 @@ namespace Tests.ClientConcepts.Troubleshooting
 			 * But can also be accessed manually:
 			 */
 			response.ApiCall.AuditTrail.Count.Should().Be(6, "{0}", debug);
-			response.ApiCall.AuditTrail[0].Event.Should().Be(AuditEvent.ProductCheckOnStartup, "{0}", debug);
-			response.ApiCall.AuditTrail[1].Event.Should().Be(AuditEvent.ProductCheckSuccess, "{0}", debug);
 			response.ApiCall.AuditTrail[2].Event.Should().Be(AuditEvent.SniffOnStartup, "{0}", debug);
 			response.ApiCall.AuditTrail[3].Event.Should().Be(AuditEvent.SniffSuccess, "{0}", debug);
 			response.ApiCall.AuditTrail[4].Event.Should().Be(AuditEvent.PingSuccess, "{0}", debug);

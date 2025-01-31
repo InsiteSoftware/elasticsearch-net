@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	public class PipelineException : Exception
 	{
@@ -37,8 +37,6 @@ namespace Elasticsearch.Net
 				case PipelineFailure.MaxRetriesReached: return "The call was retried the configured maximum amount of times";
 				case PipelineFailure.NoNodesAttempted:
 					return "No nodes were attempted, this can happen when a node predicate does not match any nodes";
-				case PipelineFailure.FailedProductCheck:
-					return RequestPipeline.ProductCheckTransientErrorWarning;
 				case PipelineFailure.Unexpected:
 				default:
 					return "An unexpected error occurred. Try checking the original exception for more information.";

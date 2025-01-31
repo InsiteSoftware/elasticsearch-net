@@ -4,9 +4,9 @@
 
 using System.Threading.Tasks;
 using Elastic.Elasticsearch.Xunit.XunitPlumbing;
-using Nest;
+using Nest7;
 using Tests.Framework.EndpointTests;
-using static Nest.Indices;
+using static Nest7.Indices;
 using static Tests.Framework.EndpointTests.UrlTester;
 
 namespace Tests.Indices.IndexSettings.UpdateIndicesSettings
@@ -16,7 +16,7 @@ namespace Tests.Indices.IndexSettings.UpdateIndicesSettings
 		[U] public async Task Urls()
 		{
 			var index = "index1,index2";
-			Nest.Indices indices = index;
+			Nest7.Indices indices = index;
 			await PUT($"/index1%2Cindex2/_settings")
 					.Fluent(c => c.Indices.UpdateSettings(indices, s => s))
 					.Request(c => c.Indices.UpdateSettings(new UpdateIndexSettingsRequest(index)))

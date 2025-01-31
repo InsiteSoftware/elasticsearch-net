@@ -5,9 +5,9 @@
 using System;
 using System.Globalization;
 using System.Text.RegularExpressions;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A time representation for use within <see cref="DateMath" /> expressions.

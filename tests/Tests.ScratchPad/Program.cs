@@ -8,9 +8,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using BenchmarkDotNet.Running;
-using Elasticsearch.Net;
-using Elasticsearch.Net.Diagnostics;
-using Nest;
+using Elasticsearch.Net7;
+using Elasticsearch.Net7.Diagnostics;
+using Nest7;
 using Tests.Core.Client;
 using Tests.Domain;
 

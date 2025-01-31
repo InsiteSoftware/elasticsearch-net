@@ -7,7 +7,7 @@ using System.Linq;
 #if NET461
 using System.Reflection;
 
-namespace Elasticsearch.Net
+namespace Elasticsearch.Net7
 {
 	internal static class RuntimeInformation
 	{

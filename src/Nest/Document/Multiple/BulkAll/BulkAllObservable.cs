@@ -7,9 +7,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net;
+using Elasticsearch.Net7;
 
-namespace Nest
+namespace Nest7
 {
 	public class BulkAllObservable<T> : IDisposable, IObservable<BulkAllResponse> where T : class
 	{
@@ -221,9 +221,6 @@ namespace Nest
 			var reason = failureReason?.GetStringValue() ?? nameof(PipelineFailure.BadRequest);
 			switch (failureReason)
 			{
-				case PipelineFailure.FailedProductCheck:
-					throw ThrowOnBadBulk(response, $"{nameof(BulkAll)} halted after failed product check");
-
 				case PipelineFailure.MaxRetriesReached:
 					if (response.ApiCall.AuditTrail.Last().Event == AuditEvent.FailedOverAllNodes)
 						throw ThrowOnBadBulk(response, $"{nameof(BulkAll)} halted after attempted bulk failed over all the active nodes");

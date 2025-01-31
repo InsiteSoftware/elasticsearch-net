@@ -7,10 +7,10 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
-using Elasticsearch.Net.Extensions;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Extensions;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	public interface IDateMath
 	{

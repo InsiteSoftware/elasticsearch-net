@@ -8,16 +8,16 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.VirtualizedCluster.MockResponses;
-using Elasticsearch.Net.VirtualizedCluster.Providers;
-using Elasticsearch.Net.VirtualizedCluster.Rules;
+using Elasticsearch.Net7.VirtualizedCluster.MockResponses;
+using Elasticsearch.Net7.VirtualizedCluster.Providers;
+using Elasticsearch.Net7.VirtualizedCluster.Rules;
 #if DOTNETCORE
 using TheException = System.Net.Http.HttpRequestException;
 #else
 using TheException = System.Net.WebException;
 #endif
 
-namespace Elasticsearch.Net.VirtualizedCluster
+namespace Elasticsearch.Net7.VirtualizedCluster
 {
 	/// <summary>
 	/// An in memory connection that uses a rule engine to return different responses for sniffs/pings and API calls.
@@ -101,9 +101,6 @@ namespace Elasticsearch.Net.VirtualizedCluster
 			requestData.Method == HttpMethod.HEAD &&
 			(requestData.PathAndQuery == string.Empty || requestData.PathAndQuery.StartsWith("?"));
 
-		public bool IsProductCheckRequest(RequestData requestData) =>
-			requestData.Uri.AbsolutePath.Equals("/", StringComparison.Ordinal) && requestData.Method == HttpMethod.GET;
-
 		public override TResponse Request<TResponse>(RequestData requestData)
 		{
 			if (!_calls.ContainsKey(requestData.Uri.Port))
@@ -134,18 +131,6 @@ namespace Elasticsearch.Net.VirtualizedCluster
 						requestData.PingTimeout,
 						_ => { },
 						_ => null //HEAD request
-					);
-				}
-				if (IsProductCheckRequest(requestData))
-				{
-					_ = Interlocked.Increment(ref state.ProductChecked);
-					return HandleRules<TResponse, IRule>(
-						requestData,
-						nameof(VirtualCluster.ProductCheck),
-						_cluster.ProductCheckRules,
-						requestData.RequestTimeout,
-						_ => { },
-						_ => ValidProductCheckResponse().ResponseBytes
 					);
 				}
 				_ = Interlocked.Increment(ref state.Called);
@@ -312,7 +297,6 @@ namespace Elasticsearch.Net.VirtualizedCluster
 			public int Pinged;
 			public int Sniffed;
 			public int Successes;
-			public int ProductChecked;
 		}
 	}
 }

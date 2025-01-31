@@ -8,7 +8,7 @@ using System.Globalization;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace Nest
+namespace Nest7
 {
 	public class FieldResolver
 	{

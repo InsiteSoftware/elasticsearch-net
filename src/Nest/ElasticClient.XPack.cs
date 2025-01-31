@@ -21,11 +21,11 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Elasticsearch.Net.Specification.XPackApi;
+using Elasticsearch.Net7.Specification.XPackApi;
 
 // ReSharper disable once CheckNamespace
 // ReSharper disable RedundantTypeArgumentsOfMethod
-namespace Nest.Specification.XPackApi
+namespace Nest7.Specification.XPackApi
 {
 	///<summary>
 	/// XPack APIs.

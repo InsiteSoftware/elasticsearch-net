@@ -3,9 +3,9 @@
 // See the LICENSE file in the project root for more information
 
 using System.Runtime.Serialization;
-using Elasticsearch.Net.Utf8Json;
+using Elasticsearch.Net7.Utf8Json;
 
-namespace Nest
+namespace Nest7
 {
 	/// <summary>
 	/// A token filter of type shingle that constructs shingles (token n-grams) from a token stream.

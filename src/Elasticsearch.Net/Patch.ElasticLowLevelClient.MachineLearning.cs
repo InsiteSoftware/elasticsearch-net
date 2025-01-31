@@ -4,9 +4,9 @@
 
 using System.Threading;
 using System.Threading.Tasks;
-using static Elasticsearch.Net.HttpMethod;
+using static Elasticsearch.Net7.HttpMethod;
 
-namespace Elasticsearch.Net.Specification.MachineLearningApi
+namespace Elasticsearch.Net7.Specification.MachineLearningApi
 {
 	// Introduced as workaround for the introduction of a body in https://github.com/elastic/elasticsearch/pull/56895
 	public partial class LowLevelMachineLearningNamespace

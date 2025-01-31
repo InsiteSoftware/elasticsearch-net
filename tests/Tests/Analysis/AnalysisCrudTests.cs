@@ -4,7 +4,7 @@
 
 using System.Linq;
 using FluentAssertions;
-using Nest;
+using Nest7;
 using Tests.Core.Extensions;
 using Tests.Core.ManagedElasticsearch.Clusters;
 using Tests.Framework.EndpointTests;
@@ -43,7 +43,7 @@ namespace Tests.Analysis
 		{
 			Settings = new IndexSettings
 			{
-				Analysis = new Nest.Analysis
+				Analysis = new Nest7.Analysis
 				{
 					Analyzers = AnalysisUsageTests.AnalyzersInitializer.Analysis.Analyzers,
 					CharFilters = AnalysisUsageTests.CharFiltersInitializer.Analysis.CharFilters,
@@ -77,7 +77,7 @@ namespace Tests.Analysis
 				(s, c, r) => c.Indices.GetSettingsAsync(r)
 			);
 
-		protected GetIndexSettingsRequest GetInitializer(string indexName) => new GetIndexSettingsRequest(Nest.Indices.Index((IndexName)indexName));
+		protected GetIndexSettingsRequest GetInitializer(string indexName) => new GetIndexSettingsRequest(Nest7.Indices.Index((IndexName)indexName));
 
 		protected IGetIndexSettingsRequest GetFluent(string indexName, GetIndexSettingsDescriptor u) => u;
 
@@ -145,9 +145,9 @@ namespace Tests.Analysis
 		{
 			IndexSettings = new IndexSettings
 			{
-				Analysis = new Nest.Analysis
+				Analysis = new Nest7.Analysis
 				{
-					CharFilters = new Nest.CharFilters { { "differentHtml", new HtmlStripCharFilter() } }
+					CharFilters = new Nest7.CharFilters { { "differentHtml", new HtmlStripCharFilter() } }
 				}
 			}
 		};

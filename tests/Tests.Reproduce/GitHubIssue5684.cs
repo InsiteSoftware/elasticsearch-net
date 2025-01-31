@@ -3,7 +3,7 @@
 // See the LICENSE file in the project root for more information
 
 using System.Text;
-using Nest;
+using Nest7;
 using System.Runtime.Serialization;
 using System.IO;
 using FluentAssertions;
