@@ -44,9 +44,6 @@ namespace Elasticsearch.Net7
 		public bool UsingSsl { get; }
 
 		/// <inheritdoc />
-		ProductCheckStatus IConnectionPool.ProductCheckStatus { get; set; } = ProductCheckStatus.NotChecked;
-
-		/// <inheritdoc />
 		public IEnumerable<Node> CreateView(Action<AuditEvent, Node> audit = null) => Nodes;
 
 		/// <inheritdoc />

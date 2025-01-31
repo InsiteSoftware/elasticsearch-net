@@ -17,13 +17,7 @@ namespace Elasticsearch.Net7.VirtualizedCluster
 
 		public VirtualCluster(IEnumerable<Node> nodes) : this(nodes, true) { }
 
-		public VirtualCluster(IEnumerable<Node> nodes, bool productCheckSucceeds)
-		{
-			_nodes = nodes.ToList();
-
-			if (productCheckSucceeds)
-				ProductCheckRules.Add(new ProductCheckRule().SucceedAlways());
-		}
+		public VirtualCluster(IEnumerable<Node> nodes, bool productCheckSucceeds) => _nodes = nodes.ToList();
 
 		public List<IClientCallRule> ClientCallRules { get; } = new();
 		public TestableDateTimeProvider DateTimeProvider { get; } = new();
@@ -31,7 +25,6 @@ namespace Elasticsearch.Net7.VirtualizedCluster
 		public IReadOnlyList<Node> Nodes => _nodes;
 
 		public List<IRule> PingingRules { get; } = new();
-		public List<IRule> ProductCheckRules { get; } = new();
 		public List<ISniffRule> SniffingRules { get; } = new();
 		internal string ElasticsearchVersion { get; private set; } = "7.0.0";
 
@@ -96,13 +89,6 @@ namespace Elasticsearch.Net7.VirtualizedCluster
 			SniffingRules.Add(selector(new SniffRule()));
 			return this;
 		}
-
-		public VirtualCluster ProductCheck(Func<ProductCheckRule, IRule> selector)
-		{
-			ProductCheckRules.Add(selector(new ProductCheckRule()));
-			return this;
-		}
-
 		public VirtualCluster ClientCalls(Func<ClientCallRule, IClientCallRule> selector)
 		{
 			ClientCallRules.Add(selector(new ClientCallRule()));

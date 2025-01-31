@@ -35,12 +35,6 @@ namespace Elasticsearch.Net7
 		bool SniffedOnStartup { get; set; }
 
 		/// <summary>
-		/// Whether a product check is seen on startup. The implementation is
-		/// responsible for setting this in a thread safe fashion.
-		/// </summary>
-		ProductCheckStatus ProductCheckStatus { get; set; }
-
-		/// <summary>
 		/// Whether pinging is supported
 		/// </summary>
 		bool SupportsPinging { get; }

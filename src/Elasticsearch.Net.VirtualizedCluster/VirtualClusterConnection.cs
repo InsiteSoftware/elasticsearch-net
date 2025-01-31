@@ -101,9 +101,6 @@ namespace Elasticsearch.Net7.VirtualizedCluster
 			requestData.Method == HttpMethod.HEAD &&
 			(requestData.PathAndQuery == string.Empty || requestData.PathAndQuery.StartsWith("?"));
 
-		public bool IsProductCheckRequest(RequestData requestData) =>
-			requestData.Uri.AbsolutePath.Equals("/", StringComparison.Ordinal) && requestData.Method == HttpMethod.GET;
-
 		public override TResponse Request<TResponse>(RequestData requestData)
 		{
 			if (!_calls.ContainsKey(requestData.Uri.Port))
@@ -134,18 +131,6 @@ namespace Elasticsearch.Net7.VirtualizedCluster
 						requestData.PingTimeout,
 						_ => { },
 						_ => null //HEAD request
-					);
-				}
-				if (IsProductCheckRequest(requestData))
-				{
-					_ = Interlocked.Increment(ref state.ProductChecked);
-					return HandleRules<TResponse, IRule>(
-						requestData,
-						nameof(VirtualCluster.ProductCheck),
-						_cluster.ProductCheckRules,
-						requestData.RequestTimeout,
-						_ => { },
-						_ => ValidProductCheckResponse().ResponseBytes
 					);
 				}
 				_ = Interlocked.Increment(ref state.Called);
@@ -312,7 +297,6 @@ namespace Elasticsearch.Net7.VirtualizedCluster
 			public int Pinged;
 			public int Sniffed;
 			public int Successes;
-			public int ProductChecked;
 		}
 	}
 }

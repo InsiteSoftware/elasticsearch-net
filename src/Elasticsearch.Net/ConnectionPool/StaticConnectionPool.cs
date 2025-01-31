@@ -77,9 +77,6 @@ namespace Elasticsearch.Net7
 		protected Random Random { get; }
 		protected bool Randomize { get; }
 
-		/// <inheritdoc />
-		ProductCheckStatus IConnectionPool.ProductCheckStatus { get; set; } = ProductCheckStatus.NotChecked;
-
 		/// <summary>
 		/// Creates a view of all the live nodes with changing starting positions that wraps over on each call
 		/// e.g Thread A might get 1,2,3,4,5 and thread B will get 2,3,4,5,1.

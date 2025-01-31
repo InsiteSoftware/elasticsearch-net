@@ -185,37 +185,45 @@ namespace Tests.MetaHeader
 
 		protected class TestableInMemoryConnection : IConnection
 		{
-			internal static readonly byte[] EmptyBody = Encoding.UTF8.GetBytes("");
+		internal static readonly byte[] EmptyBody = Encoding.UTF8.GetBytes("");
 
 			private readonly Action<RequestData> _perRequestAssertion;
-
-			private readonly InMemoryHttpResponse _productCheckResponse = InMemoryConnection.ValidProductCheckResponse();
 			private readonly List<(int, string)> _responses;
 			private int _requestCounter = -1;
-
+			
 			public TestableInMemoryConnection(Action<RequestData> assertion, List<(int, string)> responses)
 			{
 				_perRequestAssertion = assertion;
 				_responses = responses;
 			}
 
+			public void AssertExpectedCallCount() => _requestCounter.Should().Be(_responses.Count - 1);
+			
+			async Task<TResponse> IConnection.RequestAsync<TResponse>(RequestData requestData, CancellationToken cancellationToken)
+			{
+				Interlocked.Increment(ref _requestCounter);
+				
+				_perRequestAssertion(requestData);
+
+				await Task.Yield(); // avoids test deadlocks
+
+				int statusCode;
+				string response;
+				
+				if (_responses.Count > _requestCounter)
+					(statusCode, response) = _responses[_requestCounter];
+				else
+					(statusCode, response) = (500, (string)null);
+
+				var stream = !string.IsNullOrEmpty(response) ? requestData.MemoryStreamFactory.Create(Encoding.UTF8.GetBytes(response)) : requestData.MemoryStreamFactory.Create(EmptyBody);
+
+				return await ResponseBuilder
+					.ToResponseAsync<TResponse>(requestData, null, statusCode, null, stream, RequestData.DefaultJsonMimeType, cancellationToken)
+					.ConfigureAwait(false);
+			}
+
 			TResponse IConnection.Request<TResponse>(RequestData requestData)
 			{
-				if ("/".Equals(requestData.Uri.AbsolutePath, StringComparison.Ordinal) && requestData.Method == HttpMethod.GET)
-				{
-					// We don't add product checks to the request count
-
-					_productCheckResponse.Headers.TryGetValue("X-elastic-product", out var productNames);
-
-					requestData.MadeItToResponse = true;
-
-					using var ms = requestData.MemoryStreamFactory.Create(_productCheckResponse.ResponseBytes);
-
-					return ResponseBuilder.ToResponse<TResponse>(
-						requestData, null, _productCheckResponse.StatusCode, null, ms, productNames?.FirstOrDefault(),
-						RequestData.DefaultJsonMimeType);
-				}
-
 				Interlocked.Increment(ref _requestCounter);
 
 				_perRequestAssertion(requestData);
@@ -228,60 +236,12 @@ namespace Tests.MetaHeader
 				else
 					(statusCode, response) = (200, (string)null);
 
-				var stream = !string.IsNullOrEmpty(response)
-					? requestData.MemoryStreamFactory.Create(Encoding.UTF8.GetBytes(response))
-					: requestData.MemoryStreamFactory.Create(EmptyBody);
+				var stream = !string.IsNullOrEmpty(response) ? requestData.MemoryStreamFactory.Create(Encoding.UTF8.GetBytes(response)) : requestData.MemoryStreamFactory.Create(EmptyBody);
 
-				return ResponseBuilder.ToResponse<TResponse>(requestData, null, statusCode, null, stream, "Elasticsearch",
-					RequestData.DefaultJsonMimeType);
-			}
-
-			async Task<TResponse> IConnection.RequestAsync<TResponse>(RequestData requestData, CancellationToken cancellationToken)
-			{
-				if ("/".Equals(requestData.Uri.AbsolutePath, StringComparison.Ordinal) && requestData.Method == HttpMethod.GET)
-				{
-					// We don't add product checks to the request count
-
-					_productCheckResponse.Headers.TryGetValue("X-elastic-product", out var productNames);
-
-					requestData.MadeItToResponse = true;
-
-					await using var ms = requestData.MemoryStreamFactory.Create(_productCheckResponse.ResponseBytes);
-
-					await Task.Yield(); // avoids test deadlocks
-
-					return ResponseBuilder.ToResponse<TResponse>(
-						requestData, null, _productCheckResponse.StatusCode, null, ms, productNames?.FirstOrDefault(),
-						RequestData.DefaultJsonMimeType);
-				}
-
-				Interlocked.Increment(ref _requestCounter);
-
-				_perRequestAssertion(requestData);
-
-				await Task.Yield(); // avoids test deadlocks
-
-				int statusCode;
-				string response;
-
-				if (_responses.Count > _requestCounter)
-					(statusCode, response) = _responses[_requestCounter];
-				else
-					(statusCode, response) = (500, (string)null);
-
-				var stream = !string.IsNullOrEmpty(response)
-					? requestData.MemoryStreamFactory.Create(Encoding.UTF8.GetBytes(response))
-					: requestData.MemoryStreamFactory.Create(EmptyBody);
-
-				return await ResponseBuilder
-					.ToResponseAsync<TResponse>(requestData, null, statusCode, null, stream, "Elasticsearch", RequestData.DefaultJsonMimeType,
-						cancellationToken)
-					.ConfigureAwait(false);
+				return ResponseBuilder.ToResponse<TResponse>(requestData, null, statusCode, null, stream, RequestData.DefaultJsonMimeType);
 			}
 
 			public void Dispose() { }
-
-			public void AssertExpectedCallCount() => _requestCounter.Should().Be(_responses.Count - 1);
 		}
 	}
 }

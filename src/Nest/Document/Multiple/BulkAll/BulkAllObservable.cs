@@ -221,9 +221,6 @@ namespace Nest7
 			var reason = failureReason?.GetStringValue() ?? nameof(PipelineFailure.BadRequest);
 			switch (failureReason)
 			{
-				case PipelineFailure.FailedProductCheck:
-					throw ThrowOnBadBulk(response, $"{nameof(BulkAll)} halted after failed product check");
-
 				case PipelineFailure.MaxRetriesReached:
 					if (response.ApiCall.AuditTrail.Last().Event == AuditEvent.FailedOverAllNodes)
 						throw ThrowOnBadBulk(response, $"{nameof(BulkAll)} halted after attempted bulk failed over all the active nodes");

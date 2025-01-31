@@ -53,10 +53,7 @@ namespace Tests.Core.Client
 				}
 			}
 
-			var productCheckResponse =
-				productCheckSucceeds ? InMemoryConnection.ValidProductCheckResponse() : new InMemoryHttpResponse { StatusCode = 500 };
-
-			var connection = new InMemoryConnection(responseBytes, productCheckResponse, null, statusCode, exception, contentType);
+			var connection = new InMemoryConnection(responseBytes, statusCode, exception, contentType);
 			var connectionPool = new SingleNodeConnectionPool(new Uri("http://localhost:9200"));
 			var defaultSettings = new ConnectionSettings(connectionPool, connection)
 				.DefaultIndex("default-index");

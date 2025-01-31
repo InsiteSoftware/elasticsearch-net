@@ -91,12 +91,6 @@ namespace Elasticsearch.Net7
 							pipeline.SniffOnConnectionFailure();
 						}
 					}
-					catch (PipelineException pipelineException) when (pipelineException.FailureReason == PipelineFailure.FailedProductCheck)
-					{
-						// We don't mark nodes dead in this situation
-						HandlePipelineException(ref response, pipelineException, pipeline, node, seenExceptions, false);
-						break;
-					}
 					catch (PipelineException pipelineException) when (!pipelineException.Recoverable)
 					{
 						HandlePipelineException(ref response, pipelineException, pipeline, node, seenExceptions);
@@ -153,12 +147,6 @@ namespace Elasticsearch.Net7
 						pipeline.MarkDead(node);
 						await pipeline.SniffOnConnectionFailureAsync(cancellationToken).ConfigureAwait(false);
 					}
-				}
-				catch (PipelineException pipelineException) when (pipelineException.FailureReason == PipelineFailure.FailedProductCheck)
-				{
-					// We don't mark nodes dead in this situation
-					HandlePipelineException(ref response, pipelineException, pipeline, node, seenExceptions, false);
-					break;
 				}
 				catch (PipelineException pipelineException) when (!pipelineException.Recoverable)
 				{
